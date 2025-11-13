@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Courses | Tan Dai Ngo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"></div>
+
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          ☰
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="hackathons.html">Hackathons</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="awards.html">Awards & Languages</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container section-inner">
+        <h2>Relevant Coursework</h2>
+        <p class="muted">
+          Selected courses that built my foundation in algorithms, distributed systems, databases,
+          data science, statistics, and web development.
+        </p>
+
+        <div class="cards-grid">
+          <!-- UChicago -->
+          <article class="card">
+            <div class="activity-header">
+              <div class="activity-photo-wrapper">
+                <!-- 👇 This is the logo circle -->
+                <div class="activity-photo">
+                  <img src="images/uchicago-logo.png" alt="University of Chicago logo" />
+                </div>
+              </div>
+              <div>
+                <h3>University of Chicago</h3>
+                <p class="edu-meta">Graduate-level Computer Science coursework</p>
+              </div>
+            </div>
+
+            <ul class="bullet-list">
+              <li><strong>Advanced Python Programming</strong> (MPCS 51052)</li>
+              <li><strong>Algorithms</strong> (MPCS 55001)</li>
+              <li><strong>Applied Software Engineering</strong> (MPCS 51220)</li>
+              <li><strong>Databases</strong> (MPCS 53001)</li>
+              <li><strong>Distributed Systems</strong> (MPCS 52040)</li>
+              <li><strong>Mathematics for Computer Science: Discrete Mathematics</strong> (MPCS 50103)</li>
+              <li><strong>Networks</strong> (MPCS 54001)</li>
+              <li><strong>Web Development</strong> (MPCS 52553)</li>
+            </ul>
+          </article>
+
+          <!-- UW -->
+          <article class="card">
+            <div class="activity-header">
+              <div class="activity-photo-wrapper">
+                <!-- 👇 This is the UW logo circle -->
+                <div class="activity-photo">
+                  <img src="images/uw-logo.png" alt="University of Washington logo" />
+                </div>
+              </div>
+              <div>
+                <h3>University of Washington</h3>
+                <p class="edu-meta">Undergraduate-level Data &amp; Statistics coursework</p>
+              </div>
+            </div>
+
+            <ul class="bullet-list">
+              <li><strong>Databases and Data Modelling</strong> (INFO 330)</li>
+              <li><strong>Elements of Statistical Methods</strong> (STAT 311)</li>
+              <li><strong>Foundational Skills for Data Science</strong> (INFO 201)</li>
+            </ul>
+          </article>
+        </div>
+
+        <a href="index.html" class="btn-link">Back to home →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Tan Dai Ngo</span>
+      <span>Courses · Data & Software Portfolio</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

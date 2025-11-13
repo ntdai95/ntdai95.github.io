@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects | Tan Dai Ngo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"></div>
+
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          ☰
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="hackathons.html">Hackathons</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="awards.html">Awards & Languages</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container section-inner">
+        <h2>Projects</h2>
+
+        <div class="cards-grid">
+          <article class="card project-card">
+            <div class="activity-header">
+              <div class="activity-photo-wrapper">
+                <div class="activity-photo">
+                  <img src="images/auction-app.jpg" alt="Auction website dashboard" />
+                </div>
+              </div>
+              <div>
+                <h3>Auction Website (Team of 4)</h3>
+                <p class="edu-meta">University of Chicago · Oct 2021 – Dec 2021</p>
+              </div>
+            </div>
+
+            <ul class="bullet-list">
+              <li>Built user administration microservices with Flask (Python) and MySQL to manage 100+ user accounts and transactions.</li>
+              <li>Implemented automated email notifications for flagged products, improving admin response efficiency by ~30%.</li>
+              <li>Contributed to Docker-based deployment, message caching with RabbitMQ and MongoDB, and frontend debugging in an Agile workflow.</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Docker</span>
+              <span class="tag">RabbitMQ</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Microservices</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="activity-header">
+              <div class="activity-photo-wrapper">
+                <div class="activity-photo">
+                  <img src="images/reservation-backend.jpg" alt="Reservation backend APIs" />
+                </div>
+              </div>
+              <div>
+                <h3>Reservation Management System Backend (Team of 4)</h3>
+                <p class="edu-meta">University of Chicago · Apr 2021 – Jun 2021</p>
+              </div>
+            </div>
+
+            <ul class="bullet-list">
+              <li>Developed RESTful APIs with FastAPI (Python) to handle workshop timeslot reservations and equipment purchase requests.</li>
+              <li>Created and executed 100+ pytest cases to ensure API reliability and data integrity across endpoints.</li>
+              <li>Collaborated with cross-functional teams to integrate data exchange workflows, enabling seamless real-time reservation tracking.</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">pytest</span>
+              <span class="tag">Backend</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="activity-header">
+              <div class="activity-photo-wrapper">
+                <div class="activity-photo">
+                  <img src="images/socioeconomic-dashboard.jpg" alt="Socioeconomic data dashboard" />
+                </div>
+              </div>
+              <div>
+                <h3>Socioeconomic Data Analysis and Visualization</h3>
+                <p class="edu-meta">University of Washington · May 2018 – Jun 2018</p>
+              </div>
+            </div>
+
+            <ul class="bullet-list">
+              <li>Analyzed eviction rate and median income data (2000–2016) from evictionlab.org, applying linear regression to quantify socioeconomic relationships.</li>
+              <li>Developed an interactive dashboard using R (ggplot2, dplyr, DT) with responsive filters, dynamic visualizations, and real-time data exploration.</li>
+              <li>Deployed the application at ngotandai.shinyapps.io/a8-data-app-ntdai95-1565490, enabling public access to statistical insights.</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">R</span>
+              <span class="tag">ggplot2</span>
+              <span class="tag">dplyr</span>
+              <span class="tag">Shiny</span>
+              <span class="tag">Data Visualization</span>
+              <span class="tag">Regression</span>
+            </div>
+            <p>
+              <a href="https://ngotandai.shinyapps.io/a8-data-app-ntdai95-1565490" target="_blank" rel="noreferrer" class="btn-link">
+                View Shiny app →
+              </a>
+            </p>
+          </article>
+        </div>
+
+        <a href="index.html" class="btn-link">Back to home →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Tan Dai Ngo</span>
+      <span>Projects · Data & Software Portfolio</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
