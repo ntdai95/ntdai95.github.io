@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hackathons | Tan Dai Ngo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"></div>
+
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          ☰
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="hackathons.html">Hackathons</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="awards.html">Awards & Languages</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container section-inner">
+        <h2>Hackathons & Coding Challenges</h2>
+
+        <div class="cards-grid">
+          <article class="card project-card">
+            <div class="activity-header">
+              <div class="activity-photo-wrapper">
+                <div class="activity-photo">
+                  <img src="images/shell-fuel.jpg" alt="Sustainable fuel blending graphs" />
+                </div>
+              </div>
+              <div>
+                <h3>Predictive Modeling for Sustainable Fuel Blending</h3>
+                <p class="edu-meta">Shell.ai Hackathon 2025 · Jul 2025</p>
+              </div>
+            </div>
+
+            <ul class="bullet-list">
+              <li>Identified key component–property relationships through EDA of a 65-feature fuel blend dataset.</li>
+              <li>Engineered weighted property-based aggregates, cross-component interactions, and log-transformed features to capture non-linear blend behaviors.</li>
+              <li>Developed a stacked Ridge regression ensemble of CatBoost, LightGBM, and XGBoost models, optimized via Optuna, achieving MAPE &lt; 2.58% across 10 aviation fuel properties.</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">CatBoost</span>
+              <span class="tag">LightGBM</span>
+              <span class="tag">XGBoost</span>
+              <span class="tag">Optuna</span>
+              <span class="tag">Regression</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="activity-header">
+              <div class="activity-photo-wrapper">
+                <div class="activity-photo">
+                  <img src="images/imc-trading.jpg" alt="Trading candlestick chart" />
+                </div>
+              </div>
+              <div>
+                <h3>Algorithmic Trading & Execution Optimization</h3>
+                <p class="edu-meta">IMC 64 Bids Coding Challenge · Oct 2021</p>
+              </div>
+            </div>
+
+            <ul class="bullet-list">
+              <li>Implemented Java-based algorithmic trading solutions to optimize order execution and portfolio rebalancing under time constraints.</li>
+              <li>Strengthened understanding of quantitative trading concepts while thoroughly testing and optimizing Java code for performance.</li>
+              <li>Advanced to the final round, ranking in the top 15% (top 250 / 1,500 participants) in a globally competitive algorithms competition.</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">Java</span>
+              <span class="tag">Algorithmic Trading</span>
+              <span class="tag">Optimization</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="activity-header">
+              <div class="activity-photo-wrapper">
+                <div class="activity-photo">
+                  <img src="images/koronakiller-game.jpg" alt="KoronaKiller 2D game screenshot" />
+                </div>
+              </div>
+              <div>
+                <h3>KoronaKiller (Game Developer)</h3>
+                <p class="edu-meta">Uncommon Hacks · Apr 2021</p>
+              </div>
+            </div>
+
+            <ul class="bullet-list">
+              <li>Collaborated in a team of 3 to prototype KoronaKiller, a Python-based 2D simulation modeling player health dynamics and event-driven interactions.</li>
+              <li>Implemented continuous background scrolling, randomized object generation, and collision-detection mechanisms for efficient gameplay.</li>
+              <li>Delivered a functional demo within 48 hours, demonstrating rapid prototyping, debugging, and teamwork.</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">Pygame / 2D</span>
+              <span class="tag">Simulation</span>
+            </div>
+            <p>
+              <a
+                href="https://devpost.com/software/koronakiller"
+                target="_blank"
+                rel="noreferrer"
+                class="btn-link"
+              >
+                View on Devpost →
+              </a>
+            </p>
+          </article>
+        </div>
+
+        <a href="index.html" class="btn-link">Back to home →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Tan Dai Ngo</span>
+      <span>Hackathons · Data & Software Portfolio</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
