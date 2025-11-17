@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Courses() {
   return (
     <section className="section">
@@ -164,10 +166,9 @@ function Courses() {
             </ul>
           </article>
         </div>
-
-        <a href="#/" className="btn-link">
+        <Link to="/" className="btn-link">
           Back to home →
-        </a>
+        </Link>
       </div>
     </section>
   )

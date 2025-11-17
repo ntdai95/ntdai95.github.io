@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Experience() {
   return (
     <section className="section">
@@ -137,10 +139,9 @@ function Experience() {
             </div>
           </article>
         </div>
-
-        <a href="#/" className="btn-link">
+        <Link to="/" className="btn-link">
           Back to home →
-        </a>
+        </Link>
       </div>
     </section>
   )
