@@ -22,12 +22,13 @@ if (navToggle && navLinks) {
   });
 }
 
-// Highlight active nav link
+// Highlight active nav link based on file name
 (function highlightActiveNav() {
   const links = document.querySelectorAll(".nav-links a");
   const path = window.location.pathname.split("/").pop() || "index.html";
 
   links.forEach((link) => {
+    link.classList.remove("active");
     const href = link.getAttribute("href");
     if (!href) return;
 
@@ -73,7 +74,59 @@ function setTheme(theme) {
 
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
-    const current = document.documentElement.getAttribute("data-theme") || "dark";
+    const current =
+      document.documentElement.getAttribute("data-theme") || "dark";
     setTheme(current === "dark" ? "light" : "dark");
   });
 }
+
+// === Scroll reveal: smooth fade/slide-in on scroll ===
+document.addEventListener("DOMContentLoaded", () => {
+  const revealSelectors = [
+    ".hero-text",
+    ".hero-photo-wrapper",
+    ".section-inner > h2",
+    ".section-inner > p",
+    ".highlight-grid > *",
+    ".cards-grid > .card",
+    ".project-card",
+    ".activity-header",
+    ".tag-list",
+    ".footer-inner"
+  ];
+
+  const revealElements = document.querySelectorAll(revealSelectors.join(","));
+
+  if (revealElements.length === 0) return;
+
+  // Fallback if IntersectionObserver is not supported
+  if (!("IntersectionObserver" in window)) {
+    revealElements.forEach((el) => el.classList.add("reveal-visible"));
+    return;
+  }
+
+  // Add reveal + stagger classes
+  let idx = 0;
+  revealElements.forEach((el) => {
+    el.classList.add("reveal");
+    const delayClass = `reveal-delay-${(idx % 3) + 1}`;
+    el.classList.add(delayClass);
+    idx += 1;
+  });
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("reveal-visible");
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15
+    }
+  );
+
+  revealElements.forEach((el) => observer.observe(el));
+});
