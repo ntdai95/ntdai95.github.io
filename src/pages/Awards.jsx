@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Awards() {
   return (
     <>
@@ -63,10 +65,9 @@ function Awards() {
               <p className="muted">Limited working proficiency</p>
             </article>
           </div>
-
-          <a href="#/" className="btn-link">
+          <Link to="/" className="btn-link">
             Back to home →
-          </a>
+          </Link>
         </div>
       </section>
     </>

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Hackathons() {
   return (
     <section className="section">
@@ -152,10 +154,9 @@ function Hackathons() {
             </p>
           </article>
         </div>
-
-        <a href="#/" className="btn-link">
+        <Link to="/" className="btn-link">
           Back to home →
-        </a>
+        </Link>
       </div>
     </section>
   )

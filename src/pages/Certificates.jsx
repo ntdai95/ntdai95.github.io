@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Certificates() {
   return (
     <section className="section">
@@ -50,10 +52,9 @@ function Certificates() {
             </p>
           </article>
         </div>
-
-        <a href="#/" className="btn-link">
+        <Link to="/" className="btn-link">
           Back to home →
-        </a>
+        </Link>
       </div>
     </section>
   )

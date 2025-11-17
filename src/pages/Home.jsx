@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Home() {
   return (
     <>
@@ -18,9 +20,9 @@ function Home() {
             </p>
 
             <div className="hero-actions">
-              <a href="#/projects" className="btn primary">
+              <Link to="/projects" className="btn primary">
                 View Projects →
-              </a>
+              </Link>
               <a href="#contact" className="btn outline">
                 Contact Me
               </a>
@@ -253,9 +255,9 @@ function Home() {
             </article>
           </div>
 
-          <a href="#/experience" className="btn-link">
+          <Link to="/experience" className="btn-link">
             View full experience →
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -270,9 +272,9 @@ function Home() {
                 From predictive models and image processing to backend
                 microservices and interactive dashboards.
               </p>
-              <a href="#/projects" className="btn-link">
+              <Link to="/projects" className="btn-link">
                 View all projects →
-              </a>
+              </Link>
             </article>
             <article className="card">
               <h3>Hackathons</h3>
@@ -280,9 +282,9 @@ function Home() {
                 Shell.ai, IMC Trading 64 Bids, and Uncommon Hacks game
                 development.
               </p>
-              <a href="#/hackathons" className="btn-link">
+              <Link to="/hackathons" className="btn-link">
                 View hackathon work →
-              </a>
+              </Link>
             </article>
             <article className="card">
               <h3>Courses &amp; Certificates</h3>
@@ -290,9 +292,9 @@ function Home() {
                 Graduate CS coursework, data science, and applied quantitative
                 training.
               </p>
-              <a href="#/courses" className="btn-link">
+              <Link to="/courses" className="btn-link">
                 View coursework →
-              </a>
+              </Link>
             </article>
           </div>
         </div>
