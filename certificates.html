@@ -4,6 +4,47 @@
   <meta charset="UTF-8" />
   <title>Certificates | Tan Dai Ngo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme");
+        var theme;
+
+        if (stored === "light" || stored === "dark") {
+          theme = stored;
+        } else if (
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: light)").matches
+        ) {
+          theme = "light";
+        } else {
+          theme = "dark";
+        }
+
+        document.documentElement.setAttribute("data-theme", theme);
+
+        // Smooth matching background (NO flash)
+        if (theme === "light") {
+          document.documentElement.style.background = "linear-gradient(#eef1f6, #e4e7ec)";
+        } else {
+          document.documentElement.style.background = "radial-gradient(circle at top, #1e293b 0, #0f172a 55%)";
+        }
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "dark");
+        document.documentElement.style.background =
+          "radial-gradient(circle at top, #1e293b 0, #0f172a 55%)";
+      }
+    })();
+  </script>
+
+  <!-- Minimal reset -->
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+  </style>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
