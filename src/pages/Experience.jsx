@@ -8,44 +8,10 @@ function Experience() {
 
         <div className="cards-grid">
           <article className="card">
-            <h3>Data Analyst</h3>
-            <p className="edu-meta">
-              Linh Dan Hotel · Apr 2023 – Aug 2025 · Ho Chi Minh City, Vietnam ·
-              Hybrid
-            </p>
-            <ul className="bullet-list">
-              <li>
-                Built SQL ETL pipelines (20+ daily queries) and designed
-                ERD-modeled schemas to integrate and clean 1,000+ operational
-                and financial records into analysis-ready datasets.
-              </li>
-              <li>
-                Automated reporting workflows with Python and Power BI, reducing
-                manual reporting time by 30% and enabling structured
-                monthly/quarterly reviews.
-              </li>
-              <li>
-                Performed cost-benefit analyses and built Python analytics
-                dashboards (Matplotlib, Pandas) to guide pricing strategy and
-                optimize operational efficiency.
-              </li>
-            </ul>
-            <div className="tag-list">
-              <span className="tag">SQL</span>
-              <span className="tag">Python</span>
-              <span className="tag">Pandas</span>
-              <span className="tag">Power BI</span>
-              <span className="tag">Data Modeling</span>
-              <span className="tag">Data Visualization</span>
-              <span className="tag">Automation</span>
-            </div>
-          </article>
-
-          <article className="card">
-            <h3>Computer Science Teacher</h3>
+            <h3>Math and Computer Science Teacher</h3>
             <p className="edu-meta">
               APU American International Schools · Aug 2024 – Dec 2024 · Da Nang
-              City, Vietnam · On-site
+              City, Vietnam
             </p>
             <ul className="bullet-list">
               <li>
@@ -75,8 +41,8 @@ function Experience() {
           <article className="card">
             <h3>Software Developer</h3>
             <p className="edu-meta">
-              T-Mobile (BeaconFire Inc.) · Jun 2022 – Feb 2023 · Bellevue, WA,
-              USA · Hybrid
+              T-Mobile (BeaconFire Inc.) · Jun 2022 – Apr 2024 · Bellevue, WA,
+              USA
             </p>
             <ul className="bullet-list">
               <li>
@@ -109,10 +75,10 @@ function Experience() {
           </article>
 
           <article className="card">
-            <h3>Accountant</h3>
+            <h3>Accounting Intern</h3>
             <p className="edu-meta">
-              Better Business Tax &amp; Accounting Corporation · Sep 2019 – Jun
-              2020 · Renton, WA, USA · On-site
+              Better Business Tax &amp; Accounting Corporation · Feb 2020 – May
+              2020 · Renton, WA, USA
             </p>
             <ul className="bullet-list">
               <li>

@@ -198,29 +198,31 @@ function Home() {
           <h2>Recent Experience</h2>
           <div className="cards-grid three-col">
             <article className="card">
-              <h3>Data Analyst</h3>
+              <h3>Math and Computer Science Teacher</h3>
               <p className="edu-meta">
-                Linh Dan Hotel · Apr 2023 – Aug 2025 · Ho Chi Minh City, Vietnam
-                · Hybrid
+                APU American International Schools · Aug 2024 – Dec 2024 · Da
+                Nang City, Vietnam
               </p>
               <p className="muted">
-                Built SQL ETL pipelines and Python/Power BI reporting workflows
-                to support hotel operations, pricing, and cost optimization.
+                Instructed 50+ high school and college students in python
+                programming and web development via practical lessons.
               </p>
               <ul className="bullet-list">
                 <li>
-                  20+ daily SQL queries and 1,000+ records integrated into
-                  analysis-ready datasets.
-                </li>
-                <li>Automated reporting, reducing manual reporting time by 30%.</li>
+                Designed coding projects that apply real-world software
+                engineering principles such as top-down design and OOP.
+              </li>
+              <li>
+                Mentored students in debugging and code optimization, fostering
+                analytical reasoning and critical thinking skills.
+              </li>
               </ul>
             </article>
-
+            
             <article className="card">
               <h3>Software Developer</h3>
               <p className="edu-meta">
-                T-Mobile (BeaconFire Inc.) · Jun 2022 – Feb 2023 · Bellevue, WA
-                · Hybrid
+                T-Mobile (BeaconFire Inc.) · Jun 2022 – Apr 2024 · Bellevue, WA, USA
               </p>
               <p className="muted">
                 Developed microservices for the Roaming Business System using
@@ -240,17 +242,26 @@ function Home() {
             </article>
 
             <article className="card">
-              <h3>Computer Science Teacher</h3>
+              <h3>Accounting Intern</h3>
               <p className="edu-meta">
-                APU American International Schools · Aug 2024 – Dec 2024 · Da
-                Nang City, Vietnam · On-site
+                Better Business Tax & Accounting Corporation · Feb 2020 – 
+                May 2020 · Renton, WA, USA
               </p>
               <p className="muted">
-                Taught Python and web development to over 50 students through
-                hands-on projects and real-world examples.
+                Managed 30+ client datasets in QuickBooks, processing 100+ 
+                financial transactions daily with high data accuracy.
               </p>
               <ul className="bullet-list">
-                <li>Emphasized top-down design, OOP, and debugging best practices.</li>
+                <li>
+                  Automated recurring payroll and tax reporting workflows, 
+                  reducing manual effort while delivering 10+ monthly filings 
+                  and quarterly compliance reports.
+                </li>
+                <li>
+                  Developed financial dashboards and profit/loss analyses, 
+                  supporting data-driven insights into cash flow and client 
+                  profitability.
+                </li>
               </ul>
             </article>
           </div>
