@@ -43,10 +43,11 @@ function Hackathons() {
             <div className="tag-list">
               <span className="tag">Python</span>
               <span className="tag">CatBoost</span>
-              <span className="tag">LightGBM</span>
               <span className="tag">XGBoost</span>
-              <span className="tag">Optuna</span>
               <span className="tag">Regression</span>
+              <span className="tag">Feature Engineering</span>
+              <span className="tag">Docker</span>
+              <span className="tag">AWS EC2</span>
             </div>
             <p>
               <a
