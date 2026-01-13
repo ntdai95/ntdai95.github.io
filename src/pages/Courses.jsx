@@ -7,7 +7,7 @@ function Courses() {
         <h2>Relevant Coursework</h2>
         <p className="muted">
           Selected courses that built my foundation in algorithms, data science,
-          machine learning, satistics, applied mathematics, and economics.
+          machine learning, statistics, applied mathematics, and economics.
         </p>
 
         <div className="cards-grid">
