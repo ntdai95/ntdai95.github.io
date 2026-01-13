@@ -40,6 +40,15 @@ function Courses() {
               <li>
                 <strong>Optimization for Machine Learning</strong> (ECE 503)
               </li>
+              <li>
+                <strong>Systems for Massive Datasets</strong> (ECE 502)
+              </li>
+              <li>
+                <strong>Data Analysis and Pattern Recognition</strong> (ECE 535)
+              </li>
+              <li>
+                <strong>Music Retrieval Techniques</strong> (ECE 575)
+              </li>
             </ul>
           </article>
 
