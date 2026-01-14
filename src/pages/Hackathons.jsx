@@ -44,7 +44,7 @@ function Hackathons() {
               <span className="tag">Python</span>
               <span className="tag">CatBoost</span>
               <span className="tag">XGBoost</span>
-              <span className="tag">Regression</span>
+              <span className="tag">Exploratory Data Analysis</span>
               <span className="tag">Feature Engineering</span>
               <span className="tag">Docker</span>
               <span className="tag">AWS EC2</span>
