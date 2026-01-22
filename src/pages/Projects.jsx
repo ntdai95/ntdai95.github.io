@@ -115,7 +115,7 @@ function Projects() {
             </div>
             <p>
               <a
-                href="https://github.com/ntdai95/Resume-Projects/tree/main/PhotoEditor"
+                href="https://github.com/ntdai95/Resume-Projects/tree/main/Parallel%20Image%20Processing%20Engine"
                 target="_blank"
                 rel="noreferrer"
                 className="btn-link"
