@@ -46,9 +46,6 @@ function Courses() {
               <li>
                 <strong>Data Analysis and Pattern Recognition</strong> (ECE 535)
               </li>
-              <li>
-                <strong>Music Retrieval Techniques</strong> (ECE 575)
-              </li>
             </ul>
           </article>
 

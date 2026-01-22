@@ -12,6 +12,64 @@ function Projects() {
               <div className="activity-photo-wrapper">
                 <div className="activity-photo">
                   <img
+                    src="images/handwritten-digit-recognition.jpg"
+                    alt="Multi-class digit recognition with optimization"
+                  />
+                </div>
+              </div>
+              <div>
+                <h3>Handwritten Digit Recognition System</h3>
+                <p className="edu-meta">
+                  Optimization for Machine Learning (ECE 503), University of 
+                  Victoria · Nov 2025 – Dec 2025
+                </p>
+              </div>
+            </div>
+
+            <ul className="bullet-list">
+              <li>
+                Developed a multi-class SVM and Softmax classification pipeline using a
+                custom-built ML-BFGS optimizer, achieving 97.65% accuracy with faster
+                convergence than standard SGD.
+              </li>
+              <li>
+                Applied HOG feature extraction and PCA to reduce 784-dimensional pixel
+                inputs to 50 latent components, yielding a 10.2% accuracy improvement and
+                40% faster training latency.
+              </li>
+              <li>
+                Tuned regularization parameters (μ, C) and evaluated performance using
+                10×10 confusion matrices to ensure robust generalization on 10,000 test
+                samples.
+              </li>
+            </ul>
+
+            <div className="tag-list">
+              <span className="tag">Python</span>
+              <span className="tag">Machine Learning</span>
+              <span className="tag">Optimization</span>
+              <span className="tag">SVM</span>
+              <span className="tag">PCA</span>
+              <span className="tag">ML-BFGS</span>
+            </div>
+
+            <p>
+              <a
+                href="https://github.com/ntdai95/Resume-Projects/tree/main/Handwritten%20Digit%20Recognition%20System"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-link"
+              >
+                View Github code →
+              </a>
+            </p>
+          </article>
+          
+          <article className="card project-card">
+            <div className="activity-header">
+              <div className="activity-photo-wrapper">
+                <div className="activity-photo">
+                  <img
                     src="images/parallel-engine.jpg"
                     alt="Parallel Image Processing Engine"
                   />
