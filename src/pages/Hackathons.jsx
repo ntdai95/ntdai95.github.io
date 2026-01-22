@@ -18,21 +18,21 @@ function Hackathons() {
                 </div>
               </div>
               <div>
-                <h3>Productionized Machine Learning System for Sustainable Fuel Blending</h3>
+                <h3>End-to-End Machine Learning System for Multi-Output Fuel Blending</h3>
                 <p className="edu-meta">Shell.ai Hackathon 2025 · Jul 2025</p>
               </div>
             </div>
 
             <ul className="bullet-list">
               <li>
-                Deployed a production-grade end-to-end ML system using FastAPI, 
+                Deployed a production-ready machine learning system using FastAPI, 
                 Docker, and AWS EC2 to serve real-time multi-output regression 
                 predictions for 10 chemical blend properties.
               </li>
               <li>
-                Benchmarked XGBoost vs. CatBoost using 5-fold CV, selecting 
-                CatBoost after achieving lower error (MAPE 0.64 vs. 1.29) and 
-                productionizing the best-performing model.
+                Benchmarked XGBoost vs. CatBoost using 5-fold cross-validation, 
+                selecting CatBoost after achieving lower error (MAPE 0.64 vs. 1.29) 
+                and productionizing the best-performing model.
               </li>
               <li>
                 Engineered robust feature and inference pipelines using weighted 

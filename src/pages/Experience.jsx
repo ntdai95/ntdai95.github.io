@@ -41,7 +41,7 @@ function Experience() {
           <article className="card">
             <h3>Software Developer</h3>
             <p className="edu-meta">
-              T-Mobile (BeaconFire Inc.) · Jun 2022 – Apr 2024 · Bellevue, WA,
+              T-Mobile (via BeaconFire Inc.) · Jun 2022 – Apr 2024 · Bellevue, WA,
               USA
             </p>
             <ul className="bullet-list">
