@@ -15,16 +15,19 @@ function Experience() {
             </p>
             <ul className="bullet-list">
               <li>
-                Instructed 50+ high school and college students in python
-                programming and web development via practical lessons.
+                Taught Python programming and core computer science concepts 
+                to 50+ high school and college students through hands-on 
+                coding projects.
               </li>
               <li>
-                Designed coding projects that apply real-world software
-                engineering principles such as top-down design and OOP.
+                Designed project-based assignments emphasizing software 
+                engineering fundamentals, including top-down design, OOP, 
+                and code modularity.
               </li>
               <li>
-                Mentored students in debugging and code optimization, fostering
-                analytical reasoning and critical thinking skills.
+                Mentored students in debugging, algorithmic reasoning, 
+                and performance optimization, reinforcing strong analytical 
+                problem-solving skills.
               </li>
             </ul>
             <div className="tag-list">
