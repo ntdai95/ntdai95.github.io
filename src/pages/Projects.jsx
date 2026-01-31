@@ -12,6 +12,64 @@ function Projects() {
               <div className="activity-photo-wrapper">
                 <div className="activity-photo">
                   <img
+                    src="images/market-volatility-analysis.jpg"
+                    alt="Social Signal Impact on Market Volatility"
+                  />
+                </div>
+              </div>
+              <div>
+                <h3>Social Signal Impact on Market Volatility (Team of 4)</h3>
+                <p className="edu-meta">
+                  Algorithms and Data Models (CSC 501), University of 
+                  Victoria · Nov 2025 – Dec 2025
+                </p>
+              </div>
+            </div>
+
+            <ul className="bullet-list">
+              <li>
+                Built a data science pipeline integrating equity price data with 
+                influencer driven social signals stored in SQLite and Neo4j to predict 
+                next day rolling volatility across 2,200+ out of sample observations.
+              </li>
+              <li>
+                Ran controlled experiments with temporal splits and feature ablations 
+                to quantify market, social, and graph feature impact, achieving 59% 
+                directional accuracy on held out data.
+              </li>
+              <li>
+                Analyzed volatility regimes, showing price features dominate error 
+                (MAE 0.0049) while social and influence weighted features provide 
+                incremental directional gains during high volatility periods.
+              </li>
+            </ul>
+
+            <div className="tag-list">
+              <span className="tag">Python</span>
+              <span className="tag">Neo4j</span>
+              <span className="tag">SQLite</span>
+              <span className="tag">Graph Analytics</span>
+              <span className="tag">Time Series</span>
+              <span className="tag">Feature Engineering</span>
+            </div>
+
+            <p>
+              <a
+                href="https://github.com/ntdai95/Resume-Projects/tree/main/Social%20Signal%20Impact%20on%20Market%20Volatility"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-link"
+              >
+                View Github code →
+              </a>
+            </p>
+          </article>
+
+          <article className="card project-card">
+            <div className="activity-header">
+              <div className="activity-photo-wrapper">
+                <div className="activity-photo">
+                  <img
                     src="images/handwritten-digit-recognition.jpg"
                     alt="Multi-class digit recognition with optimization"
                   />
@@ -28,12 +86,12 @@ function Projects() {
 
             <ul className="bullet-list">
               <li>
-                Developed a multi-class SVM and Softmax classification pipeline using a
-                custom-built ML-BFGS optimizer, achieving 97.65% accuracy with faster
+                Developed a multiclass SVM and Softmax classification pipeline using a
+                custom built ML-BFGS optimizer, achieving 97.65% accuracy with faster
                 convergence than standard SGD.
               </li>
               <li>
-                Applied HOG feature extraction and PCA to reduce 784-dimensional pixel
+                Applied HOG feature extraction and PCA to reduce 784 dimensional pixel
                 inputs to 50 latent components, yielding a 10.2% accuracy improvement and
                 40% faster training latency.
               </li>
