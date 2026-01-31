@@ -25,18 +25,18 @@ function Hackathons() {
 
             <ul className="bullet-list">
               <li>
-                Deployed a production-ready machine learning system using FastAPI, 
-                Docker, and AWS EC2 to serve real-time multi-output regression 
+                Deployed a production ready machine learning system using FastAPI, 
+                Docker, and AWS EC2 to serve real time multi-output regression 
                 predictions for 10 chemical blend properties.
               </li>
               <li>
                 Benchmarked XGBoost vs. CatBoost using 5-fold cross-validation, 
                 selecting CatBoost after achieving lower error (MAPE 0.64 vs. 1.29) 
-                and productionizing the best-performing model.
+                and productionizing the best performing model.
               </li>
               <li>
                 Engineered robust feature and inference pipelines using weighted 
-                property aggregation, entropy-based mixture metrics, and 
+                property aggregation, entropy based mixture metrics, and 
                 serialized preprocessing to ensure consistent production inference.
               </li>
             </ul>
@@ -81,7 +81,7 @@ function Hackathons() {
 
             <ul className="bullet-list">
               <li>
-                Implemented Java-based algorithmic trading solutions to optimize
+                Implemented Java based algorithmic trading solutions to optimize
                 order execution and portfolio rebalancing under time
                 constraints.
               </li>
@@ -122,19 +122,19 @@ function Hackathons() {
             <ul className="bullet-list">
               <li>
                 Collaborated in a cross-functional team of 3 to prototype
-                KoronaKiller, a Python-based 2D simulation that models player
-                health dynamics and event-driven interactions in real time.
+                KoronaKiller, a Python based 2D simulation that models player
+                health dynamics and event driven interactions in real time.
               </li>
               <li>
                 Applied algorithmic design and logic optimization to implement
                 continuous background scrolling, randomized object generation,
-                and collision-detection mechanisms for efficient gameplay
+                and collision detection mechanisms for efficient gameplay
                 execution.
               </li>
               <li>
-                Delivered a functional demo within a 48-hour hackathon,
+                Delivered a functional demo within a 48 hour hackathon,
                 demonstrating rapid prototyping, debugging, and teamwork skills
-                essential for data-driven product development.
+                essential for data driven product development.
               </li>
             </ul>
             <div className="tag-list">
