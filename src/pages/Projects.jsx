@@ -128,6 +128,61 @@ function Projects() {
               <div className="activity-photo-wrapper">
                 <div className="activity-photo">
                   <img
+                    src="images/hr-onboarding.jpg"
+                    alt="HR Onboarding Microservices Platform"
+                  />
+                </div>
+              </div>
+              <div>
+                <h3>HR Onboarding Microservices Platform</h3>
+                <p className="edu-meta">
+                  Personal Project · Apr 2022 – May 2022
+                </p>
+              </div>
+            </div>
+
+            <ul className="bullet-list">
+              <li>
+                Built microservices platform using Spring Boot and Spring 
+                Cloud Gateway supporting scalable onboarding, visa, and 
+                housing management workflows.
+              </li>
+              <li>
+                Implemented intercommunication and service discovery using 
+                OpenFeign across multiple backend services.
+              </li>
+              <li>
+                Integrated MySQL, MongoDB, and AWS S3 storage while 
+                achieving 80%+ unit test coverage.
+              </li>
+            </ul>
+            <div className="tag-list">
+              <span className="tag">Java</span>
+              <span className="tag">Spring Boot</span>
+              <span className="tag">Microservices</span>
+              <span className="tag">OpenFeign</span>
+              <span className="tag">MySQL</span>
+              <span className="tag">MongoDB</span>
+              <span className="tag">AWS S3</span>
+              <span className="tag">JUnit</span>
+            </div>
+            <p>
+              <a
+                href="https://github.com/ntdai95/Resume-Projects/tree/main/HR%20Onboarding%20Microservices%20Platform"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-link"
+              >
+                View Github code →
+              </a>
+            </p>
+          </article>
+
+          <article className="card project-card">
+            <div className="activity-header">
+              <div className="activity-photo-wrapper">
+                <div className="activity-photo">
+                  <img
                     src="images/parallel-engine.jpg"
                     alt="Parallel Image Processing Engine"
                   />
