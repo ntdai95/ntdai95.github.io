@@ -12,13 +12,13 @@ function Projects() {
               <div className="activity-photo-wrapper">
                 <div className="activity-photo">
                   <img
-                    src="images/sentiment-stock-analysis.jpg"
-                    alt="Sentiment Stock Analysis"
+                    src="images/stock-sentiment-analysis.jpg"
+                    alt="Stock Sentiment Analysis"
                   />
                 </div>
               </div>
               <div>
-                <h3>Sentiment Stock Analysis (Team of 4)</h3>
+                <h3>Stock Sentiment Analysis (Team of 4)</h3>
                 <p className="edu-meta">
                   Algorithms and Data Models (CSC 501), University of 
                   Victoria · Nov 2025 – Dec 2025
