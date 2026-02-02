@@ -140,7 +140,7 @@ function Home() {
                 <div>
                   <h3>Master of Engineering (MEng), Applied Data Science</h3>
                   <p className="edu-meta">
-                    University of Victoria · Sep 2025 – Aug 2026 (Expected)
+                    University of Victoria · Sep 2025 – Dec 2026 (Expected)
                     <br />
                     GPA: 9.00 / 9.00
                   </p>
