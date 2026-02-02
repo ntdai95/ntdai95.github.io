@@ -12,13 +12,13 @@ function Projects() {
               <div className="activity-photo-wrapper">
                 <div className="activity-photo">
                   <img
-                    src="images/market-volatility-analysis.jpg"
-                    alt="Social Signal Impact on Market Volatility"
+                    src="images/sentiment-stock-analysis.jpg"
+                    alt="Sentiment Stock Analysis"
                   />
                 </div>
               </div>
               <div>
-                <h3>Social Signal Impact on Market Volatility (Team of 4)</h3>
+                <h3>Sentiment Stock Analysis (Team of 4)</h3>
                 <p className="edu-meta">
                   Algorithms and Data Models (CSC 501), University of 
                   Victoria · Nov 2025 – Dec 2025
@@ -28,19 +28,18 @@ function Projects() {
 
             <ul className="bullet-list">
               <li>
-                Built a data science pipeline integrating equity price data with 
-                influencer driven social signals stored in SQLite and Neo4j to predict 
-                next day rolling volatility across 2,200+ out of sample observations.
+                Architected a multiple data source system using Neo4j for graphical 
+                influencer mapping and SQLite for relational time series storage, 
+                ingesting X (Twitter) API streams and historical market data.
               </li>
               <li>
-                Ran controlled experiments with temporal splits and feature ablations 
-                to quantify market, social, and graph feature impact, achieving 59% 
-                directional accuracy on held out data.
+                Implemented batched FinBERT inference pipeline to generate sentiment 
+                signals achieving up to 59% directional accuracy in predicting 
+                next day returns during volatile periods.
               </li>
               <li>
-                Analyzed volatility regimes, showing price features dominate error 
-                (MAE 0.0049) while social and influence weighted features provide 
-                incremental directional gains during high volatility periods.
+                Validated predictive relationships between social signals and returns 
+                via Granger causality and modeled volatility periods using GARCH(1,1).
               </li>
             </ul>
 
@@ -50,12 +49,12 @@ function Projects() {
               <span className="tag">SQLite</span>
               <span className="tag">Graph Analytics</span>
               <span className="tag">Time Series</span>
-              <span className="tag">Feature Engineering</span>
+              <span className="tag">FinBERT</span>
             </div>
 
             <p>
               <a
-                href="https://github.com/ntdai95/Resume-Projects/tree/main/Social%20Signal%20Impact%20on%20Market%20Volatility"
+                href="https://github.com/ntdai95/Resume-Projects/tree/main/Sentiment%20Stock%20Analysis"
                 target="_blank"
                 rel="noreferrer"
                 className="btn-link"
