@@ -28,18 +28,20 @@ function Projects() {
 
             <ul className="bullet-list">
               <li>
-                Architected a multiple data source system using Neo4j for graphical 
-                influencer mapping and SQLite for relational time series storage, 
-                ingesting X (Twitter) API streams and historical market data.
+                Built a sentiment analysis pipeline over 15k+ tweets across 10 tech 
+                stocks, enabling large-scale market sentiment analysis, by integrating 
+                X API data, SQLite/Neo4j storage, and FinTwitBERT modeling.
               </li>
               <li>
-                Implemented batched FinBERT inference pipeline to generate sentiment 
-                signals achieving up to 59% directional accuracy in predicting 
-                next day returns during volatile periods.
+                Identified measurable sentiment-return relationships, including 
+                statistically significant predictive effects for NVIDIA, by 
+                implementing engagement-weighted sentiment aggregation and Granger 
+                causality testing.
               </li>
               <li>
-                Validated predictive relationships between social signals and returns 
-                via Granger causality and modeled volatility periods using GARCH(1,1).
+                Analyzed equity volatility dynamics across major tech stocks, revealing 
+                persistent volatility clustering, by applying GARCH(1,1) modeling and 
+                automated cross-stock analysis workflows.
               </li>
             </ul>
 
@@ -49,12 +51,12 @@ function Projects() {
               <span className="tag">SQLite</span>
               <span className="tag">Graph Analytics</span>
               <span className="tag">Time Series</span>
-              <span className="tag">FinBERT</span>
+              <span className="tag">FinTwitBERT</span>
             </div>
 
             <p>
               <a
-                href="https://github.com/ntdai95/Resume-Projects/tree/main/Sentiment%20Stock%20Analysis"
+                href="https://github.com/ntdai95/Resume-Projects/tree/main/Stock%20Sentiment%20Analysis"
                 target="_blank"
                 rel="noreferrer"
                 className="btn-link"
