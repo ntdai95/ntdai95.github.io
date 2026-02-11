@@ -284,8 +284,8 @@ function Home() {
             <article className="card">
               <h3>Projects</h3>
               <p className="muted">
-                From predictive models and image processing to backend
-                microservices and interactive dashboards.
+                From predictive models and data analysis to 
+                image processing and interactive dashboards.
               </p>
               <Link to="/projects" className="btn-link">
                 View all projects →

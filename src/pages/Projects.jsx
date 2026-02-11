@@ -123,61 +123,6 @@ function Projects() {
               </a>
             </p>
           </article>
-          
-          <article className="card project-card">
-            <div className="activity-header">
-              <div className="activity-photo-wrapper">
-                <div className="activity-photo">
-                  <img
-                    src="images/hr-onboarding.jpg"
-                    alt="HR Onboarding Microservices Platform"
-                  />
-                </div>
-              </div>
-              <div>
-                <h3>HR Onboarding Microservices Platform</h3>
-                <p className="edu-meta">
-                  Personal Project · Apr 2022 – May 2022
-                </p>
-              </div>
-            </div>
-
-            <ul className="bullet-list">
-              <li>
-                Built microservices platform using Spring Boot and Spring 
-                Cloud Gateway supporting scalable onboarding, visa, and 
-                housing management workflows.
-              </li>
-              <li>
-                Implemented intercommunication and service discovery using 
-                OpenFeign across multiple backend services.
-              </li>
-              <li>
-                Integrated MySQL, MongoDB, and AWS S3 storage while 
-                achieving 80%+ unit test coverage.
-              </li>
-            </ul>
-            <div className="tag-list">
-              <span className="tag">Java</span>
-              <span className="tag">Spring Boot</span>
-              <span className="tag">Microservices</span>
-              <span className="tag">OpenFeign</span>
-              <span className="tag">MySQL</span>
-              <span className="tag">MongoDB</span>
-              <span className="tag">AWS S3</span>
-              <span className="tag">JUnit</span>
-            </div>
-            <p>
-              <a
-                href="https://github.com/ntdai95/Resume-Projects/tree/main/HR%20Onboarding%20Microservices%20Platform"
-                target="_blank"
-                rel="noreferrer"
-                className="btn-link"
-              >
-                View Github code →
-              </a>
-            </p>
-          </article>
 
           <article className="card project-card">
             <div className="activity-header">
@@ -230,60 +175,6 @@ function Projects() {
             <p>
               <a
                 href="https://github.com/ntdai95/Resume-Projects/tree/main/Parallel%20Image%20Processing%20Engine"
-                target="_blank"
-                rel="noreferrer"
-                className="btn-link"
-              >
-                View Github code →
-              </a>
-            </p>
-          </article>
-
-          <article className="card project-card">
-            <div className="activity-header">
-              <div className="activity-photo-wrapper">
-                <div className="activity-photo">
-                  <img
-                    src="images/reservation-backend.jpg"
-                    alt="Reservation backend APIs"
-                  />
-                </div>
-              </div>
-              <div>
-                <h3>Reservation Management System Backend (Team of 4)</h3>
-                <p className="edu-meta">
-                  Applied Software Engineering (MPCS 51220), University of
-                  Chicago · Apr 2021 – Jun 2021
-                </p>
-              </div>
-            </div>
-
-            <ul className="bullet-list">
-              <li>
-                Developed RESTful APIs with FastAPI (Python) to handle 50+
-                daily workshop timeslot reservations and equipment purchase
-                requests.
-              </li>
-              <li>
-                Created and executed 100+ pytest cases to ensure API reliability
-                and data integrity across endpoints.
-              </li>
-              <li>
-                Collaborated with cross-functional teams to integrate data
-                exchange workflows, enabling seamless real-time reservation
-                tracking.
-              </li>
-            </ul>
-            <div className="tag-list">
-              <span className="tag">Python</span>
-              <span className="tag">FastAPI</span>
-              <span className="tag">REST APIs</span>
-              <span className="tag">pytest</span>
-              <span className="tag">Backend</span>
-            </div>
-            <p>
-              <a
-                href="https://github.com/ntdai95/Resume-Projects/tree/main/Reservation%20Management%20System%20Backend"
                 target="_blank"
                 rel="noreferrer"
                 className="btn-link"
