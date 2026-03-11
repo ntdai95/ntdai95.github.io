@@ -12,6 +12,67 @@ function Projects() {
               <div className="activity-photo-wrapper">
                 <div className="activity-photo">
                   <img
+                    src="images/ocean-data.jpg"
+                    alt="Oceanographic Data Analysis and Visualization"
+                  />
+                </div>
+              </div>
+              <div>
+                <h3>Distributed Ocean Data ML Platform with RAG</h3>
+                <p className="edu-meta">
+                  Systems for Massive Datasets (ECE 502), University of 
+                  Victoria · Feb 2026 – Mar 2026
+                </p>
+              </div>
+            </div>
+
+            <ul className="bullet-list">
+              <li>
+                Built a distributed ML pipeline using Apache Spark (Bronze → Silver → 
+                Gold architecture) to ingest and harmonize heterogeneous NetCDF ocean 
+                sensor datasets for scalable feature generation and forecasting
+              </li>
+              <li>
+                Trained an XGBoost forecasting model on engineered telemetry features 
+                achieving R² = 0.9999 and RMSE = 0.0061 with reproducible experiments 
+                tracked via MLflow.
+              </li>
+              <li>
+                Developed a RAG-powered API using Sentence Transformers, Qdrant vector 
+                search, FastAPI, and Ollama LLMs to enable semantic search and natural 
+                language exploration of ocean datasets.
+              </li>
+            </ul>
+
+            <div className="tag-list">
+              <span className="tag">Apache Spark</span>
+              <span className="tag">XGBoost</span>
+              <span className="tag">RAG</span>
+              <span className="tag">Vector Search</span>
+              <span className="tag">Sentence Transformers</span>
+              <span className="tag">Qdrant</span>
+              <span className="tag">FastAPI</span>
+              <span className="tag">MLflow</span>
+              <span className="tag">LLMs</span>
+            </div>
+
+            <p>
+              <a
+                href="https://github.com/ntdai95/Resume-Projects/tree/main/Distributed%20Ocean%20Data%20ML%20Platform%20with%20RAG"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-link"
+              >
+                View Github code →
+              </a>
+            </p>
+          </article>
+          
+          <article className="card project-card">
+            <div className="activity-header">
+              <div className="activity-photo-wrapper">
+                <div className="activity-photo">
+                  <img
                     src="images/stock-sentiment-analysis.jpg"
                     alt="Stock Sentiment Analysis"
                   />
@@ -57,64 +118,6 @@ function Projects() {
             <p>
               <a
                 href="https://github.com/ntdai95/Resume-Projects/tree/main/Stock%20Sentiment%20Analysis"
-                target="_blank"
-                rel="noreferrer"
-                className="btn-link"
-              >
-                View Github code →
-              </a>
-            </p>
-          </article>
-
-          <article className="card project-card">
-            <div className="activity-header">
-              <div className="activity-photo-wrapper">
-                <div className="activity-photo">
-                  <img
-                    src="images/handwritten-digit-recognition.jpg"
-                    alt="Multi-class digit recognition with optimization"
-                  />
-                </div>
-              </div>
-              <div>
-                <h3>Handwritten Digit Recognition System</h3>
-                <p className="edu-meta">
-                  Optimization for Machine Learning (ECE 503), University of 
-                  Victoria · Nov 2025 – Dec 2025
-                </p>
-              </div>
-            </div>
-
-            <ul className="bullet-list">
-              <li>
-                Developed a multiclass SVM and Softmax classification pipeline using a
-                custom built ML-BFGS optimizer, achieving 97.65% accuracy with faster
-                convergence than standard SGD.
-              </li>
-              <li>
-                Applied HOG feature extraction and PCA to reduce 784 dimensional pixel
-                inputs to 50 latent components, yielding a 10.2% accuracy improvement and
-                40% faster training latency.
-              </li>
-              <li>
-                Tuned regularization parameters (μ, C) and evaluated performance using
-                10×10 confusion matrices to ensure robust generalization on 10,000 test
-                samples.
-              </li>
-            </ul>
-
-            <div className="tag-list">
-              <span className="tag">Python</span>
-              <span className="tag">Machine Learning</span>
-              <span className="tag">Optimization</span>
-              <span className="tag">SVM</span>
-              <span className="tag">PCA</span>
-              <span className="tag">ML-BFGS</span>
-            </div>
-
-            <p>
-              <a
-                href="https://github.com/ntdai95/Resume-Projects/tree/main/Handwritten%20Digit%20Recognition%20System"
                 target="_blank"
                 rel="noreferrer"
                 className="btn-link"
