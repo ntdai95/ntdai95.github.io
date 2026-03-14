@@ -33,14 +33,13 @@ function Projects() {
                 sensor datasets for scalable feature generation and forecasting
               </li>
               <li>
-                Trained an XGBoost forecasting model on engineered telemetry features 
-                achieving R² = 0.9999 and RMSE = 0.0061 with reproducible experiments 
-                tracked via MLflow.
+                Trained an XGBoost forecasting model with Optuna hyperparameter tuning 
+                and MLflow experiment tracking, achieving R² = 0.9999 and RMSE = 0.0061.
               </li>
               <li>
-                Developed a RAG-powered API using Sentence Transformers, Qdrant vector 
-                search, FastAPI, and Ollama LLMs to enable semantic search and natural 
-                language exploration of ocean datasets.
+                Developed a FastAPI RAG service using Ollama LLM, Sentence Transformers, 
+                and Qdrant vector search, implementing retrieval benchmarking (hit@k = 
+                1.0, term recall = 0.875).
               </li>
             </ul>
 
@@ -53,7 +52,8 @@ function Projects() {
               <span className="tag">Qdrant</span>
               <span className="tag">FastAPI</span>
               <span className="tag">MLflow</span>
-              <span className="tag">LLMs</span>
+              <span className="tag">LLM</span>
+              <span className="tag">Optuna</span>
             </div>
 
             <p>
