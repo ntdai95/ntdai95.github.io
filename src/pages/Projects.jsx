@@ -29,8 +29,8 @@ function Projects() {
             <ul className="bullet-list">
               <li>
                 Built a distributed ML pipeline using Apache Spark (Bronze → Silver → 
-                Gold architecture) to ingest and harmonize heterogeneous NetCDF ocean 
-                sensor datasets for scalable feature generation and forecasting
+                Gold architecture) to ingest and harmonize 10M+ NOAA and ONC ocean 
+                sensor observations for scalable feature generation and forecasting.
               </li>
               <li>
                 Trained an XGBoost forecasting model with Optuna hyperparameter tuning 
