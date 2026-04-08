@@ -46,6 +46,12 @@ function Courses() {
               <li>
                 <strong>Data Analysis and Pattern Recognition</strong> (ECE 535)
               </li>
+              <li>
+                <strong>Data Mining</strong> (CSC 503)
+              </li>
+              <li>
+                <strong>Selected Topics in Computer Engineering: Artificial Intelligence</strong> (ECE 569A)
+              </li>
             </ul>
           </article>
 
