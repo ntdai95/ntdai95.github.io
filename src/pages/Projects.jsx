@@ -132,6 +132,66 @@ function Projects() {
               <div className="activity-photo-wrapper">
                 <div className="activity-photo">
                   <img
+                    src="images/isolation-forest.jpg"
+                    alt="Anomaly Detection with Isolation Forest"
+                  />
+                </div>
+              </div>
+              <div>
+                <h3>Anomaly Detection with Isolation Forest on High Volume Bird Observation Data (Team of 3)</h3>
+                <p className="edu-meta">
+                  Systems for Massive Datasets (ECE 502), University of 
+                  Victoria · Mar 2026 – Apr 2026
+                </p>
+              </div>
+            </div>
+
+            <ul className="bullet-list">
+              <li>
+                Built an anomaly detection system on a distributed eBird dataset (1M+ 
+                observations) using a custom implementation of Isolation Forest with 
+                data processing in PySpark.
+              </li>
+              <li>
+                Designed an end-to-end ML pipeline including feature engineering 
+                (species frequency, geospatial features, cyclical time encoding) and 
+                stratified sampling to preserve data distribution.
+              </li>
+              <li>
+                Evaluated model performance using ROC AUC and runtime metrics, 
+                identifying limitations of Isolation Forest in skewed datasets 
+                (feature specific swamping).
+              </li>
+            </ul>
+
+            <div className="tag-list">
+              <span className="tag">PySpark</span>
+              <span className="tag">Isolation Forest</span>
+              <span className="tag">Anomaly Detection</span>
+              <span className="tag">Feature Engineering</span>
+              <span className="tag">Stratified Sampling</span>
+              <span className="tag">ROC AUC</span>
+              <span className="tag">Data Pipeline</span>
+              <span className="tag">Experimentation</span>
+            </div>
+
+            <p>
+              <a
+                href="https://github.com/ntdai95/CSC502-Final-Project"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-link"
+              >
+                View Github code →
+              </a>
+            </p>
+          </article>
+
+          <article className="card project-card">
+            <div className="activity-header">
+              <div className="activity-photo-wrapper">
+                <div className="activity-photo">
+                  <img
                     src="images/parallel-engine.jpg"
                     alt="Parallel Image Processing Engine"
                   />
