@@ -30,11 +30,14 @@ function Projects() {
               <li>
                 Built a distributed ML pipeline using Apache Spark (Bronze → Silver → 
                 Gold architecture) to ingest and harmonize 10M+ NOAA and ONC ocean 
-                sensor observations for scalable feature generation and forecasting.
+                sensor observations for scalable feature engineering and time series 
+                forecasting.
               </li>
               <li>
-                Trained an XGBoost forecasting model with Optuna hyperparameter tuning 
-                and MLflow experiment tracking, achieving R² = 0.9999 and RMSE = 0.0061.
+                Trained and evaluated forecasting models using XGBoost with Optuna 
+                hyperparameter tuning and MLflow experiment tracking, applying holdout 
+                validation based on time to ensure reliable performance on unseen 
+                temporal data.
               </li>
               <li>
                 Developed a FastAPI RAG service using Ollama LLM, Sentence Transformers, 
