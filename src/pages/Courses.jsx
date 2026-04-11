@@ -52,6 +52,9 @@ function Courses() {
               <li>
                 <strong>Selected Topics in Computer Engineering: Artificial Intelligence</strong> (ECE 569A)
               </li>
+              <li>
+                <strong>Applied Data Analysis</strong> (ECE 537)
+              </li>
             </ul>
           </article>
 
