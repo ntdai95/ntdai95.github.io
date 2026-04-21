@@ -44,6 +44,24 @@ function Awards() {
                 </a>
               </p>
             </article>
+
+            <article className="card">
+              <h3>FIDE Rating - 1825</h3>
+              <p className="edu-meta">FIDE · Jan 2008</p>
+              <p className="muted">
+                Competitive chess player with official international rating.
+              </p>
+              <p>
+                <a
+                  href="https://ratings.fide.com/profile/707937"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-link"
+                >
+                  View profile →
+                </a>
+              </p>
+            </article>
           </div>
         </div>
       </section>
