@@ -1,13 +1,13 @@
 @echo off
 setlocal
 
-set /p msg=Commit message: 
-if "%msg%"=="" set msg=update site
+set /p MSG=Commit message: 
+if "%MSG%"=="" set MSG=update site
 
 git add .
 git diff --cached --quiet
 if errorlevel 1 (
-    git commit -m "%msg%"
+    git commit -m "%MSG%"
     if errorlevel 1 exit /b 1
     git push
     if errorlevel 1 exit /b 1
@@ -15,7 +15,7 @@ if errorlevel 1 (
     echo No source changes to commit.
 )
 
-npm run build
+call npm run build
 if errorlevel 1 exit /b 1
 
 for /f "delims=" %%r in ('git config --get remote.origin.url') do set REPO=%%r
@@ -28,13 +28,13 @@ if exist .git rmdir /s /q .git
 git init
 if errorlevel 1 exit /b 1
 
-git checkout -b gh-pages
-if errorlevel 1 exit /b 1
-
 git add -A
 if errorlevel 1 exit /b 1
 
 git commit -m "deploy"
+if errorlevel 1 exit /b 1
+
+git branch -M gh-pages
 if errorlevel 1 exit /b 1
 
 git remote add origin %REPO%
@@ -45,6 +45,8 @@ if errorlevel 1 exit /b 1
 
 popd
 
+if exist dist\.git rmdir /s /q dist\.git
+
 echo.
-echo Deploy complete.
+echo Live site updated.
 endlocal
