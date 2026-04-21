@@ -58,7 +58,7 @@ function Awards() {
                   rel="noreferrer"
                   className="btn-link"
                 >
-                  View profile →
+                  View chess profile →
                 </a>
               </p>
             </article>
