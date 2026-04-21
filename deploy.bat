@@ -18,8 +18,32 @@ if errorlevel 1 (
 npm run build
 if errorlevel 1 exit /b 1
 
-for /f %%i in ('git subtree split --prefix dist main') do git push origin %%i:gh-pages --force
+for /f "delims=" %%r in ('git config --get remote.origin.url') do set REPO=%%r
+
+pushd dist
 if errorlevel 1 exit /b 1
+
+if exist .git rmdir /s /q .git
+
+git init
+if errorlevel 1 exit /b 1
+
+git checkout -b gh-pages
+if errorlevel 1 exit /b 1
+
+git add -A
+if errorlevel 1 exit /b 1
+
+git commit -m "deploy"
+if errorlevel 1 exit /b 1
+
+git remote add origin %REPO%
+if errorlevel 1 exit /b 1
+
+git push -f origin gh-pages
+if errorlevel 1 exit /b 1
+
+popd
 
 echo.
 echo Deploy complete.
