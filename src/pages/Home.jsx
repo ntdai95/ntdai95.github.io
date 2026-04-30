@@ -142,7 +142,7 @@ function Home() {
                   <p className="edu-meta">
                     University of Victoria · Sep 2025 – Dec 2027 (Expected)
                     <br />
-                    GPA: 9.00 / 9.00
+                    GPA: 8.68 / 9.00
                   </p>
                 </div>
               </div>
