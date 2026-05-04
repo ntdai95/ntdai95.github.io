@@ -25,19 +25,18 @@ function Hackathons() {
 
             <ul className="bullet-list">
               <li>
-                Deployed a production ready machine learning system using FastAPI, 
-                Docker, and AWS EC2 to serve real time multi-output regression 
-                predictions for 10 chemical blend properties.
+                Built and deployed a production ML system for multi-output regression 
+                across 10 chemical blend properties using FastAPI, Docker, and AWS EC2 
+                for real-time inference.
               </li>
               <li>
-                Benchmarked XGBoost vs. CatBoost using 5-fold cross-validation, 
-                selecting CatBoost after achieving lower error (MAPE 0.64 vs. 1.29) 
-                and productionizing the best performing model.
+                Benchmarked XGBoost and CatBoost using 5-fold cross-validation, selecting 
+                CatBoost after achieving significantly lower error (MAPE: 0.64 vs. 1.29).
               </li>
               <li>
-                Engineered robust feature and inference pipelines using weighted 
-                property aggregation, entropy based mixture metrics, and 
-                serialized preprocessing to ensure consistent production inference.
+                Designed feature engineering and inference pipelines using weighted 
+                aggregation, mixture metrics based on entropy, and serialized preprocessing 
+                to ensure consistent production predictions.
               </li>
             </ul>
             <div className="tag-list">

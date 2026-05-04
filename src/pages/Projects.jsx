@@ -28,21 +28,21 @@ function Projects() {
 
             <ul className="bullet-list">
               <li>
-                Built a distributed ML pipeline using Apache Spark (Bronze → Silver → 
-                Gold architecture) to ingest and harmonize 10M+ NOAA and ONC ocean 
-                sensor observations for scalable feature engineering and time series 
+                Built an end-to-end distributed ML pipeline using Apache Spark (Bronze → 
+                Silver → Gold architecture) to ingest and harmonize 10M+ NOAA and ONC 
+                ocean sensor observations for scalable feature engineering and time series 
                 forecasting.
               </li>
               <li>
-                Trained and evaluated forecasting models using XGBoost with Optuna 
-                hyperparameter tuning and MLflow experiment tracking, applying holdout 
-                validation based on time to ensure reliable performance on unseen 
-                temporal data.
+                Developed and tuned XGBoost forecasting models using Optuna and MLflow, 
+                applying chronological holdout validation on temporally correlated ocean 
+                data (RMSE: 0.00586, R²: 0.9999).
               </li>
               <li>
-                Developed a FastAPI RAG service using Ollama LLM, Sentence Transformers, 
-                and Qdrant vector search, implementing retrieval benchmarking (hit@k = 
-                1.0, term recall = 0.875).
+                Deployed FastAPI services for prediction and RAG-based querying using 
+                Sentence Transformers, Qdrant/FAISS, and Ollama, with retrieval benchmarking 
+                (hit@k: 1.0, term recall: 0.875), and a Streamlit dashboard for interactive 
+                exploration.
               </li>
             </ul>
 
@@ -55,8 +55,9 @@ function Projects() {
               <span className="tag">Qdrant</span>
               <span className="tag">FastAPI</span>
               <span className="tag">MLflow</span>
-              <span className="tag">LLM</span>
+              <span className="tag">Ollama LLM</span>
               <span className="tag">Optuna</span>
+              <span className="tag">Streamlit</span>
             </div>
 
             <p>
