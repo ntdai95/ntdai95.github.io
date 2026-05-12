@@ -39,10 +39,9 @@ function Projects() {
                 data (RMSE: 0.00586, R²: 0.9999).
               </li>
               <li>
-                Deployed FastAPI services for prediction and RAG-based querying using 
-                Sentence Transformers, Qdrant/FAISS, and Ollama, with retrieval benchmarking 
-                (hit@k: 1.0, term recall: 0.875), and a Streamlit dashboard for interactive 
-                exploration.
+                Deployed FastAPI services for model inference and RAG search using Sentence 
+                Transformers, Qdrant, and Ollama with retrieval benchmarking (hit@k: 1.0, 
+                term recall: 0.875) and a Streamlit dashboard for interactive exploration.
               </li>
             </ul>
 

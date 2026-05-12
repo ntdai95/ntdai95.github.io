@@ -8,7 +8,7 @@ function Home() {
         <div className="container hero-grid">
           <div className="hero-text">
             <p className="hero-kicker">
-              Data Analytics · Machine Learning · Software Engineering
+              Data Science · Machine Learning · Software Engineering
             </p>
             <h1>Tan Dai Ngo</h1>
             <p className="hero-subtitle">
@@ -100,8 +100,8 @@ function Home() {
               <h3>What I Work With</h3>
               <p className="muted">
                 Python · SQL · R · Java · pandas · scikit-learn · gradient
-                boosting · REST APIs · Docker · Kafka · Power BI · AWS ·
-                microservices.
+                boosting · REST APIs · Docker · Kafka · Cassandra · AWS ·
+                LLM · RAG · Qdrant · microservices.
               </p>
             </div>
             <div className="card">

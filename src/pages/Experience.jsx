@@ -49,19 +49,16 @@ function Experience() {
             </p>
             <ul className="bullet-list">
               <li>
-                Collaborated with a team of 5 to develop enterprise microservices
-                for the Roaming Business System (Spring Boot, Java Stream API),
-                integrating with Jenkins CI/CD for deployments and Splunk for
-                log monitoring.
+                Automated Kafka reprocessing pipelines for 50+ weekly roaming 
+                service tests, cutting manual intervention by 80%.
               </li>
               <li>
-                Designed and optimized Cassandra database schemas for partner and
-                workflow management microservices, handling 100k+ records while
-                maintaining query execution time under 3 seconds.
+                Redesigned Cassandra schemas for partner/workflow microservices 
+                (100k+ records), maintaining query latency under 3s.
               </li>
               <li>
-                Automated weekly reprocessing of 50+ roaming service tests with
-                Kafka pipelines, cutting manual effort by 80%.
+                Developed Spring Boot microservices integrated with Jenkins 
+                CI/CD and Splunk, enabling scalable downstream analytics.
               </li>
             </ul>
             <div className="tag-list">
