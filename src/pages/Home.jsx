@@ -99,9 +99,10 @@ function Home() {
             <div className="card">
               <h3>What I Work With</h3>
               <p className="muted">
-                Python · SQL · R · Java · pandas · scikit-learn · gradient
-                boosting · REST APIs · Docker · Kafka · Cassandra · AWS ·
-                LLM · RAG · Qdrant · microservices.
+                Python · SQL · R · Java · Go · regression · classification · 
+                clustering · feature engineering · scikit-learn · gradient 
+                boosting · REST APIs · MLflow · Docker · Kafka · Cassandra · 
+                AWS · Sentence Transformers · RAG · Qdrant · microservices
               </p>
             </div>
             <div className="card">
@@ -109,7 +110,7 @@ function Home() {
               <ul className="bullet-list">
                 <li>Google Advanced Data Analytics Specialization (Google, 2025).</li>
                 <li>
-                  Shell.ai Hackathon 2025 – productionized machine learning system for sustainable fuel blending
+                  Shell.ai Hackathon 2025 – end-to-end machine learning system for sustainable fuel blending
                 </li>
                 <li>
                   IMC 64 Bids Coding Challenge – final round (top 15%).
