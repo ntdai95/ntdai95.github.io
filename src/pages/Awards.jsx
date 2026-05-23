@@ -84,7 +84,7 @@ function Awards() {
             </article>
           </div>
           <p style={{ marginTop: '2rem', marginBottom: '1rem' }}>
-            <strong>Interested in working together?</strong>{' '}
+            <strong>Interested in working together?</strong>
             {' \u00a0\u00a0 '}
             <a href="mailto:ngotandai95@gmail.com">ngotandai95@gmail.com</a>
             {' \u00a0·\u00a0 '}
