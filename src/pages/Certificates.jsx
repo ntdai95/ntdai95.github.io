@@ -52,6 +52,12 @@ function Certificates() {
             </p>
           </article>
         </div>
+        <p style={{ marginTop: '2rem' }}>
+          Interested in working together?{' '}
+          <a href="mailto:ngotandai95@gmail.com">ngotandai95@gmail.com</a>
+          {' · '}
+          <a href="https://linkedin.com/in/ntdai95" target="_blank" rel="noreferrer">LinkedIn</a>
+        </p>
         <Link to="/" className="btn-link">
           Back to home →
         </Link>

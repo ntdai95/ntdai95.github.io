@@ -12,57 +12,23 @@ function Home() {
             </p>
             <h1>Tan Dai Ngo</h1>
             <p className="hero-subtitle">
-              Data analyst and software developer with experience in predictive
-              modeling, image processing, analytics dashboards, backend
-              microservices, and algorithmic trading challenges. I enjoy
-              turning data into decisions and building reliable systems
-              end-to-end.
+              Data scientist and software engineer with experience in 
+              predictive modeling, distributed ML systems, backend 
+              microservices, and analytics dashboards. Actively seeking 
+              co-op/internship roles in data science, ML engineering, 
+              or software development (Jan – Dec 2027) — open to remote 
+              or relocating anywhere in Canada.
             </p>
 
             <div className="hero-actions">
+              <Link to="documents/Ngo Tan Dai - Resume.pdf" className="btn primary">
+                Resume (PDF) →
+              </Link>
               <Link to="/projects" className="btn primary">
                 View Projects →
               </Link>
               <a href="#contact" className="btn outline">
                 Contact Me
-              </a>
-            </div>
-
-            <div className="hero-meta">
-              <span>📍 Victoria, BC</span>
-              <span>📞 250-661-9530</span>
-              <span>
-                ✉️{' '}
-                <a href="mailto:ngotandai95@gmail.com">
-                  ngotandai95@gmail.com
-                </a>
-              </span>
-            </div>
-
-            <div className="hero-links">
-              <a
-                href="https://www.linkedin.com/in/ntdai95"
-                target="_blank"
-                rel="noreferrer"
-                className="chip-link"
-              >
-                LinkedIn →
-              </a>
-              <a
-                href="https://github.com/ntdai95"
-                target="_blank"
-                rel="noreferrer"
-                className="chip-link"
-              >
-                GitHub →
-              </a>
-              <a
-                href="documents/Ngo Tan Dai - Resume.pdf"
-                target="_blank"
-                rel="noreferrer"
-                className="chip-link"
-              >
-                Resume (PDF) →
               </a>
             </div>
           </div>
@@ -81,18 +47,12 @@ function Home() {
         <div className="container section-inner">
           <h2>About</h2>
           <p>
-            I’m a data-driven problem solver with experience across analytics,
-            predictive modeling, and backend software engineering. I’ve built
-            ETL pipelines and dashboards in hospitality, developed microservices
-            in the telecom domain, and taught computer science and Python
-            programming at the college level.
-          </p>
-          <p>
-            My background spans economics, computer science, and applied data
-            science, and I’ve participated in competitive hackathons such as
-            the Shell.ai Hackathon and IMC 64 Bids Coding Challenge. I value
-            clean code, reproducible analysis, and clear communication with
-            stakeholders.
+            I'm a data scientist and software engineer with experience in 
+            predictive modeling, distributed ML systems, ETL pipelines, 
+            and backend microservices. My background spans economics, 
+            computer science, and applied data science across industry, 
+            academia, and competitive settings. I value clean code, 
+            reproducible analysis, and clear communication with stakeholders.
           </p>
 
           <div className="highlight-grid">
@@ -108,12 +68,12 @@ function Home() {
             <div className="card">
               <h3>Recent Highlights</h3>
               <ul className="bullet-list">
-                <li>Google Advanced Data Analytics Specialization (Google, 2025).</li>
+                <li>Google Advanced Data Analytics Specialization (Google, 2025)</li>
                 <li>
                   Shell.ai Hackathon 2025 – end-to-end machine learning system for sustainable fuel blending
                 </li>
                 <li>
-                  IMC 64 Bids Coding Challenge – final round (top 15%).
+                  IMC 64 Bids Coding Challenge – final round (top 15% of 1,500 participants)
                 </li>
               </ul>
             </div>
