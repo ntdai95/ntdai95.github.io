@@ -193,6 +193,17 @@ a:hover {
   border-color: rgba(209, 213, 219, 1);
 }
 
+.section-darker {
+  background: radial-gradient(circle at top, rgba(2, 6, 23, 0.98), #010409);
+  border-top: 1px solid rgba(15, 23, 42, 0.7);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.7);
+}
+
+[data-theme="light"] .section-darker {
+  background: #f3f4f6;
+  border-color: rgba(209, 213, 219, 1);
+}
+
 .section-inner {
   background: linear-gradient(
     135deg,

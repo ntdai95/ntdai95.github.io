@@ -181,13 +181,13 @@ function Courses() {
             </ul>
           </article>
         </div>
-        <p style={{ marginTop: '2rem' }}>
-          Interested in working together?{' '}
+        <p style={{ marginTop: '2rem', marginBottom: '0.5rem' }}>
+          <strong>Interested in working together?</strong>{' '}
           <a href="mailto:ngotandai95@gmail.com">ngotandai95@gmail.com</a>
           {' · '}
           <a href="https://linkedin.com/in/ntdai95" target="_blank" rel="noreferrer">LinkedIn</a>
         </p>
-        <Link to="/" className="btn-link">
+        <Link to="/" className="btn-link" style={{ marginTop: '0' }}>
           Back to home →
         </Link>
       </div>

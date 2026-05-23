@@ -155,7 +155,7 @@ function Home() {
       </section>
 
       {/* RECENT EXPERIENCE */}
-      <section className="section section-alt">
+      <section className="section section-darker">
         <div className="container section-inner">
           <h2>Recent Experience</h2>
           <div className="cards-grid three-col">
