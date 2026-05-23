@@ -83,10 +83,10 @@ function Awards() {
               <p className="muted">Limited working proficiency</p>
             </article>
           </div>
-          <p style={{ marginTop: '2rem', marginBottom: '0.5rem' }}>
+          <p style={{ marginTop: '2rem', marginBottom: '1rem' }}>
             <strong>Interested in working together?</strong>{' '}
             <a href="mailto:ngotandai95@gmail.com">ngotandai95@gmail.com</a>
-            {' · '}
+            {' \u00a0·\u00a0 '}
             <a href="https://linkedin.com/in/ntdai95" target="_blank" rel="noreferrer">LinkedIn</a>
           </p>
           <Link to="/" className="btn-link" style={{ marginTop: '0' }}>
