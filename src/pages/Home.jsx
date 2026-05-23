@@ -286,14 +286,14 @@ function Home() {
           </p>
           <ul className="contact-list">
             <li>
-              ✉️ Email:{' '}
+              ✉️ <strong>Email:</strong>{' '}
               <a href="mailto:ngotandai95@gmail.com">
                 ngotandai95@gmail.com
               </a>
             </li>
-            <li>📞 Phone: 250-661-9530</li>
+            <li>📞 <strong>Phone:</strong> 250-661-9530</li>
             <li>
-              🔗 LinkedIn:{' '}
+              🔗 <strong>LinkedIn:</strong>{' '}
               <a
                 href="https://www.linkedin.com/in/ntdai95"
                 target="_blank"
@@ -303,7 +303,7 @@ function Home() {
               </a>
             </li>
             <li>
-              🧑‍💻 GitHub:{' '}
+              🧑‍💻 <strong>GitHub:</strong>{' '}
               <a
                 href="https://github.com/ntdai95"
                 target="_blank"
