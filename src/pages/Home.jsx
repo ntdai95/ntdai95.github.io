@@ -47,15 +47,15 @@ function Home() {
               </div>
               <div className="metric">
                 <span className="metric-value">2+</span>
-                <span className="metric-label">Yrs Industry</span>
+                <span className="metric-label">Years Industry</span>
               </div>
               <div className="metric">
                 <span className="metric-value">3</span>
                 <span className="metric-label">Hackathons</span>
               </div>
               <div className="metric">
-                <span className="metric-value">8.68</span>
-                <span className="metric-label">Current GPA / 9</span>
+                <span className="metric-value">8.68 / 9.00</span>
+                <span className="metric-label">Current GPA</span>
               </div>
             </div>
           </div>
