@@ -188,7 +188,7 @@ function Courses() {
           {' \u00a0·\u00a0 '}
           <a href="https://linkedin.com/in/ntdai95" target="_blank" rel="noreferrer">LinkedIn</a>
         </p>
-        <Link to="/" className="btn-link" style={{ marginTop: '0' }}>
+        <Link to="/" className="btn primary" style={{ marginTop: '0' }}>
           Back to home →
         </Link>
       </div>

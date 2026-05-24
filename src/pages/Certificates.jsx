@@ -23,7 +23,7 @@ function Certificates() {
                 href="https://www.coursera.org/account/accomplishments/specialization/QCVMY2HTFEJL"
                 target="_blank"
                 rel="noreferrer"
-                className="btn-link"
+                className="btn primary"
               >
                 View credential →
               </a>
@@ -45,7 +45,7 @@ function Certificates() {
                 href="documents/Quantitative Managerial Economics.JPG"
                 target="_blank"
                 rel="noreferrer"
-                className="btn-link"
+                className="btn primary"
               >
                 View certificate →
               </a>
@@ -59,7 +59,7 @@ function Certificates() {
           {' \u00a0·\u00a0 '}
           <a href="https://linkedin.com/in/ntdai95" target="_blank" rel="noreferrer">LinkedIn</a>
         </p>
-        <Link to="/" className="btn-link" style={{ marginTop: '0' }}>
+        <Link to="/" className="btn primary" style={{ marginTop: '0' }}>
           Back to home →
         </Link>
       </div>

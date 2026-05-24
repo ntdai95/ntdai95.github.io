@@ -48,7 +48,7 @@ function Hackathons() {
                 href="https://github.com/ntdai95/Shell.ai-Hackathon-2025"
                 target="_blank"
                 rel="noreferrer"
-                className="btn-link"
+                className="btn primary"
               >
                 View GitHub code →
               </a>
@@ -121,7 +121,7 @@ function Hackathons() {
                 href="https://devpost.com/software/koronakiller"
                 target="_blank"
                 rel="noreferrer"
-                className="btn-link"
+                className="btn primary"
               >
                 View on Devpost →
               </a>
@@ -130,14 +130,16 @@ function Hackathons() {
 
         </div>
 
-        <p style={{ marginTop: '2.5rem', marginBottom: '0.75rem' }}>
+        <p style={{ marginTop: '2.5rem', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
           <strong>Interested in working together?</strong>
-          {'   '}
-          <a href="mailto:ngotandai95@gmail.com">ngotandai95@gmail.com</a>
-          {'  ·  '}
-          <a href="https://linkedin.com/in/ntdai95" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:ngotandai95@gmail.com" className="btn secondary">
+            Send Email
+          </a>
+          <a href="https://linkedin.com/in/ntdai95" target="_blank" rel="noreferrer" className="btn secondary">
+            Connect on LinkedIn
+          </a>
         </p>
-        <Link to="/" className="btn-link">← Back to home</Link>
+        <Link to="/" className="btn primary">← Back to home</Link>
       </div>
     </section>
   )

@@ -54,7 +54,7 @@ function Projects() {
                 href="https://github.com/ntdai95/Resume-Projects/tree/main/Distributed%20Ocean%20Data%20ML%20Platform%20with%20RAG"
                 target="_blank"
                 rel="noreferrer"
-                className="btn-link"
+                className="btn primary"
               >
                 View GitHub code →
               </a>
@@ -104,7 +104,7 @@ function Projects() {
                 href="https://github.com/ntdai95/CSC502-Final-Project"
                 target="_blank"
                 rel="noreferrer"
-                className="btn-link"
+                className="btn primary"
               >
                 View GitHub code →
               </a>
@@ -152,7 +152,7 @@ function Projects() {
                 href="https://github.com/ntdai95/Resume-Projects/tree/main/Stock%20Sentiment%20Analysis"
                 target="_blank"
                 rel="noreferrer"
-                className="btn-link"
+                className="btn primary"
               >
                 View GitHub code →
               </a>
@@ -201,7 +201,7 @@ function Projects() {
                 href="https://github.com/ntdai95/Resume-Projects/tree/main/Parallel%20Image%20Processing%20Engine"
                 target="_blank"
                 rel="noreferrer"
-                className="btn-link"
+                className="btn primary"
               >
                 View GitHub code →
               </a>
@@ -248,7 +248,7 @@ function Projects() {
                 href="https://ngotandai.shinyapps.io/a8-data-app-ntdai95-1565490"
                 target="_blank"
                 rel="noreferrer"
-                className="btn-link"
+                className="btn primary"
               >
                 View live app →
               </a>
@@ -257,14 +257,16 @@ function Projects() {
 
         </div>
 
-        <p style={{ marginTop: '2.5rem', marginBottom: '0.75rem' }}>
+        <p style={{ marginTop: '2.5rem', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
           <strong>Interested in working together?</strong>
-          {'   '}
-          <a href="mailto:ngotandai95@gmail.com">ngotandai95@gmail.com</a>
-          {'  ·  '}
-          <a href="https://linkedin.com/in/ntdai95" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:ngotandai95@gmail.com" className="btn secondary">
+            Send Email
+          </a>
+          <a href="https://linkedin.com/in/ntdai95" target="_blank" rel="noreferrer" className="btn secondary">
+            Connect on LinkedIn
+          </a>
         </p>
-        <Link to="/" className="btn-link">← Back to home</Link>
+        <Link to="/" className="btn primary">← Back to home</Link>
       </div>
     </section>
   )

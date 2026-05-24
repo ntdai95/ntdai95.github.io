@@ -34,7 +34,7 @@ function Credentials() {
                   href="https://www.coursera.org/account/accomplishments/specialization/QCVMY2HTFEJL"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn-link"
+                  className="btn primary"
                 >
                   View credential →
                 </a>
@@ -61,7 +61,7 @@ function Credentials() {
                   href="documents/Quantitative Managerial Economics.JPG"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn-link"
+                  className="btn primary"
                 >
                   View certificate →
                 </a>
@@ -177,7 +177,7 @@ function Credentials() {
                   href="documents/IELTS.pdf"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn-link"
+                  className="btn primary"
                 >
                   View score →
                 </a>
@@ -196,7 +196,7 @@ function Credentials() {
                   href="documents/Annual Dean's List.jpg"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn-link"
+                  className="btn primary"
                 >
                   View award →
                 </a>
@@ -214,7 +214,7 @@ function Credentials() {
                   href="https://ratings.fide.com/profile/707937"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn-link"
+                  className="btn primary"
                 >
                   View profile →
                 </a>
@@ -237,14 +237,16 @@ function Credentials() {
             </article>
           </div>
 
-          <p style={{ marginTop: '2.5rem', marginBottom: '0.75rem' }}>
+          <p style={{ marginTop: '2.5rem', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
             <strong>Interested in working together?</strong>
-            {'   '}
-            <a href="mailto:ngotandai95@gmail.com">ngotandai95@gmail.com</a>
-            {'  ·  '}
-            <a href="https://linkedin.com/in/ntdai95" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="mailto:ngotandai95@gmail.com" className="btn secondary">
+              Send Email
+            </a>
+            <a href="https://linkedin.com/in/ntdai95" target="_blank" rel="noreferrer" className="btn secondary">
+              Connect on LinkedIn
+            </a>
           </p>
-          <Link to="/" className="btn-link">← Back to home</Link>
+          <Link to="/" className="btn primary">← Back to home</Link>
         </div>
       </section>
     </>

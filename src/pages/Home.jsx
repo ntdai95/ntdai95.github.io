@@ -35,7 +35,7 @@ function Home() {
               <Link to="/projects" className="btn primary">
                 View Projects →
               </Link>
-              <a href="#contact" className="btn outline">
+              <a href="#contact" className="btn secondary">
                 Contact Me
               </a>
             </div>
@@ -282,7 +282,7 @@ function Home() {
             </article>
           </div>
 
-          <Link to="/experience" className="btn-link">
+          <Link to="/experience" className="btn primary" style={{ marginTop: '1.5rem' }}>
             View full experience →
           </Link>
         </div>
@@ -299,7 +299,7 @@ function Home() {
                 From predictive models and data analysis to
                 image processing and interactive dashboards.
               </p>
-              <Link to="/projects" className="btn-link">
+              <Link to="/projects" className="btn primary">
                 View all projects →
               </Link>
             </article>
@@ -309,7 +309,7 @@ function Home() {
                 Shell.ai, IMC Trading 64 Bids, and Uncommon Hacks game
                 development.
               </p>
-              <Link to="/hackathons" className="btn-link">
+              <Link to="/hackathons" className="btn primary">
                 View hackathon work →
               </Link>
             </article>
@@ -319,7 +319,7 @@ function Home() {
                 Graduate CS coursework, data science certifications, awards,
                 and applied quantitative training.
               </p>
-              <Link to="/credentials" className="btn-link">
+              <Link to="/credentials" className="btn primary">
                 View credentials →
               </Link>
             </article>
@@ -346,9 +346,9 @@ function Home() {
                 href="https://www.linkedin.com/in/ntdai95"
                 target="_blank"
                 rel="noreferrer"
-                className="btn outline"
+                className="btn primary"
               >
-                Connect on LinkedIn
+                Connect on LinkedIn →
               </a>
             </div>
             <div className="cta-links">

@@ -19,7 +19,7 @@ function Awards() {
                   href="documents/IELTS.pdf"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn-link"
+                  className="btn primary"
                 >
                   View score →
                 </a>
@@ -38,7 +38,7 @@ function Awards() {
                   href="documents/Annual Dean's List.jpg"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn-link"
+                  className="btn primary"
                 >
                   View award →
                 </a>
@@ -56,7 +56,7 @@ function Awards() {
                   href="https://ratings.fide.com/profile/707937"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn-link"
+                  className="btn primary"
                 >
                   View profile →
                 </a>
@@ -90,7 +90,7 @@ function Awards() {
             {' \u00a0·\u00a0 '}
             <a href="https://linkedin.com/in/ntdai95" target="_blank" rel="noreferrer">LinkedIn</a>
           </p>
-          <Link to="/" className="btn-link" style={{ marginTop: '0' }}>
+          <Link to="/" className="btn primary" style={{ marginTop: '0' }}>
             Back to home →
           </Link>
         </div>
