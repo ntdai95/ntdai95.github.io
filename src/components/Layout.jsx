@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import { NavLink, Link, useLocation } from 'react-router-dom'
 
 function Layout({ children }) {
   const [theme, setTheme] = useState('dark')
@@ -70,6 +70,20 @@ function Layout({ children }) {
       left: 0,
       behavior: 'auto' // use 'smooth' if you want extra smoothness
     })
+  }, [location.pathname])
+
+  // Scroll progress bar
+  useEffect(() => {
+    const bar = document.getElementById('progress-bar')
+    if (!bar) return
+    const update = () => {
+      const scrolled = window.scrollY
+      const total = document.documentElement.scrollHeight - window.innerHeight
+      bar.style.width = total > 0 ? (scrolled / total) * 100 + '%' : '0%'
+    }
+    window.addEventListener('scroll', update, { passive: true })
+    update()
+    return () => window.removeEventListener('scroll', update)
   }, [location.pathname])
 
   // Route-level fade: fade <main> on every route change
@@ -149,9 +163,13 @@ function Layout({ children }) {
 
   return (
     <div>
+      <div id="progress-bar" className="progress-bar" />
       <header className="site-header">
         <div className="container header-inner">
-          <div className="logo" />
+          <Link to="/" className="logo">
+            <span className="logo-dot" />
+            Tan Dai Ngo
+          </Link>
 
           <nav className="nav">
             <button
@@ -166,29 +184,11 @@ function Layout({ children }) {
               className={`nav-links ${navOpen ? 'open' : ''}`}
               id="navLinks"
             >
-              <li>
-                <NavLink to="/" end>
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/experience">Experience</NavLink>
-              </li>
-              <li>
-                <NavLink to="/projects">Projects</NavLink>
-              </li>
-              <li>
-                <NavLink to="/hackathons">Hackathons</NavLink>
-              </li>
-              <li>
-                <NavLink to="/courses">Courses</NavLink>
-              </li>
-              <li>
-                <NavLink to="/certificates">Certificates</NavLink>
-              </li>
-              <li>
-                <NavLink to="/awards">Awards &amp; Languages</NavLink>
-              </li>
+              <li><NavLink to="/" end>Home</NavLink></li>
+              <li><NavLink to="/experience">Experience</NavLink></li>
+              <li><NavLink to="/projects">Projects</NavLink></li>
+              <li><NavLink to="/hackathons">Hackathons</NavLink></li>
+              <li><NavLink to="/credentials">Credentials</NavLink></li>
             </ul>
           </nav>
 
@@ -207,9 +207,12 @@ function Layout({ children }) {
 
       <footer className="site-footer">
         <div className="container footer-inner">
-          <span>
-            © <span id="year">{currentYear}</span> Tan Dai Ngo
-          </span>
+          <span>© {currentYear} Tan Dai Ngo</span>
+          <div className="footer-links">
+            <a href="mailto:ngotandai95@gmail.com">Email</a>
+            <a href="https://linkedin.com/in/ntdai95" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/ntdai95" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
           <span>Data &amp; Software Portfolio</span>
         </div>
       </footer>
