@@ -396,9 +396,11 @@ a:hover {
   font-size: clamp(2.9rem, 5.5vw, 4rem);
   font-weight: 800;
   letter-spacing: -0.04em;
-  line-height: 1;
+  line-height: 1.35;
   color: var(--text);
   margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .hero-subtitle {
