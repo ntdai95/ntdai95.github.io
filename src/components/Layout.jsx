@@ -1,169 +1,106 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { NavLink, Link, useLocation } from 'react-router-dom'
+import Lenis from 'lenis'
+import CustomCursor from './CustomCursor'
+import Preloader from './Preloader'
+import BackToTop from './BackToTop'
 
 function Layout({ children }) {
   const [theme, setTheme] = useState('dark')
   const [navOpen, setNavOpen] = useState(false)
   const location = useLocation()
+  const spotlightRef = useRef(null)
+  const lenisRef = useRef(null)
 
-  // Initialize theme on mount (no big flash)
+  // ── Theme ──────────────────────────────────────────────────
   useEffect(() => {
     try {
       const stored = localStorage.getItem('theme')
-      let nextTheme
-
-      if (stored === 'light' || stored === 'dark') {
-        nextTheme = stored
-      } else if (
-        window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: light)').matches
-      ) {
-        nextTheme = 'light'
-      } else {
-        nextTheme = 'dark'
-      }
-
-      setTheme(nextTheme)
-      document.documentElement.setAttribute('data-theme', nextTheme)
-      if (nextTheme === 'light') {
-        document.documentElement.style.background =
-          'linear-gradient(#eef1f6, #e4e7ec)'
-      } else {
-        document.documentElement.style.background =
-          'radial-gradient(circle at top, #1e293b 0, #0f172a 55%)'
-      }
-    } catch (e) {
+      const next =
+        stored === 'light' || stored === 'dark'
+          ? stored
+          : window.matchMedia?.('(prefers-color-scheme: light)').matches
+          ? 'light'
+          : 'dark'
+      applyTheme(next)
+      setTheme(next)
+    } catch {
+      applyTheme('dark')
       setTheme('dark')
-      document.documentElement.setAttribute('data-theme', 'dark')
-      document.documentElement.style.background =
-        'radial-gradient(circle at top, #1e293b 0, #0f172a 55%)'
     }
   }, [])
 
-  const toggleTheme = () => {
-    const nextTheme = theme === 'dark' ? 'light' : 'dark'
-    setTheme(nextTheme)
-    document.documentElement.setAttribute('data-theme', nextTheme)
-    try {
-      localStorage.setItem('theme', nextTheme)
-    } catch (e) {
-      /* ignore */
-    }
-    if (nextTheme === 'light') {
-      document.documentElement.style.background =
-        'linear-gradient(#eef1f6, #e4e7ec)'
-    } else {
-      document.documentElement.style.background =
-        'radial-gradient(circle at top, #1e293b 0, #0f172a 55%)'
-    }
+  function applyTheme(t) {
+    document.documentElement.setAttribute('data-theme', t)
+    document.documentElement.style.background =
+      t === 'light'
+        ? 'linear-gradient(#eef1f6, #e4e7ec)'
+        : 'radial-gradient(circle at top, #1e293b 0, #0f172a 55%)'
   }
 
-  // Close mobile nav on route change
-  useEffect(() => {
-    setNavOpen(false)
-  }, [location.pathname])
+  const toggleTheme = () => {
+    const next = theme === 'dark' ? 'light' : 'dark'
+    setTheme(next)
+    applyTheme(next)
+    try { localStorage.setItem('theme', next) } catch {}
+  }
 
-  // 🔹 Scroll to top on route change so pages don't start at the bottom
+  // ── Lenis smooth scroll ────────────────────────────────────
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'auto' // use 'smooth' if you want extra smoothness
+    const lenis = new Lenis({ lerp: 0.09, smoothWheel: true })
+    lenisRef.current = lenis
+
+    // Wire lenis scroll to the progress bar
+    lenis.on('scroll', ({ progress }) => {
+      const bar = document.getElementById('progress-bar')
+      if (bar) bar.style.width = `${progress * 100}%`
     })
-  }, [location.pathname])
 
-  // Scroll progress bar
+    let rafId
+    const raf = (time) => { lenis.raf(time); rafId = requestAnimationFrame(raf) }
+    rafId = requestAnimationFrame(raf)
+
+    return () => { cancelAnimationFrame(rafId); lenis.destroy(); lenisRef.current = null }
+  }, [])
+
+  // ── Close nav + scroll to top on route change ──────────────
+  useEffect(() => { setNavOpen(false) }, [location.pathname])
+
   useEffect(() => {
-    const bar = document.getElementById('progress-bar')
-    if (!bar) return
-    const update = () => {
-      const scrolled = window.scrollY
-      const total = document.documentElement.scrollHeight - window.innerHeight
-      bar.style.width = total > 0 ? (scrolled / total) * 100 + '%' : '0%'
+    if (lenisRef.current) {
+      lenisRef.current.scrollTo(0, { immediate: true })
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
     }
-    window.addEventListener('scroll', update, { passive: true })
-    update()
-    return () => window.removeEventListener('scroll', update)
   }, [location.pathname])
 
-  // Route-level fade: fade <main> on every route change
+  // ── Spotlight cursor overlay ───────────────────────────────
   useEffect(() => {
-    const main = document.querySelector('main')
-    if (!main) return
-    main.classList.remove('page-fade')
-    // force reflow to restart animation
-    // eslint-disable-next-line no-unused-expressions
-    main.offsetWidth
-    main.classList.add('page-fade')
-  }, [location.pathname])
-
-  // Scroll reveal on each page
-  useEffect(() => {
-    const revealSelectors = [
-      '.hero-text',
-      '.hero-photo-wrapper',
-      '.section-inner > h2',
-      '.section-inner > p',
-      '.highlight-grid > *',
-      '.cards-grid > .card',
-      '.project-card',
-      '.activity-header',
-      '.tag-list',
-      '.footer-inner'
-    ]
-
-    const elements = Array.from(
-      document.querySelectorAll(revealSelectors.join(','))
-    )
-
-    if (!elements.length) return
-
-    // Reset classes so we can re-apply animation per route
-    elements.forEach((el) => {
-      el.classList.remove(
-        'reveal',
-        'reveal-visible',
-        'reveal-delay-1',
-        'reveal-delay-2',
-        'reveal-delay-3'
-      )
-    })
-
-    if (!('IntersectionObserver' in window)) {
-      elements.forEach((el) => el.classList.add('reveal-visible'))
-      return
+    const el = spotlightRef.current
+    if (!el) return
+    const onMove = (e) => {
+      el.style.background = `radial-gradient(600px circle at ${e.clientX}px ${e.clientY}px, rgba(56,189,248,0.042), transparent 40%)`
     }
-
-    let idx = 0
-    elements.forEach((el) => {
-      el.classList.add('reveal')
-      const delayClass = `reveal-delay-${(idx % 3) + 1}`
-      el.classList.add(delayClass)
-      idx += 1
-    })
-
-    const observer = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('reveal-visible')
-            obs.unobserve(entry.target)
-          }
-        })
-      },
-      { threshold: 0.15 }
-    )
-
-    elements.forEach((el) => observer.observe(el))
-
-    return () => observer.disconnect()
-  }, [location.pathname])
+    window.addEventListener('mousemove', onMove, { passive: true })
+    return () => window.removeEventListener('mousemove', onMove)
+  }, [])
 
   const currentYear = new Date().getFullYear()
 
   return (
     <div>
+      <a href="#main-content" className="skip-to-content">Skip to main content</a>
+      <Preloader />
+      <CustomCursor />
+
+      {/* Spotlight overlay */}
+      <div ref={spotlightRef} className="spotlight" aria-hidden="true" />
+
+      {/* Film grain texture */}
+      <div className="grain-overlay" aria-hidden="true" />
+
       <div id="progress-bar" className="progress-bar" />
+
       <header className="site-header">
         <div className="container header-inner">
           <Link to="/" className="logo">
@@ -171,19 +108,20 @@ function Layout({ children }) {
             Tan Dai Ngo
           </Link>
 
-          <nav className="nav">
+          <nav className="nav" aria-label="Main navigation">
             <button
+              type="button"
               className="nav-toggle"
               id="navToggle"
               aria-label="Toggle navigation"
+              aria-expanded={navOpen}
               onClick={() => setNavOpen((v) => !v)}
             >
-              ☰
+              <span className={`hamburger ${navOpen ? 'open' : ''}`} aria-hidden="true">
+                <span /><span /><span />
+              </span>
             </button>
-            <ul
-              className={`nav-links ${navOpen ? 'open' : ''}`}
-              id="navLinks"
-            >
+            <ul className={`nav-links ${navOpen ? 'open' : ''}`} id="navLinks">
               <li><NavLink to="/" end>Home</NavLink></li>
               <li><NavLink to="/experience">Experience</NavLink></li>
               <li><NavLink to="/projects">Projects</NavLink></li>
@@ -193,6 +131,7 @@ function Layout({ children }) {
           </nav>
 
           <button
+            type="button"
             className="theme-toggle"
             id="themeToggle"
             aria-label="Toggle color theme"
@@ -203,7 +142,9 @@ function Layout({ children }) {
         </div>
       </header>
 
-      <main>{children}</main>
+      <main id="main-content">{children}</main>
+
+      <BackToTop />
 
       <footer className="site-footer">
         <div className="container footer-inner">

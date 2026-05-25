@@ -1,31 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Redirecting…</title>
+    <title>Tan Dai Ngo</title>
     <script>
-      // GitHub Pages SPA redirect hack
-      // Source: https://github.com/rafgraph/spa-github-pages
-      (function () {
-        var redirect = sessionStorage.getItem("ghspa_redirect");
-        sessionStorage.removeItem("ghspa_redirect");
-        if (redirect) {
-          window.history.replaceState(null, null, redirect);
-        }
-      })();
+      // Store the full path so index.html can restore it after React loads.
+      sessionStorage.setItem(
+        '__spa_redirect',
+        location.pathname + location.search + location.hash
+      )
+      location.replace('/')
     </script>
   </head>
-  <body>
-    <script>
-      (function () {
-        const l = window.location;
-        const redirectUrl =
-          l.protocol + '//' + l.host + l.pathname.replace(/\/$/,'') + '/?' +
-          (l.pathname + l.search).replace(/^\//, '');
-        
-        sessionStorage.setItem('ghspa_redirect', redirectUrl);
-        window.location.replace('/');
-      })();
-    </script>
-  </body>
+  <body></body>
 </html>
