@@ -65,6 +65,54 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
+                <img src="images/reservation-system.jpeg" alt="Distributed Facility Reservation System" loading="lazy" />
+              </div>
+              <h3>Distributed Facility Reservation System (Team of 4)</h3>
+              <p className="edu-meta">
+                Applied Software Engineering (MPCS 51220), University of
+                Chicago · Apr 2021 – May 2021
+              </p>
+              <ul className="bullet-list">
+                <li>
+                  Developed the database backend (SQLite) and cross-facility 
+                  interoperability (FastAPI) enabling reservations across five
+                  independently built facility systems.
+                </li>
+                <li>
+                  Designed the SQLite schema for users, reservations, and 
+                  transactions, modeling reservations as 30-minute blocks to 
+                  support conflict detection and cancellations.
+                </li>
+                <li>
+                  Built the service-to-service protocol letting our facility 
+                  exchange reservation requests with four peer systems over a 
+                  shared HTTP contract.
+                </li>
+              </ul>
+              <div className="tag-list">
+                <span className="tag">Python</span>
+                <span className="tag">FastAPI</span>
+                <span className="tag">SQLite</span>
+                <span className="tag">REST API</span>
+                <span className="tag">Distributed Systems</span>
+                <span className="tag">Service Interoperability</span>
+                <span className="tag">Database Design</span>
+                <span className="tag">Session Authentication</span>
+              </div>
+              <p style={{ marginTop: '1rem' }}>
+                <a
+                  href="https://github.com/ntdai95/Resume-Projects/tree/main/Distributed%20Facility%20Reservation%20System"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn primary"
+                >
+                  View GitHub code →
+                </a>
+              </p>
+            </TiltCard>
+            
+            <TiltCard className="card project-card">
+              <div className="project-card-img-wrap">
                 <img src="images/isolation-forest.jpg" alt="Anomaly Detection with Isolation Forest" loading="lazy" />
               </div>
               <h3>Anomaly Detection with Isolation Forest on High Volume Bird Observation Data (Team of 3)</h3>

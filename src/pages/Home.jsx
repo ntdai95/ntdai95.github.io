@@ -368,7 +368,7 @@ function Home() {
               <h3>Projects</h3>
               <p className="muted">
                 From predictive models and data analysis to
-                image processing and interactive dashboards.
+                distributed systems and interactive dashboards.
               </p>
               <Link to="/projects" className="btn primary">
                 View all projects →
