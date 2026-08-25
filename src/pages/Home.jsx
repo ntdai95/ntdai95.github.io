@@ -331,8 +331,9 @@ function Home() {
                   deployed fixes through Jenkins across 50+ releases.
                 </li>
                 <li>
-                  Automated rejected-test reprocessing with Kafka, Cassandra,
-                  and Python, cutting manual effort by 80%.
+                  Automated a Kafka-driven reprocessing pipeline with a
+                  user-requested retry mechanism for rejected roaming tests,
+                  using Cassandra and Python, cutting manual effort by 80%.
                 </li>
               </ul>
             </StaggerItem>

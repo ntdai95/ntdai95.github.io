@@ -64,12 +64,13 @@ function Experience() {
                     deployed fixes through Jenkins across 50+ releases.
                   </li>
                   <li>
-                    Debugged production issues and monitored system health
-                    with Splunk across T-Mobile's data servers.
+                    Debugged production issues with Splunk and built a
+                    Mobileum test-rejection email notifier via MS Graph API.
                   </li>
                   <li>
-                    Automated rejected-test reprocessing with Kafka, Cassandra,
-                    and Python, cutting manual effort by 80%.
+                    Automated a Kafka-driven reprocessing pipeline with a
+                    user-requested retry mechanism for rejected roaming tests,
+                    using Cassandra and Python, cutting manual effort by 80%.
                   </li>
                 </ul>
                 <div className="tag-list">
@@ -79,6 +80,7 @@ function Experience() {
                   <span className="tag">Cassandra</span>
                   <span className="tag">Jenkins</span>
                   <span className="tag">Splunk</span>
+                  <span className="tag">MS Graph API</span>
                   <span className="tag">Data Pipelines</span>
                   <span className="tag">Automation</span>
                   <span className="tag">CI/CD</span>
