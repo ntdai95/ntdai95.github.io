@@ -289,7 +289,7 @@ function Home() {
           <FadeIn><h2>Recent Experience</h2></FadeIn>
           <StaggerGrid className="cards-grid three-col">
             <StaggerItem as="article" className="card">
-              <h3>Math and Computer Science Teacher</h3>
+              <h3>Mathematics and Computer Science Teacher</h3>
               <p className="edu-meta">
                 APU American International Schools
                 <br />

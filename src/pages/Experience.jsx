@@ -14,7 +14,7 @@ function Experience() {
           <StaggerGrid className="timeline">
             <StaggerItem className="timeline-item">
               <article className="card">
-                <h3>Math and Computer Science Teacher</h3>
+                <h3>Mathematics and Computer Science Teacher</h3>
                 <p className="edu-meta">
                   APU American International Schools · Aug 2024 – Dec 2024 · Da Nang City, Vietnam
                 </p>
