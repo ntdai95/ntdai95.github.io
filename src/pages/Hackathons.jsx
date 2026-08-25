@@ -22,18 +22,18 @@ function Hackathons() {
               <p className="edu-meta">Shell.ai Hackathon 2025 · Jul 2025</p>
               <ul className="bullet-list">
                 <li>
-                  Built and deployed a production ML system for multi-output regression
-                  across 10 chemical blend properties using FastAPI, Docker, and AWS EC2
-                  for real-time inference.
+                  Built and deployed an inference system for multi-output regression
+                  across 10 chemical blend properties, served through FastAPI on a
+                  Dockerized AWS EC2 instance.
                 </li>
                 <li>
-                  Benchmarked XGBoost and CatBoost using 5-fold cross-validation, selecting
-                  CatBoost after achieving significantly lower error (MAPE: 0.64 vs. 1.29).
+                  Benchmarked CatBoost against XGBoost under 5-fold cross-validation and
+                  shipped CatBoost after it came in at 0.64 MAPE against XGBoost's 1.29.
                 </li>
                 <li>
-                  Designed feature engineering and inference pipelines using weighted
-                  aggregation, mixture metrics based on entropy, and serialized preprocessing
-                  to ensure consistent production predictions.
+                  Engineered entropy-based mixture metrics as model features and
+                  serialized the preprocessing pipeline so training and inference stayed
+                  consistent.
                 </li>
               </ul>
               <div className="tag-list">
@@ -65,18 +65,16 @@ function Hackathons() {
               <p className="edu-meta">IMC 64 Bids Coding Challenge · Oct 2021</p>
               <ul className="bullet-list">
                 <li>
-                  Implemented Java based algorithmic trading solutions to optimize
-                  order execution and portfolio rebalancing under time constraints.
+                  Wrote Java trading algorithms for order execution and portfolio
+                  rebalancing against a hard time budget per round.
                 </li>
                 <li>
-                  Gained foundational knowledge in quantitative trading concepts
-                  while thoroughly testing and optimizing Java code for
-                  correctness and performance.
+                  Tested and profiled the code under competition constraints, fixing
+                  the paths that were too slow to place.
                 </li>
                 <li>
-                  Advanced to the final round, ranking in the top 15% (top 250
-                  out of 1,500 participants) in a globally competitive trading
-                  algorithms competition.
+                  Reached the final round, placing in the top 15% of 1,500
+                  participants (top 250).
                 </li>
               </ul>
               <div className="tag-list">
@@ -94,19 +92,16 @@ function Hackathons() {
               <p className="edu-meta">Uncommon Hacks · Apr 2021</p>
               <ul className="bullet-list">
                 <li>
-                  Collaborated in a cross-functional team of 3 to prototype
-                  KoronaKiller, a Python based 2D simulation that models player
-                  health dynamics and event driven interactions in real time.
+                  Built KoronaKiller with a team of 3 in Python and Pygame — a 2D
+                  simulation modeling player health and event-driven interactions
+                  in real time.
                 </li>
                 <li>
-                  Applied algorithmic design and logic optimization to implement
-                  continuous background scrolling, randomized object generation,
-                  and collision detection mechanisms for efficient gameplay execution.
+                  Implemented continuous background scrolling, randomized object
+                  spawning, and collision detection.
                 </li>
                 <li>
-                  Delivered a functional demo within a 48 hour hackathon,
-                  demonstrating rapid prototyping, debugging, and teamwork skills
-                  essential for data driven product development.
+                  Shipped a working demo inside the 48-hour hackathon window.
                 </li>
               </ul>
               <div className="tag-list">

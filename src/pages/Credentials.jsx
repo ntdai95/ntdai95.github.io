@@ -19,10 +19,9 @@ function Credentials() {
                 Issued by Google · Jun 2025 · Credential ID: QCVMY2HTFEJL
               </p>
               <p className="muted">
-                End-to-end data analytics specialization: exploratory data
-                analysis, visualization, statistical analysis, regression, and
-                machine learning workflows using Python and industry-standard
-                tooling.
+                Specialization covering exploratory data analysis, visualization,
+                statistical analysis, regression, and machine learning workflows
+                in Python.
               </p>
               <div className="tag-list">
                 <span className="tag">Python</span>
@@ -49,9 +48,8 @@ function Credentials() {
                 Department of Economics, University of Washington · Apr 2019
               </p>
               <p className="muted">
-                Coursework and applied training in microeconomics, quantitative
-                methods, and managerial decision-making with emphasis on
-                data-driven economic reasoning.
+                Coursework in microeconomics, quantitative methods, and
+                managerial decision-making.
               </p>
               <div className="tag-list">
                 <span className="tag">Microeconomics</span>

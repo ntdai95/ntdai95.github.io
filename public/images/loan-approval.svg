@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 210" role="img" aria-label="Loan Approval Classifier">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1330"/>
+      <stop offset="100%" stop-color="#060a1b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#4ade80"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="210" fill="url(#bg)"/>
+  <g fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.65">
+    <polyline points="70,150 110,120 150,135 190,90 230,100 270,55"/>
+    <circle cx="70" cy="150" r="4" fill="#38bdf8" stroke="none"/>
+    <circle cx="110" cy="120" r="4" fill="#38bdf8" stroke="none"/>
+    <circle cx="150" cy="135" r="4" fill="#4ade80" stroke="none"/>
+    <circle cx="190" cy="90" r="4" fill="#4ade80" stroke="none"/>
+    <circle cx="230" cy="100" r="4" fill="#38bdf8" stroke="none"/>
+    <circle cx="270" cy="55" r="4" fill="#4ade80" stroke="none"/>
+  </g>
+  <rect x="0" y="204" width="800" height="6" fill="url(#accent)"/>
+  <text x="340" y="98" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#f1f5f9">Loan Approval Classifier</text>
+  <text x="340" y="132" font-family="Consolas, monospace" font-size="16" fill="#94a3b8">Imbalanced credit data &#183; F1-scored search</text>
+</svg>

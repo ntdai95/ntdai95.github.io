@@ -20,19 +20,19 @@ function Experience() {
                 </p>
                 <ul className="bullet-list">
                   <li>
-                    Taught Python programming and core computer science concepts
-                    to 50+ high school and college students through hands-on
-                    coding projects.
+                    Taught Python and core computer science concepts to 50+ high
+                    school and college students with no prior background, through
+                    hands-on coding projects rather than lectures.
                   </li>
                   <li>
-                    Designed project-based assignments emphasizing software
-                    engineering fundamentals, including top-down design, OOP,
-                    and code modularity.
+                    Designed project-based assignments around top-down design,
+                    OOP, and code modularity, adjusting the pace and depth of
+                    each explanation live based on how the class responded.
                   </li>
                   <li>
-                    Mentored students in debugging, algorithmic reasoning,
-                    and performance optimization, reinforcing strong analytical
-                    problem-solving skills.
+                    Mentored students one-on-one on debugging and algorithmic
+                    reasoning, walking through their own broken code instead of
+                    handing them the fix.
                   </li>
                 </ul>
                 <div className="tag-list">
@@ -55,16 +55,24 @@ function Experience() {
                 </p>
                 <ul className="bullet-list">
                   <li>
-                    Automated Kafka reprocessing pipelines for 50+ weekly roaming
-                    service tests, cutting manual intervention by 80%.
+                    Built and maintained REST service endpoints in Java and Spring
+                    Boot inside a microservices codebase for the Roaming Business
+                    System.
                   </li>
                   <li>
-                    Redesigned Cassandra schemas for partner/workflow microservices
-                    (100k+ records), maintaining query latency under 3s.
+                    Traced defects to their root cause across service boundaries
+                    and documented the fix so it outlived the ticket, then
+                    reviewed teammates' code every sprint to catch issues before
+                    release.
                   </li>
                   <li>
-                    Developed Spring Boot microservices integrated with Jenkins
-                    CI/CD and Splunk, enabling scalable downstream analytics.
+                    Maintained sub-3-second response times on SQL joins spanning
+                    multiple source databases, and deployed implemented features
+                    to production through Jenkins on each release.
+                  </li>
+                  <li>
+                    Automated the weekly reprocessing of 50+ roaming service
+                    tests in Python, cutting manual intervention by 80%.
                   </li>
                 </ul>
                 <div className="tag-list">
@@ -90,17 +98,16 @@ function Experience() {
                 <ul className="bullet-list">
                   <li>
                     Managed 30+ client datasets in QuickBooks, processing 100+
-                    financial transactions daily with high data accuracy.
+                    financial transactions a day.
                   </li>
                   <li>
-                    Automated recurring payroll and tax reporting workflows, reducing
-                    manual effort while delivering 10+ monthly filings and quarterly
-                    compliance reports.
+                    Automated recurring payroll and tax reporting workflows,
+                    delivering 10+ monthly filings and quarterly compliance
+                    reports on schedule.
                   </li>
                   <li>
-                    Developed financial dashboards and profit/loss analyses,
-                    supporting data-driven insights into cash flow and client
-                    profitability.
+                    Built profit/loss dashboards clients used to track cash flow
+                    and profitability month to month.
                   </li>
                 </ul>
                 <div className="tag-list">

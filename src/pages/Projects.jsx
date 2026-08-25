@@ -15,6 +15,58 @@ function Projects() {
           <StaggerGrid className="cards-grid two-col">
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
+                <img src="images/ids-network.svg" alt="Multi-Stage IoT Intrusion Detection" loading="lazy" />
+              </div>
+              <span className="featured-badge">★ Featured Project</span>
+              <h3>Multi-Stage IoT Intrusion Detection (Team of 7)</h3>
+              <p className="edu-meta">
+                Capstone Project (ECE 592B), University of
+                Victoria · Summer 2026
+              </p>
+              <ul className="bullet-list">
+                <li>
+                  Compared six detection models on 200K+ CIC IoT-DIAD 2024 network flows
+                  using a two-stage pipeline — unsupervised packet scoring feeding a
+                  supervised flow classifier — with the best XGBoost model reaching 92.5%
+                  recall at 0.96% false-positive rate under a 1% FPR budget.
+                </li>
+                <li>
+                  Ran a four-condition holdout experiment and found the benchmark leaks
+                  capture-session identity: benign and attack traffic were recorded on
+                  different days, and the capture window is predictable from flow features
+                  alone at ROC-AUC 0.922.
+                </li>
+                <li>
+                  Reported the honest cost of closing that leak rather than the headline
+                  number — PR-AUC drops from 0.927 to 0.630 and the FPR budget blows out to
+                  32% under a session-disjoint split — and wrote an integrity check
+                  confirming every engineered feature stayed causal and label-free.
+                </li>
+              </ul>
+              <div className="tag-list">
+                <span className="tag">Python</span>
+                <span className="tag">scikit-learn</span>
+                <span className="tag">XGBoost</span>
+                <span className="tag">PyTorch</span>
+                <span className="tag">Anomaly Detection</span>
+                <span className="tag">Data Leakage Auditing</span>
+                <span className="tag">Model Evaluation</span>
+                <span className="tag">Network Security</span>
+              </div>
+              <p style={{ marginTop: '1rem' }}>
+                <a
+                  href="https://github.com/ntdai95/ECE592B-Capstone-Project"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn primary"
+                >
+                  View GitHub code →
+                </a>
+              </p>
+            </TiltCard>
+
+            <TiltCard className="card project-card">
+              <div className="project-card-img-wrap">
                 <img src="images/ocean-data.jpg" alt="Distributed Ocean Data ML Platform with RAG" loading="lazy" />
               </div>
               <span className="featured-badge">★ Featured Project</span>
@@ -22,20 +74,19 @@ function Projects() {
               <p className="edu-meta">Personal Project · Feb 2026 – Mar 2026</p>
               <ul className="bullet-list">
                 <li>
-                  Built an end-to-end distributed ML pipeline using Apache Spark (Bronze →
-                  Silver → Gold architecture) to ingest and harmonize 10M+ NOAA and ONC
-                  ocean sensor observations for scalable feature engineering and time series
-                  forecasting.
+                  Built a distributed ML pipeline in Apache Spark (Bronze → Silver → Gold
+                  layers) to harmonize 10M+ NOAA and ONC ocean sensor observations into one
+                  queryable model for feature engineering and forecasting.
                 </li>
                 <li>
-                  Developed and tuned XGBoost forecasting models using Optuna and MLflow,
-                  applying chronological holdout validation on temporally correlated ocean
-                  data (RMSE: 0.00586, R²: 0.9999).
+                  Tuned XGBoost forecasting models with Optuna and tracked runs in MLflow,
+                  validating on chronological holdouts rather than random splits
+                  (RMSE: 0.00586, R²: 0.9999).
                 </li>
                 <li>
-                  Deployed FastAPI services for model inference and RAG search using Sentence
-                  Transformers, Qdrant, and Ollama with retrieval benchmarking (hit@k: 1.0,
-                  term recall: 0.875) and a Streamlit dashboard for interactive exploration.
+                  Served forecasts and RAG search behind a FastAPI backend using Sentence
+                  Transformers, Qdrant, and Ollama, evaluated against a held-out query set
+                  (hit@k: 1.0, term recall: 0.875), with a Streamlit front end.
                 </li>
               </ul>
               <div className="tag-list">
@@ -67,6 +118,7 @@ function Projects() {
               <div className="project-card-img-wrap">
                 <img src="images/reservation-system.jpeg" alt="Distributed Facility Reservation System" loading="lazy" />
               </div>
+              <span className="featured-badge">★ Featured Project</span>
               <h3>Distributed Facility Reservation System (Team of 4)</h3>
               <p className="edu-meta">
                 Applied Software Engineering (MPCS 51220), University of
@@ -74,19 +126,18 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Developed the database backend (SQLite) and cross-facility 
-                  interoperability (FastAPI) enabling reservations across five
-                  independently built facility systems.
+                  Built the SQLite database layer and the FastAPI interoperability service
+                  connecting our facility to four independently built peer systems, over 27
+                  versioned REST endpoints with published OpenAPI docs.
                 </li>
                 <li>
-                  Designed the SQLite schema for users, reservations, and 
-                  transactions, modeling reservations as 30-minute blocks to 
-                  support conflict detection and cancellations.
+                  Modeled users, reservations, and transactions as 30-minute blocks to
+                  support conflict detection and cancellations, then backed it with 71
+                  pytest tests across the API, database, and rules layers.
                 </li>
                 <li>
-                  Built the service-to-service protocol letting our facility 
-                  exchange reservation requests with four peer systems over a 
-                  shared HTTP contract.
+                  Negotiated a shared HTTP contract with the other four teams and tested our
+                  service against their live implementations rather than mocks.
                 </li>
               </ul>
               <div className="tag-list">
@@ -110,32 +161,33 @@ function Projects() {
                 </a>
               </p>
             </TiltCard>
-            
+
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
                 <img src="images/isolation-forest.jpg" alt="Anomaly Detection with Isolation Forest" loading="lazy" />
               </div>
+              <span className="featured-badge">★ Featured Project</span>
               <h3>Anomaly Detection with Isolation Forest on High Volume Bird Observation Data (Team of 3)</h3>
               <p className="edu-meta">
-                Systems for Massive Datasets (ECE 502), University of
+                Systems for Massive Datasets (CSC 502), University of
                 Victoria · Mar 2026 – Apr 2026
               </p>
               <ul className="bullet-list">
                 <li>
-                  Built an anomaly detection system on a distributed eBird dataset (1M+
-                  observations) using a custom implementation of Isolation Forest with
-                  data processing in PySpark.
+                  Implemented Isolation Forest from the published algorithm rather than a
+                  library, then ran it on 1,093,203 eBird observations from British
+                  Columbia using PySpark for distributed processing.
                 </li>
                 <li>
-                  Designed an end-to-end ML pipeline including feature engineering
-                  (species frequency, geospatial features, cyclical time encoding) and
-                  stratified sampling to preserve data distribution.
+                  Engineered features from species frequency, geospatial position, and
+                  cyclical time encoding, using stratified sampling across eight quantile
+                  bins to keep the class distribution honest.
                 </li>
                 <li>
-                  Discovered a geographic variant of feature-specific swamping in
-                  Isolation Forest, where skewed spatial distributions caused the model to
-                  miss anomalies in dense regions, and proposed rank transformation
-                  and density-aware subsampling as fixes.
+                  Found a previously undescribed geographic variant of feature-specific
+                  swamping — skewed spatial density made the model miss anomalies in dense
+                  regions — and proposed rank transformation and density-aware subsampling
+                  to fix it.
                 </li>
               </ul>
               <div className="tag-list">
@@ -162,6 +214,53 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
+                <img src="images/auction-microservices.svg" alt="Auction Marketplace Microservices" loading="lazy" />
+              </div>
+              <h3>Auction Marketplace Microservices (Team of 4)</h3>
+              <p className="edu-meta">
+                Topics in Software Engineering (MPCS 51205), University of
+                Chicago · Feb 2021 – Mar 2021
+              </p>
+              <ul className="bullet-list">
+                <li>
+                  Split an auction platform into six Flask REST services — items, users,
+                  auctions, transactions, watchlist, and messaging — each with its own
+                  MySQL database so one schema change couldn't break another service.
+                </li>
+                <li>
+                  Routed cross-service events through RabbitMQ and stored delivered
+                  messages in MongoDB, pairing a relational and a document store in the
+                  same system.
+                </li>
+                <li>
+                  Orchestrated all ten containers with Docker Compose, sequencing startup
+                  so each service's database was ready before the service depending on it.
+                </li>
+              </ul>
+              <div className="tag-list">
+                <span className="tag">Python</span>
+                <span className="tag">Flask</span>
+                <span className="tag">MySQL</span>
+                <span className="tag">MongoDB</span>
+                <span className="tag">RabbitMQ</span>
+                <span className="tag">Docker Compose</span>
+                <span className="tag">Microservices</span>
+                <span className="tag">REST API</span>
+              </div>
+              <p style={{ marginTop: '1rem' }}>
+                <a
+                  href="https://github.com/ntdai95/Auction-Website"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn primary"
+                >
+                  View GitHub code →
+                </a>
+              </p>
+            </TiltCard>
+
+            <TiltCard className="card project-card">
+              <div className="project-card-img-wrap">
                 <img src="images/stock-sentiment-analysis.jpg" alt="Stock Sentiment Analysis" loading="lazy" />
               </div>
               <h3>Stock Sentiment Analysis (Team of 4)</h3>
@@ -171,20 +270,18 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Built a sentiment analysis pipeline over 15k+ tweets across 10 tech
-                  stocks, enabling large-scale market sentiment analysis, by integrating
-                  X API data, SQLite/Neo4j storage, and FinTwitBERT modeling.
+                  Built a sentiment pipeline over 15k+ tweets across 10 tech stocks,
+                  combining X API data, SQLite and Neo4j storage, and FinTwitBERT sentiment
+                  scoring.
                 </li>
                 <li>
-                  Identified measurable sentiment-return relationships, including
-                  statistically significant predictive effects for NVIDIA, by
-                  implementing engagement-weighted sentiment aggregation and Granger
-                  causality testing.
+                  Weighted daily sentiment by engagement and tested it against returns with
+                  Granger causality, finding a statistically significant predictive effect
+                  for NVIDIA but weak signal elsewhere.
                 </li>
                 <li>
-                  Analyzed equity volatility dynamics across major tech stocks, revealing
-                  persistent volatility clustering, by applying GARCH(1,1) modeling and
-                  automated cross-stock analysis workflows.
+                  Modeled volatility with GARCH(1,1) after checking stationarity, and found
+                  persistent volatility clustering across the major tech names.
                 </li>
               </ul>
               <div className="tag-list">
@@ -215,21 +312,17 @@ function Projects() {
               <p className="edu-meta">Personal Project · Apr 2022 – May 2022</p>
               <ul className="bullet-list">
                 <li>
-                  Developed an image processing engine in Go, supporting
-                  grayscale, sharpening, blurring, and edge detection methods via
-                  custom 2D convolution kernels.
+                  Built an image processing engine in Go supporting grayscale, sharpening,
+                  blurring, and edge detection through custom 2D convolution kernels.
                 </li>
                 <li>
-                  Implemented sequential, fan-in/fan-out pipeline, and bulk
-                  synchronous parallel (BSP) execution models, using goroutines,
-                  channels, sync.WaitGroup, and atomic counters for task
-                  coordination.
+                  Implemented sequential, fan-in/fan-out, and bulk-synchronous parallel
+                  (BSP) execution models using goroutines, channels, sync.WaitGroup, and
+                  atomic counters for coordination.
                 </li>
                 <li>
-                  Reduced runtime by 20% with the fan-in/fan-out implementation
-                  and 30% with the BSP model when processing 30+ images,
-                  demonstrating effective parallelization and systems-level
-                  optimization.
+                  Cut runtime 20% with the fan-in/fan-out pipeline and 30% with the BSP
+                  model when processing 30+ images.
                 </li>
               </ul>
               <div className="tag-list">
@@ -257,46 +350,136 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/socioeconomic-dashboard.jpg" alt="Socioeconomic data dashboard" loading="lazy" />
+                <img src="images/loan-approval.svg" alt="Loan Approval Classifier" loading="lazy" />
               </div>
-              <h3>Socioeconomic Data Analysis and Visualization</h3>
+              <h3>Loan Approval Classifier (Team of 6)</h3>
               <p className="edu-meta">
-                Foundational Skills for Data Science (INFO 201), University of
-                Washington · May 2018 – Jun 2018
+                Data Mining (CSC 503), University of
+                Victoria · Summer 2026
               </p>
               <ul className="bullet-list">
                 <li>
-                  Analyzed eviction rate and median income data (2000–2016) from
-                  evictionlab.org, applying linear regression to quantify
-                  socioeconomic relationships.
+                  Tuned a neural classifier by randomized search under 5-fold
+                  cross-validation on an imbalanced loan-approval dataset, scoring on F1
+                  instead of accuracy so the majority class couldn't inflate the number.
                 </li>
                 <li>
-                  Developed an interactive dashboard using R (ggplot2, dplyr, DT)
-                  with responsive filters, dynamic visualizations, and real-time
-                  data exploration.
+                  Applied SMOTE inside the training folds only, keeping resampled rows out
+                  of every validation split to avoid leaking synthetic examples into
+                  evaluation.
                 </li>
                 <li>
-                  Deployed the application at
-                  ngotandai.shinyapps.io/a8-data-app-ntdai95-1565490, enabling
-                  public access to statistical insights.
+                  Compared resampling before and after normalization and showed the
+                  ordering changes the result, then benchmarked the tuned network against
+                  an XGBoost baseline on identical splits.
                 </li>
               </ul>
               <div className="tag-list">
-                <span className="tag">R</span>
-                <span className="tag">ggplot2</span>
-                <span className="tag">dplyr</span>
-                <span className="tag">Shiny</span>
-                <span className="tag">Data Visualization</span>
-                <span className="tag">Regression</span>
+                <span className="tag">Python</span>
+                <span className="tag">scikit-learn</span>
+                <span className="tag">XGBoost</span>
+                <span className="tag">SMOTE</span>
+                <span className="tag">Cross-Validation</span>
+                <span className="tag">Imbalanced Classification</span>
+                <span className="tag">Credit Risk</span>
               </div>
               <p style={{ marginTop: '1rem' }}>
                 <a
-                  href="https://ngotandai.shinyapps.io/a8-data-app-ntdai95-1565490"
+                  href="https://github.com/ntdai95/CSC503-Final-Project"
                   target="_blank"
                   rel="noreferrer"
                   className="btn primary"
                 >
-                  View live app →
+                  View GitHub code →
+                </a>
+              </p>
+            </TiltCard>
+
+            <TiltCard className="card project-card">
+              <div className="project-card-img-wrap">
+                <img src="images/ticket-triage.svg" alt="Support Ticket Triage" loading="lazy" />
+              </div>
+              <h3>Support Ticket Triage (Team of 4)</h3>
+              <p className="edu-meta">
+                Selected Topics in Computer Engineering: AI (ECE 569A), University of
+                Victoria · Summer 2026
+              </p>
+              <ul className="bullet-list">
+                <li>
+                  Compared three model families on the same ticket-triage task — TF-IDF
+                  with a linear SVM, retrieval by cosine similarity over a kNN index, and
+                  DistilBERT embeddings feeding a small classifier.
+                </li>
+                <li>
+                  Trained one DistilBERT embedding to predict ticket type, priority, and
+                  queue together instead of building three separate models.
+                </li>
+                <li>
+                  Built a Streamlit demo that shows the retrieved neighbor tickets behind
+                  each prediction, so a reviewer can see why the model made a call.
+                </li>
+              </ul>
+              <div className="tag-list">
+                <span className="tag">Python</span>
+                <span className="tag">scikit-learn</span>
+                <span className="tag">DistilBERT</span>
+                <span className="tag">TF-IDF</span>
+                <span className="tag">kNN</span>
+                <span className="tag">NLP</span>
+                <span className="tag">Streamlit</span>
+              </div>
+              <p style={{ marginTop: '1rem' }}>
+                <a
+                  href="https://github.com/ntdai95/ECE569A-Final-Project"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn primary"
+                >
+                  View GitHub code →
+                </a>
+              </p>
+            </TiltCard>
+
+            <TiltCard className="card project-card">
+              <div className="project-card-img-wrap">
+                <img src="images/belay-chat.svg" alt="Belay Real-Time Chat Application" loading="lazy" />
+              </div>
+              <h3>Belay Real-Time Chat Application</h3>
+              <p className="edu-meta">
+                Web Development (MPCS 52553), University of
+                Chicago · Jan 2022 – Feb 2022
+              </p>
+              <ul className="bullet-list">
+                <li>
+                  Designed nested REST routes for channels, messages, and threaded replies,
+                  backing a single-page client with ten fetch-based calls against a Flask API.
+                </li>
+                <li>
+                  Modeled users, channels, messages, and membership across four SQLite
+                  tables, including a last-seen join table used to compute unread counts.
+                </li>
+                <li>
+                  Routed the client with the History API so channel and thread URLs stayed
+                  shareable, and secured accounts with hashed passwords and per-session
+                  authkey tokens checked on every request.
+                </li>
+              </ul>
+              <div className="tag-list">
+                <span className="tag">Python</span>
+                <span className="tag">Flask</span>
+                <span className="tag">SQLite</span>
+                <span className="tag">JavaScript</span>
+                <span className="tag">REST API</span>
+                <span className="tag">Session Authentication</span>
+              </div>
+              <p style={{ marginTop: '1rem' }}>
+                <a
+                  href="https://github.com/ntdai95/Personal-Projects/tree/main/Belay"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn primary"
+                >
+                  View GitHub code →
                 </a>
               </p>
             </TiltCard>

@@ -139,12 +139,13 @@ function Home() {
           <FadeIn><h2>About</h2></FadeIn>
           <FadeIn delay={0.05}>
             <p>
-              I'm a data scientist and software engineer with experience in
-              predictive modeling, distributed ML systems, ETL pipelines,
-              and backend microservices. My background spans economics,
-              computer science, and applied data science across industry,
-              academia, and competitive settings. I value clean code,
-              reproducible analysis, and clear communication with stakeholders.
+              I'm a data scientist and software engineer whose work runs
+              through predictive modeling, distributed ML systems, ETL
+              pipelines, and backend microservices — plus an economics degree
+              that comes up more often than people expect. I've built this
+              across a production job, two graduate programs, and a handful
+              of competitions, and I'd rather ship something small and
+              correct than something large and untested.
             </p>
           </FadeIn>
 
@@ -312,18 +313,18 @@ function Home() {
                 T-Mobile (via BeaconFire Inc.) · Jun 2022 – Apr 2024 · Bellevue, WA, USA
               </p>
               <p className="muted">
-                Developed microservices for the Roaming Business System using
-                Spring Boot, Cassandra, Jenkins CI/CD, and Kafka pipelines.
+                Built and maintained REST microservices for the Roaming
+                Business System in Java and Spring Boot, on a stack that also
+                ran Kafka and Cassandra.
               </p>
               <ul className="bullet-list">
                 <li>
-                  Designed and optimized Cassandra database schemas for partner
-                  and workflow management microservices, handling 100k+ records
-                  while maintaining query execution time under 3 seconds.
+                  Maintained sub-3-second response times on SQL joins spanning
+                  multiple source databases, over 100k+ records.
                 </li>
                 <li>
-                  Automated weekly reprocessing of 50+ roaming service tests,
-                  cutting manual effort by 80%.
+                  Automated the weekly reprocessing of 50+ roaming service
+                  tests in Python, cutting manual effort by 80%.
                 </li>
               </ul>
             </StaggerItem>
