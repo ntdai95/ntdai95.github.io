@@ -54,25 +54,22 @@ function Experience() {
                 </p>
                 <ul className="bullet-list">
                   <li>
-                    Documented the root cause of 20+ defects traced across
-                    service boundaries, so each fix outlived the ticket.
-                  </li>
-                  <li>
                     Built and maintained REST endpoints across 5+ RBS
-                    (Roaming Business System) services using Java and Spring
-                    Boot.
+                    (Roaming Business System) microservices in Java and Spring
+                    Boot, keeping SQL response times under 3 seconds across
+                    multiple source databases.
                   </li>
                   <li>
-                    Deployed features to production through Jenkins across
-                    50+ releases.
+                    Documented the root cause of 20+ cross-service defects and
+                    deployed fixes through Jenkins across 50+ releases.
                   </li>
                   <li>
-                    Maintained report response times under 3 seconds on SQL
-                    joins spanning multiple source databases.
+                    Debugged production issues and monitored system health
+                    with Splunk across T-Mobile's data servers.
                   </li>
                   <li>
-                    Cut manual effort on recurring dataset builds and validation
-                    runs by 80% by automating both in Python.
+                    Automated rejected-test reprocessing with Kafka, Cassandra,
+                    and Python, cutting manual effort by 80%.
                   </li>
                 </ul>
                 <div className="tag-list">

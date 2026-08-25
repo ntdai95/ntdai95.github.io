@@ -322,16 +322,17 @@ function Home() {
               <ul className="bullet-list">
                 <li>
                   Built and maintained REST endpoints across 5+ RBS
-                  (Roaming Business System) services using Java and Spring
-                  Boot.
+                  (Roaming Business System) microservices in Java and Spring
+                  Boot, keeping SQL response times under 3 seconds across
+                  multiple source databases.
                 </li>
                 <li>
-                  Maintained report response times under 3 seconds on SQL
-                  joins spanning multiple source databases.
+                  Documented the root cause of 20+ cross-service defects and
+                  deployed fixes through Jenkins across 50+ releases.
                 </li>
                 <li>
-                  Cut manual effort on recurring dataset builds and validation
-                  runs by 80% by automating both in Python.
+                  Automated rejected-test reprocessing with Kafka, Cassandra,
+                  and Python, cutting manual effort by 80%.
                 </li>
               </ul>
             </StaggerItem>
