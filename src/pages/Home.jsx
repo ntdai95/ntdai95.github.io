@@ -321,9 +321,9 @@ function Home() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Built and maintained REST service endpoints across 5+
-                  services in the Roaming Business System (RBS), using Java
-                  and Spring Boot.
+                  Built and maintained REST endpoints across 5+ RBS
+                  (Roaming Business System) services using Java and Spring
+                  Boot.
                 </li>
                 <li>
                   Maintained report response times under 3 seconds on SQL
