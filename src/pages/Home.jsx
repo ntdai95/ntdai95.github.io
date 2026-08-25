@@ -291,7 +291,9 @@ function Home() {
             <StaggerItem as="article" className="card">
               <h3>Math and Computer Science Teacher</h3>
               <p className="edu-meta">
-                APU American International Schools · Aug 2024 – Dec 2024 · Da Nang City, Vietnam
+                APU American International Schools
+                <br />
+                Aug 2024 – Dec 2024 · Da Nang City, Vietnam
               </p>
               <ul className="bullet-list">
                 <li>
@@ -314,7 +316,9 @@ function Home() {
             <StaggerItem as="article" className="card">
               <h3>Software Developer</h3>
               <p className="edu-meta">
-                T-Mobile (via BeaconFire Inc.) · Jun 2022 – Apr 2024 · Bellevue, WA, USA
+                T-Mobile (via BeaconFire Inc.)
+                <br />
+                Jun 2022 – Apr 2024 · Bellevue, WA, USA
               </p>
               <ul className="bullet-list">
                 <li>
@@ -336,7 +340,9 @@ function Home() {
             <StaggerItem as="article" className="card">
               <h3>Accounting Intern</h3>
               <p className="edu-meta">
-                Better Business Tax &amp; Accounting Corporation · Feb 2020 – May 2020 · Renton, WA, USA
+                Better Business Tax &amp; Accounting Corporation
+                <br />
+                Feb 2020 – May 2020 · Renton, WA, USA
               </p>
               <ul className="bullet-list">
                 <li>
@@ -370,8 +376,9 @@ function Home() {
             <StaggerItem as="article" className="card">
               <h3>Projects</h3>
               <p className="muted">
-                From predictive models and data analysis to
-                distributed systems and interactive dashboards.
+                Ten projects spanning network security, distributed data
+                platforms, NLP, and financial modeling, each with GitHub
+                code behind it.
               </p>
               <Link to="/projects" className="btn primary">
                 View all projects →
@@ -380,8 +387,8 @@ function Home() {
             <StaggerItem as="article" className="card">
               <h3>Hackathons</h3>
               <p className="muted">
-                Shell.ai, IMC 64 Bids, and Uncommon Hacks game
-                development.
+                Shell.ai's fuel-blending challenge, IMC's 64 Bids trading
+                competition, and a 48-hour game jam.
               </p>
               <Link to="/hackathons" className="btn primary">
                 View hackathon work →
@@ -390,8 +397,9 @@ function Home() {
             <StaggerItem as="article" className="card">
               <h3>Credentials</h3>
               <p className="muted">
-                Graduate CS coursework, data science certifications, awards,
-                and applied quantitative training.
+                Coursework from three universities, a Google data analytics
+                certificate, and honors spanning academics and competitive
+                chess.
               </p>
               <Link to="/credentials" className="btn primary">
                 View credentials →

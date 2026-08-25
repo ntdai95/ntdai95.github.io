@@ -62,11 +62,11 @@
   --text:         #0f172a;
   --text-2:       #475569;
   --text-3:       #94a3b8;
-  --border:       rgba(15, 23, 42, 0.08);
-  --border-hi:    rgba(56, 189, 248, 0.3);
-  --soft:         rgba(56, 189, 248, 0.07);
-  --sh-card:      0 2px 16px rgba(15, 23, 42, 0.07);
-  --sh-hover:     0 6px 32px rgba(15, 23, 42, 0.11), 0 0 0 1px rgba(56, 189, 248, 0.18);
+  --border:       rgba(15, 23, 42, 0.12);
+  --border-hi:    rgba(56, 189, 248, 0.35);
+  --soft:         rgba(56, 189, 248, 0.08);
+  --sh-card:      0 4px 20px rgba(15, 23, 42, 0.10);
+  --sh-hover:     0 8px 36px rgba(15, 23, 42, 0.14), 0 0 0 1px rgba(56, 189, 248, 0.22);
 }
 
 /* ============================================================
@@ -255,13 +255,13 @@ a:hover {
 }
 
 [data-theme="light"] .section-alt {
-  background: rgba(241,245,252,0.8);
-  border-color: rgba(15,23,42,0.07);
+  background: #eef2fa;
+  border-color: rgba(15,23,42,0.09);
 }
 
 [data-theme="light"] .section-darker {
-  background: rgba(234,238,246,0.9);
-  border-color: rgba(15,23,42,0.07);
+  background: #e3e9f5;
+  border-color: rgba(15,23,42,0.11);
 }
 
 /* section-inner = layout container only, no visual boxing */
