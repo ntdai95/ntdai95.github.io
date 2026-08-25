@@ -323,12 +323,12 @@ function Home() {
                 <li>
                   Built and maintained REST endpoints across 5+ RBS
                   (Roaming Business System) microservices in Java and Spring
-                  Boot, keeping SQL response times under 3 seconds across
-                  multiple source databases.
+                  Boot, keeping Cassandra query response times under 3
+                  seconds across multiple data sources.
                 </li>
                 <li>
-                  Documented the root cause of 20+ cross-service defects and
-                  deployed fixes through Jenkins across 50+ releases.
+                  Traced 20+ cross-service defects to their root cause and
+                  deployed features via Jenkins across 50+ releases.
                 </li>
                 <li>
                   Automated a Kafka-driven reprocessing pipeline with a
