@@ -15,19 +15,19 @@ function Projects() {
           <StaggerGrid className="cards-grid two-col">
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/ids-network.svg" alt="Multi-Stage IoT Intrusion Detection" loading="lazy" />
+                <img src="images/ids-network.jpg" alt="Multi-Stage IoT Intrusion Detection" loading="lazy" />
               </div>
               <span className="featured-badge">★ Featured Project</span>
               <h3>Multi-Stage IoT Intrusion Detection (Team of 7)</h3>
               <p className="edu-meta">
                 Capstone Project (ECE 592B), University of
-                Victoria · Summer 2026
+                Victoria · May 2026 – Aug 2026
               </p>
               <ul className="bullet-list">
                 <li>
                   Compared six detection models on 200K+ CIC IoT-DIAD 2024 network flows
-                  using a two-stage pipeline — unsupervised packet scoring feeding a
-                  supervised flow classifier — with the best XGBoost model reaching 92.5%
+                  using a two-stage pipeline: unsupervised packet scoring feeding a
+                  supervised flow classifier, with the best XGBoost model reaching 92.5%
                   recall at 0.96% false-positive rate under a 1% FPR budget.
                 </li>
                 <li>
@@ -37,10 +37,10 @@ function Projects() {
                   alone at ROC-AUC 0.922.
                 </li>
                 <li>
-                  Reported the honest cost of closing that leak rather than the headline
-                  number — PR-AUC drops from 0.927 to 0.630 and the FPR budget blows out to
-                  32% under a session-disjoint split — and wrote an integrity check
-                  confirming every engineered feature stayed causal and label-free.
+                  Reported the honest cost of closing that leak instead of the headline
+                  number. PR-AUC drops from 0.927 to 0.630 and the FPR budget blows out to
+                  32% under a session-disjoint split. Wrote an integrity check confirming
+                  every engineered feature stayed causal and label-free.
                 </li>
               </ul>
               <div className="tag-list">
@@ -185,9 +185,9 @@ function Projects() {
                 </li>
                 <li>
                   Found a previously undescribed geographic variant of feature-specific
-                  swamping — skewed spatial density made the model miss anomalies in dense
-                  regions — and proposed rank transformation and density-aware subsampling
-                  to fix it.
+                  swamping: skewed spatial density made the model miss anomalies in dense
+                  regions. Proposed rank transformation and density-aware subsampling to
+                  fix it.
                 </li>
               </ul>
               <div className="tag-list">
@@ -214,7 +214,7 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/auction-microservices.svg" alt="Auction Marketplace Microservices" loading="lazy" />
+                <img src="images/auction-microservices.jpg" alt="Auction Marketplace Microservices" loading="lazy" />
               </div>
               <h3>Auction Marketplace Microservices (Team of 4)</h3>
               <p className="edu-meta">
@@ -223,8 +223,8 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Split an auction platform into six Flask REST services — items, users,
-                  auctions, transactions, watchlist, and messaging — each with its own
+                  Split an auction platform into six Flask REST services (items, users,
+                  auctions, transactions, watchlist, and messaging), each with its own
                   MySQL database so one schema change couldn't break another service.
                 </li>
                 <li>
@@ -270,7 +270,7 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Built a sentiment pipeline over 15k+ tweets across 10 tech stocks,
+                  Built a sentiment pipeline over 15K+ tweets across 10 tech stocks,
                   combining X API data, SQLite and Neo4j storage, and FinTwitBERT sentiment
                   scoring.
                 </li>
@@ -350,12 +350,12 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/loan-approval.svg" alt="Loan Approval Classifier" loading="lazy" />
+                <img src="images/loan-approval.jpg" alt="Loan Approval Classifier" loading="lazy" />
               </div>
               <h3>Loan Approval Classifier (Team of 6)</h3>
               <p className="edu-meta">
                 Data Mining (CSC 503), University of
-                Victoria · Summer 2026
+                Victoria · Jul 2026 – Aug 2026
               </p>
               <ul className="bullet-list">
                 <li>
@@ -397,16 +397,16 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/ticket-triage.svg" alt="Support Ticket Triage" loading="lazy" />
+                <img src="images/ticket-triage.jpg" alt="Support Ticket Triage" loading="lazy" />
               </div>
               <h3>Support Ticket Triage (Team of 4)</h3>
               <p className="edu-meta">
                 Selected Topics in Computer Engineering: AI (ECE 569A), University of
-                Victoria · Summer 2026
+                Victoria · May 2026 – Jun 2026
               </p>
               <ul className="bullet-list">
                 <li>
-                  Compared three model families on the same ticket-triage task — TF-IDF
+                  Compared three model families on the same ticket-triage task: TF-IDF
                   with a linear SVM, retrieval by cosine similarity over a kNN index, and
                   DistilBERT embeddings feeding a small classifier.
                 </li>
@@ -442,7 +442,7 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/belay-chat.svg" alt="Belay Real-Time Chat Application" loading="lazy" />
+                <img src="images/belay-chat.jpg" alt="Belay Real-Time Chat Application" loading="lazy" />
               </div>
               <h3>Belay Real-Time Chat Application</h3>
               <p className="edu-meta">

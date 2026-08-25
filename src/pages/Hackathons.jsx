@@ -92,7 +92,7 @@ function Hackathons() {
               <p className="edu-meta">Uncommon Hacks · Apr 2021</p>
               <ul className="bullet-list">
                 <li>
-                  Built KoronaKiller with a team of 3 in Python and Pygame — a 2D
+                  Built KoronaKiller with a team of 3 in Python and Pygame, a 2D
                   simulation modeling player health and event-driven interactions
                   in real time.
                 </li>

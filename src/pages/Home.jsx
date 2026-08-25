@@ -11,11 +11,12 @@ import { useTypewriter } from '../hooks/useTypewriter'
 const ROLES = ['Data Scientist', 'Machine Learning Engineer', 'Software Engineer']
 
 const TECHS = [
-  'Python', 'SQL', 'R', 'Java', 'Go',
-  'scikit-learn', 'XGBoost', 'CatBoost', 'MLflow', 'Optuna',
+  'Python', 'SQL', 'Java', 'Go',
+  'scikit-learn', 'XGBoost', 'CatBoost', 'PyTorch', 'MLflow', 'Optuna',
   'Apache Spark', 'Kafka', 'Cassandra', 'Docker', 'AWS',
-  'Spring Boot', 'FastAPI', 'RAG', 'Qdrant', 'Sentence Transformers',
-  'Neo4j', 'PySpark', 'FinTwitBERT', 'Ollama', 'Streamlit',
+  'Spring Boot', 'Flask', 'FastAPI', 'RAG', 'Qdrant', 'Sentence Transformers',
+  'Neo4j', 'MongoDB', 'RabbitMQ', 'PySpark', 'FinTwitBERT', 'DistilBERT',
+  'Ollama', 'Streamlit',
 ]
 
 const heroContainer = {
@@ -28,7 +29,7 @@ const heroItem = {
 }
 
 function Home() {
-  useEffect(() => { document.title = 'Tan Dai Ngo — Data Scientist & ML Engineer' }, [])
+  useEffect(() => { document.title = 'Tan Dai Ngo | Data Scientist & ML Engineer' }, [])
   const role = useTypewriter(ROLES, 80, 45, 2000)
 
   // Parallax on scroll
@@ -65,8 +66,8 @@ function Home() {
               Data scientist and software engineer with experience in
               predictive modeling, distributed ML systems, backend
               microservices, and analytics dashboards. Actively seeking
-              co-op/internship roles in data science, ML engineering,
-              or software development — open to remote or relocating
+              co-op / internship roles in data science, ML engineering,
+              or software development, open to remote work or relocating
               anywhere in Canada.
             </p>
 
@@ -141,11 +142,11 @@ function Home() {
             <p>
               I'm a data scientist and software engineer whose work runs
               through predictive modeling, distributed ML systems, ETL
-              pipelines, and backend microservices — plus an economics degree
-              that comes up more often than people expect. I've built this
-              across a production job, two graduate programs, and a handful
-              of competitions, and I'd rather ship something small and
-              correct than something large and untested.
+              pipelines, and backend microservices. I also have an economics
+              degree, which comes up more often than people expect. I've
+              built this across a production job, two graduate programs, and
+              a handful of competitions. Given the choice, I'd rather ship
+              something small and correct than something large and untested.
             </p>
           </FadeIn>
 
@@ -159,7 +160,6 @@ function Home() {
                     <div className="skill-tags">
                       <span className="tag">Python</span>
                       <span className="tag">SQL</span>
-                      <span className="tag">R</span>
                       <span className="tag">Java</span>
                       <span className="tag">Go</span>
                     </div>
@@ -170,10 +170,12 @@ function Home() {
                       <span className="tag">scikit-learn</span>
                       <span className="tag">XGBoost</span>
                       <span className="tag">CatBoost</span>
+                      <span className="tag">PyTorch</span>
                       <span className="tag">MLflow</span>
                       <span className="tag">Optuna</span>
                       <span className="tag">RAG</span>
                       <span className="tag">Sentence Transformers</span>
+                      <span className="tag">DistilBERT</span>
                     </div>
                   </div>
                   <div className="skill-row">
@@ -182,6 +184,8 @@ function Home() {
                       <span className="tag">Apache Spark</span>
                       <span className="tag">Kafka</span>
                       <span className="tag">Cassandra</span>
+                      <span className="tag">MongoDB</span>
+                      <span className="tag">RabbitMQ</span>
                       <span className="tag">Docker</span>
                       <span className="tag">AWS</span>
                     </div>
@@ -190,6 +194,7 @@ function Home() {
                     <span className="skill-label">Backend</span>
                     <div className="skill-tags">
                       <span className="tag">Spring Boot</span>
+                      <span className="tag">Flask</span>
                       <span className="tag">FastAPI</span>
                       <span className="tag">REST APIs</span>
                       <span className="tag">microservices</span>
@@ -320,7 +325,7 @@ function Home() {
               <ul className="bullet-list">
                 <li>
                   Maintained sub-3-second response times on SQL joins spanning
-                  multiple source databases, over 100k+ records.
+                  multiple source databases, over 100K+ records.
                 </li>
                 <li>
                   Automated the weekly reprocessing of 50+ roaming service
