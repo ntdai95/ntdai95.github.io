@@ -68,9 +68,8 @@ function Experience() {
                     Mobileum test-rejection email notifier via MS Graph API.
                   </li>
                   <li>
-                    Automated a Kafka-driven reprocessing pipeline with a
-                    user-requested retry mechanism for rejected roaming tests,
-                    using Cassandra and Python, cutting manual effort by 80%.
+                    Automated reprocessing of rejected roaming tests with
+                    weekly retries using Kafka, cutting manual effort by 80%.
                   </li>
                 </ul>
                 <div className="tag-list">
