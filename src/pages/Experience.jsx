@@ -63,7 +63,8 @@ function Experience() {
                   </li>
                   <li>
                     Built and maintained REST service endpoints in Java and
-                    Spring Boot inside a microservices codebase.
+                    Spring Boot inside the Roaming Business System (RBS)
+                    codebase.
                   </li>
                   <li>
                     Reviewed teammates' code every sprint, catching defects

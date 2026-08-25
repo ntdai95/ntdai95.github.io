@@ -322,11 +322,12 @@ function Home() {
               <ul className="bullet-list">
                 <li>
                   Built and maintained REST service endpoints in Java and
-                  Spring Boot inside a microservices codebase.
+                  Spring Boot inside the Roaming Business System (RBS)
+                  codebase.
                 </li>
                 <li>
-                  Documented the root cause of each defect traced across
-                  service boundaries, so the fix outlived the ticket.
+                  Maintained report response times under 3 seconds on SQL
+                  joins spanning multiple source databases.
                 </li>
                 <li>
                   Cut manual effort on recurring dataset builds and validation
