@@ -20,8 +20,9 @@ function Projects() {
               <span className="featured-badge">★ Featured Project</span>
               <h3>Multi-Stage IoT Intrusion Detection (Team of 7)</h3>
               <p className="edu-meta">
-                Capstone Project (ECE 592B), University of
-                Victoria · May 2026 – Aug 2026
+                Capstone Project (ECE 592B), University of Victoria
+                <br />
+                May 2026 – Aug 2026
               </p>
               <ul className="bullet-list">
                 <li>
@@ -71,7 +72,11 @@ function Projects() {
               </div>
               <span className="featured-badge">★ Featured Project</span>
               <h3>Distributed Ocean Data ML Platform with RAG</h3>
-              <p className="edu-meta">Personal Project · Feb 2026 – Mar 2026</p>
+              <p className="edu-meta">
+                Personal Project
+                <br />
+                Feb 2026 – Mar 2026
+              </p>
               <ul className="bullet-list">
                 <li>
                   Built a distributed ML pipeline in Apache Spark (Bronze → Silver → Gold
@@ -121,8 +126,9 @@ function Projects() {
               <span className="featured-badge">★ Featured Project</span>
               <h3>Distributed Facility Reservation System (Team of 4)</h3>
               <p className="edu-meta">
-                Applied Software Engineering (MPCS 51220), University of
-                Chicago · Apr 2021 – May 2021
+                Applied Software Engineering (MPCS 51220), University of Chicago
+                <br />
+                Apr 2021 – May 2021
               </p>
               <ul className="bullet-list">
                 <li>
@@ -169,8 +175,9 @@ function Projects() {
               <span className="featured-badge">★ Featured Project</span>
               <h3>Anomaly Detection with Isolation Forest on High Volume Bird Observation Data (Team of 3)</h3>
               <p className="edu-meta">
-                Systems for Massive Datasets (CSC 502), University of
-                Victoria · Mar 2026 – Apr 2026
+                Systems for Massive Datasets (CSC 502), University of Victoria
+                <br />
+                Mar 2026 – Apr 2026
               </p>
               <ul className="bullet-list">
                 <li>
@@ -218,8 +225,9 @@ function Projects() {
               </div>
               <h3>Auction Marketplace Microservices (Team of 4)</h3>
               <p className="edu-meta">
-                Topics in Software Engineering (MPCS 51205), University of
-                Chicago · Feb 2021 – Mar 2021
+                Topics in Software Engineering (MPCS 51205), University of Chicago
+                <br />
+                Feb 2021 – Mar 2021
               </p>
               <ul className="bullet-list">
                 <li>
@@ -265,8 +273,9 @@ function Projects() {
               </div>
               <h3>Stock Sentiment Analysis (Team of 4)</h3>
               <p className="edu-meta">
-                Algorithms and Data Models (CSC 501), University of
-                Victoria · Nov 2025 – Dec 2025
+                Algorithms and Data Models (CSC 501), University of Victoria
+                <br />
+                Nov 2025 – Dec 2025
               </p>
               <ul className="bullet-list">
                 <li>
@@ -309,7 +318,11 @@ function Projects() {
                 <img src="images/parallel-engine.jpg" alt="Parallel Image Processing Engine" loading="lazy" />
               </div>
               <h3>Parallel Image Processing Engine</h3>
-              <p className="edu-meta">Personal Project · Apr 2022 – May 2022</p>
+              <p className="edu-meta">
+                Personal Project
+                <br />
+                Apr 2022 – May 2022
+              </p>
               <ul className="bullet-list">
                 <li>
                   Built an image processing engine in Go supporting grayscale, sharpening,
@@ -354,8 +367,9 @@ function Projects() {
               </div>
               <h3>Loan Approval Classifier (Team of 6)</h3>
               <p className="edu-meta">
-                Data Mining (CSC 503), University of
-                Victoria · Jul 2026 – Aug 2026
+                Data Mining (CSC 503), University of Victoria
+                <br />
+                Jul 2026 – Aug 2026
               </p>
               <ul className="bullet-list">
                 <li>
@@ -401,8 +415,9 @@ function Projects() {
               </div>
               <h3>Support Ticket Triage (Team of 4)</h3>
               <p className="edu-meta">
-                Selected Topics in Computer Engineering: AI (ECE 569A), University of
-                Victoria · May 2026 – Jun 2026
+                Selected Topics in Computer Engineering: AI (ECE 569A), University of Victoria
+                <br />
+                May 2026 – Jun 2026
               </p>
               <ul className="bullet-list">
                 <li>
@@ -446,8 +461,9 @@ function Projects() {
               </div>
               <h3>Belay Real-Time Chat Application</h3>
               <p className="edu-meta">
-                Web Development (MPCS 52553), University of
-                Chicago · Jan 2022 – Feb 2022
+                Web Development (MPCS 52553), University of Chicago
+                <br />
+                Jan 2022 – Feb 2022
               </p>
               <ul className="bullet-list">
                 <li>

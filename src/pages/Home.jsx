@@ -293,21 +293,20 @@ function Home() {
               <p className="edu-meta">
                 APU American International Schools · Aug 2024 – Dec 2024 · Da Nang City, Vietnam
               </p>
-              <p className="muted">
-                Taught Python programming and core computer science concepts
-                to 50+ high school and college students through hands-on coding
-                projects.
-              </p>
               <ul className="bullet-list">
                 <li>
-                  Designed project-based assignments emphasizing software
-                  engineering fundamentals, including top-down design, OOP, and
-                  code modularity.
+                  Taught Python and core computer science concepts to 50+ high
+                  school and college students with no prior background, through
+                  hands-on coding projects.
                 </li>
                 <li>
-                  Mentored students in debugging, algorithmic reasoning, and
-                  performance optimization, reinforcing strong analytical
-                  problem-solving skills.
+                  Designed project-based assignments around top-down design,
+                  OOP, and code modularity.
+                </li>
+                <li>
+                  Mentored students one-on-one on debugging and algorithmic
+                  reasoning, walking through their own broken code instead of
+                  handing them the fix.
                 </li>
               </ul>
             </StaggerItem>
@@ -317,12 +316,12 @@ function Home() {
               <p className="edu-meta">
                 T-Mobile (via BeaconFire Inc.) · Jun 2022 – Apr 2024 · Bellevue, WA, USA
               </p>
-              <p className="muted">
-                Built and maintained REST microservices for the Roaming
-                Business System in Java and Spring Boot, on a stack that also
-                ran Kafka and Cassandra.
-              </p>
               <ul className="bullet-list">
+                <li>
+                  Built and maintained REST microservices for the Roaming
+                  Business System in Java and Spring Boot, on a stack that also
+                  ran Kafka and Cassandra.
+                </li>
                 <li>
                   Maintained sub-3-second response times on SQL joins spanning
                   multiple source databases, over 100K+ records.
@@ -337,23 +336,21 @@ function Home() {
             <StaggerItem as="article" className="card">
               <h3>Accounting Intern</h3>
               <p className="edu-meta">
-                Better Business Tax &amp; Accounting Corporation · Feb 2020 –
-                May 2020 · Renton, WA, USA
-              </p>
-              <p className="muted">
-                Managed 30+ client datasets in QuickBooks, processing 100+
-                financial transactions daily with high data accuracy.
+                Better Business Tax &amp; Accounting Corporation · Feb 2020 – May 2020 · Renton, WA, USA
               </p>
               <ul className="bullet-list">
                 <li>
-                  Automated recurring payroll and tax reporting workflows,
-                  reducing manual effort while delivering 10+ monthly filings
-                  and quarterly compliance reports.
+                  Managed 30+ client datasets in QuickBooks, processing 100+
+                  financial transactions a day.
                 </li>
                 <li>
-                  Developed financial dashboards and profit/loss analyses,
-                  supporting data-driven insights into cash flow and client
-                  profitability.
+                  Automated recurring payroll and tax reporting workflows,
+                  delivering 10+ monthly filings and quarterly compliance
+                  reports on schedule.
+                </li>
+                <li>
+                  Built profit/loss dashboards clients used to track cash flow
+                  and profitability month to month.
                 </li>
               </ul>
             </StaggerItem>
@@ -383,7 +380,7 @@ function Home() {
             <StaggerItem as="article" className="card">
               <h3>Hackathons</h3>
               <p className="muted">
-                Shell.ai, IMC Trading 64 Bids, and Uncommon Hacks game
+                Shell.ai, IMC 64 Bids, and Uncommon Hacks game
                 development.
               </p>
               <Link to="/hackathons" className="btn primary">
