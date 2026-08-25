@@ -54,29 +54,21 @@ function Experience() {
                 </p>
                 <ul className="bullet-list">
                   <li>
-                    Gathered goals from business stakeholders and wrote them up
-                    as specifications they could verify themselves.
+                    Documented the root cause of 20+ defects traced across
+                    service boundaries, so each fix outlived the ticket.
                   </li>
                   <li>
-                    Documented the root cause of each defect traced across
-                    service boundaries, so the fix outlived the ticket.
+                    Built and maintained REST service endpoints across 5+
+                    services in the Roaming Business System (RBS), using Java
+                    and Spring Boot.
                   </li>
                   <li>
-                    Built and maintained REST service endpoints in Java and
-                    Spring Boot inside the Roaming Business System (RBS)
-                    codebase.
-                  </li>
-                  <li>
-                    Reviewed teammates' code every sprint, catching defects
-                    before they reached release.
+                    Deployed features to production through Jenkins across
+                    50+ releases.
                   </li>
                   <li>
                     Maintained report response times under 3 seconds on SQL
                     joins spanning multiple source databases.
-                  </li>
-                  <li>
-                    Deployed implemented features to production servers through
-                    Jenkins on each release.
                   </li>
                   <li>
                     Cut manual effort on recurring dataset builds and validation
