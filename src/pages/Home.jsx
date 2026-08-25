@@ -297,9 +297,8 @@ function Home() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Taught Python and core computer science concepts to 50+ high
-                  school and college students with no prior background, through
-                  hands-on coding projects.
+                  Explained technical material to 50+ students with no prior
+                  background, adjusting the pitch in real time.
                 </li>
                 <li>
                   Designed project-based assignments around top-down design,
@@ -322,17 +321,16 @@ function Home() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Built and maintained REST microservices for the Roaming
-                  Business System in Java and Spring Boot, on a stack that also
-                  ran Kafka and Cassandra.
+                  Built and maintained REST service endpoints in Java and
+                  Spring Boot inside a microservices codebase.
                 </li>
                 <li>
-                  Maintained sub-3-second response times on SQL joins spanning
-                  multiple source databases, over 100K+ records.
+                  Documented the root cause of each defect traced across
+                  service boundaries, so the fix outlived the ticket.
                 </li>
                 <li>
-                  Automated the weekly reprocessing of 50+ roaming service
-                  tests in Python, cutting manual effort by 80%.
+                  Cut manual effort on recurring dataset builds and validation
+                  runs by 80% by automating both in Python.
                 </li>
               </ul>
             </StaggerItem>

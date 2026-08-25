@@ -93,6 +93,10 @@ function Projects() {
                   Transformers, Qdrant, and Ollama, evaluated against a held-out query set
                   (hit@k: 1.0, term recall: 0.875), with a Streamlit front end.
                 </li>
+                <li>
+                  Containerized every service so each experiment could be reproduced from
+                  scratch by someone else.
+                </li>
               </ul>
               <div className="tag-list">
                 <span className="tag">Apache Spark</span>
@@ -102,6 +106,7 @@ function Projects() {
                 <span className="tag">Sentence Transformers</span>
                 <span className="tag">Qdrant</span>
                 <span className="tag">FastAPI</span>
+                <span className="tag">Docker</span>
                 <span className="tag">MLflow</span>
                 <span className="tag">Ollama LLM</span>
                 <span className="tag">Optuna</span>
@@ -144,6 +149,10 @@ function Projects() {
                 <li>
                   Negotiated a shared HTTP contract with the other four teams and tested our
                   service against their live implementations rather than mocks.
+                </li>
+                <li>
+                  Secured every endpoint behind session tokens checked for freshness and
+                  permission scope.
                 </li>
               </ul>
               <div className="tag-list">

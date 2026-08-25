@@ -20,9 +20,8 @@ function Experience() {
                 </p>
                 <ul className="bullet-list">
                   <li>
-                    Taught Python and core computer science concepts to 50+ high
-                    school and college students with no prior background, through
-                    hands-on coding projects rather than lectures.
+                    Explained technical material to 50+ students with no prior
+                    background, adjusting the pitch in real time.
                   </li>
                   <li>
                     Designed project-based assignments around top-down design,
@@ -55,24 +54,32 @@ function Experience() {
                 </p>
                 <ul className="bullet-list">
                   <li>
-                    Built and maintained REST service endpoints in Java and Spring
-                    Boot inside a microservices codebase for the Roaming Business
-                    System.
+                    Gathered goals from business stakeholders and wrote them up
+                    as specifications they could verify themselves.
                   </li>
                   <li>
-                    Traced defects to their root cause across service boundaries
-                    and documented the fix so it outlived the ticket, then
-                    reviewed teammates' code every sprint to catch issues before
-                    release.
+                    Documented the root cause of each defect traced across
+                    service boundaries, so the fix outlived the ticket.
                   </li>
                   <li>
-                    Maintained sub-3-second response times on SQL joins spanning
-                    multiple source databases, and deployed implemented features
-                    to production through Jenkins on each release.
+                    Built and maintained REST service endpoints in Java and
+                    Spring Boot inside a microservices codebase.
                   </li>
                   <li>
-                    Automated the weekly reprocessing of 50+ roaming service
-                    tests in Python, cutting manual intervention by 80%.
+                    Reviewed teammates' code every sprint, catching defects
+                    before they reached release.
+                  </li>
+                  <li>
+                    Maintained report response times under 3 seconds on SQL
+                    joins spanning multiple source databases.
+                  </li>
+                  <li>
+                    Deployed implemented features to production servers through
+                    Jenkins on each release.
+                  </li>
+                  <li>
+                    Cut manual effort on recurring dataset builds and validation
+                    runs by 80% by automating both in Python.
                   </li>
                 </ul>
                 <div className="tag-list">
