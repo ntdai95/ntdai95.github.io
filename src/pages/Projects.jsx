@@ -68,10 +68,10 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/ocean-data.jpg" alt="Distributed Ocean Data ML Platform with RAG" loading="lazy" />
+                <img src="images/ocean-data.jpg" alt="Ocean Data Platform with RAG" loading="lazy" />
               </div>
               <span className="featured-badge">★ Featured Project</span>
-              <h3>Distributed Ocean Data ML Platform with RAG</h3>
+              <h3>Ocean Data Platform with RAG</h3>
               <p className="edu-meta">
                 Personal Project
                 <br />
@@ -179,10 +179,10 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/isolation-forest.jpg" alt="Anomaly Detection with Isolation Forest" loading="lazy" />
+                <img src="images/isolation-forest.jpg" alt="Anomaly Detection at Scale on Species Data" loading="lazy" />
               </div>
               <span className="featured-badge">★ Featured Project</span>
-              <h3>Anomaly Detection with Isolation Forest on High Volume Bird Observation Data (Team of 3)</h3>
+              <h3>Anomaly Detection at Scale on Species Data (Team of 3)</h3>
               <p className="edu-meta">
                 Systems for Massive Datasets (CSC 502), University of Victoria
                 <br />
