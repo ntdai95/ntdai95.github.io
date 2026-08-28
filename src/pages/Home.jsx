@@ -110,7 +110,7 @@ function Home() {
               </div>
               <div className="metric">
                 <span className="metric-value">
-                  <AnimatedNumber to={8.68} from={8} decimals={2} suffix=" / 9.00" duration={1600} />
+                  <AnimatedNumber to={8.78} from={8} decimals={2} suffix=" / 9.00" duration={1600} />
                 </span>
                 <span className="metric-label">Current GPA</span>
               </div>
@@ -240,7 +240,7 @@ function Home() {
                   <p className="edu-meta">
                     University of Victoria · Sep 2025 – Dec 2027 (Expected)
                     <br />
-                    GPA: 8.68 / 9.00
+                    GPA: 8.78 / 9.00
                   </p>
                 </div>
               </div>

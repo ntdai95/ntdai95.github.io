@@ -103,6 +103,7 @@ function Credentials() {
                 <li><strong>Data Analysis and Pattern Recognition</strong> (ECE 535)</li>
                 <li><strong>Data Mining</strong> (CSC 503)</li>
                 <li><strong>Selected Topics in Computer Engineering: Artificial Intelligence</strong> (ECE 569A)</li>
+                <li><strong>Music Retrieval Techniques</strong> (CSC 575)</li>
                 <li><strong>Applied Data Analysis</strong> (ECE 537)</li>
               </ul>
             </StaggerItem>
