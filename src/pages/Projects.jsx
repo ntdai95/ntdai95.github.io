@@ -28,20 +28,20 @@ function Projects() {
                 <li>
                   Compared six detection models on 200K+ CIC IoT-DIAD 2024 network flows
                   using a two-stage pipeline: unsupervised packet scoring feeding a
-                  supervised flow classifier, with the best XGBoost model reaching 92.5%
-                  recall at 0.96% false-positive rate under a 1% FPR budget.
+                  supervised flow classifier, with the best XGBoost model reaching 99.4%
+                  recall at 0.81% false-positive rate under a 1% FPR budget.
                 </li>
                 <li>
                   Ran a four-condition holdout experiment and found the benchmark leaks
                   capture-session identity: benign and attack traffic were recorded on
-                  different days, and the capture window is predictable from flow features
-                  alone at ROC-AUC 0.922.
+                  different days, and a threshold that holds 1% FPR on one capture day
+                  costs over 30% on another.
                 </li>
                 <li>
                   Reported the honest cost of closing that leak instead of the headline
-                  number. PR-AUC drops from 0.927 to 0.630 and the FPR budget blows out to
-                  32% under a session-disjoint split. Wrote an integrity check confirming
-                  every engineered feature stayed causal and label-free.
+                  number. PR-AUC drops from 0.994 to 0.189 and the FPR budget blows out to
+                  over 32% under a session-disjoint split. Wrote an integrity check
+                  confirming every engineered feature stayed causal and label-free.
                 </li>
               </ul>
               <div className="tag-list">
