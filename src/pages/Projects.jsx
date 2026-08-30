@@ -383,9 +383,9 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Compared six model variants — baseline, SMOTE, class-weighted, and a
-                  quantum-simulated feature transform — across tuned XGBoost and neural
-                  network classifiers on an imbalanced loan-approval dataset.
+                  Compared baseline, SMOTE, class-weighted, and quantum-transformed versions
+                  of tuned XGBoost and neural network classifiers on an imbalanced
+                  loan-approval dataset.
                 </li>
                 <li>
                   Split rows into inlier and outlier partitions with Isolation Forest and
@@ -393,9 +393,9 @@ function Projects() {
                   a mixture of experts at evaluation time.
                 </li>
                 <li>
-                  Simulated a 12-qubit quantum reservoir in PennyLane — angle encoding into
-                  a Trotterized Ising circuit — as a fixed nonlinear feature transform ahead
-                  of the classical classifiers.
+                  Simulated a 12-qubit quantum reservoir in PennyLane, angle-encoding each
+                  row into a Trotterized Ising circuit, as a fixed nonlinear feature
+                  transform ahead of the classical classifiers.
                 </li>
                 <li>
                   Wrapped every tuned model in a custom Fairlearn constraint enforcing
