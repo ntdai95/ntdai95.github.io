@@ -383,27 +383,33 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Tuned a neural classifier by randomized search under 5-fold
-                  cross-validation on an imbalanced loan-approval dataset, scoring on F1
-                  instead of accuracy so the majority class couldn't inflate the number.
+                  Compared six model variants — baseline, SMOTE, class-weighted, and a
+                  quantum-simulated feature transform — across tuned XGBoost and neural
+                  network classifiers on an imbalanced loan-approval dataset.
                 </li>
                 <li>
-                  Applied SMOTE inside the training folds only, keeping resampled rows out
-                  of every validation split to avoid leaking synthetic examples into
-                  evaluation.
+                  Split rows into inlier and outlier partitions with Isolation Forest and
+                  trained a specialist ensemble per partition, pooling their predictions as
+                  a mixture of experts at evaluation time.
                 </li>
                 <li>
-                  Compared resampling before and after normalization and showed the
-                  ordering changes the result, then benchmarked the tuned network against
-                  an XGBoost baseline on identical splits.
+                  Simulated a 12-qubit quantum reservoir in PennyLane — angle encoding into
+                  a Trotterized Ising circuit — as a fixed nonlinear feature transform ahead
+                  of the classical classifiers.
+                </li>
+                <li>
+                  Wrapped every tuned model in a custom Fairlearn constraint enforcing
+                  false-positive/false-negative parity across age and income at once, then
+                  reported the resulting precision/recall trade-off instead of hiding it.
                 </li>
               </ul>
               <div className="tag-list">
                 <span className="tag">Python</span>
                 <span className="tag">scikit-learn</span>
                 <span className="tag">XGBoost</span>
+                <span className="tag">PennyLane</span>
+                <span className="tag">Fairlearn</span>
                 <span className="tag">SMOTE</span>
-                <span className="tag">Cross-Validation</span>
                 <span className="tag">Imbalanced Classification</span>
                 <span className="tag">Credit Risk</span>
               </div>
