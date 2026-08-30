@@ -250,7 +250,7 @@ function Projects() {
                   same system.
                 </li>
                 <li>
-                  Orchestrated all ten containers with Docker Compose, sequencing startup
+                  Orchestrated all 14 containers with Docker Compose, sequencing startup
                   so each service's database was ready before the service depending on it.
                 </li>
               </ul>
