@@ -95,6 +95,12 @@ function Projects() {
                   R² reflects the data's autocorrelation rather than learned skill.
                 </li>
                 <li>
+                  Extended the check across seven forecast horizons (1 second to 2 hours)
+                  and a version with cross-sensor context added (salinity, dissolved
+                  oxygen); persistence won every horizon, and XGBoost's R² turned negative
+                  past 30 minutes, consistent with overfitting rather than learned drift.
+                </li>
+                <li>
                   Served forecasts and RAG search behind a FastAPI backend using Sentence
                   Transformers, Qdrant, and Ollama, evaluated against a held-out query set
                   (hit@k: 1.0, term recall: 0.875), with a Streamlit front end.
