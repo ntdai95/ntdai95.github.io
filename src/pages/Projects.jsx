@@ -109,11 +109,12 @@ function Projects() {
                 <li>
                   Served forecasts and RAG search behind a FastAPI backend using Sentence
                   Transformers, Qdrant, and Ollama, evaluated against a held-out query set
-                  (hit@k: 1.0, term recall: 0.875), with a Streamlit front end.
+                  of 10 natural-language questions (hit@k: 0.9, term recall: 0.85), with a
+                  Streamlit front end.
                 </li>
                 <li>
-                  Containerized every service so each experiment could be reproduced from
-                  scratch by someone else.
+                  Containerized the FastAPI service and vector store with Docker Compose so
+                  the live system could be stood up identically anywhere.
                 </li>
               </ul>
               <div className="tag-list">
