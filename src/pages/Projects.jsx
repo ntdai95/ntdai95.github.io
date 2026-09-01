@@ -87,7 +87,12 @@ function Projects() {
                 <li>
                   Tuned XGBoost forecasting models with Optuna and tracked runs in MLflow,
                   validating on chronological holdouts rather than random splits
-                  (RMSE: 0.00586, R²: 0.9999).
+                  (RMSE: 0.00715, R²: 0.99975).
+                </li>
+                <li>
+                  Benchmarked the tuned model against a naive persistence baseline
+                  (RMSE: 0.00442), which won on raw error and confirmed the near-perfect
+                  R² reflects the data's autocorrelation rather than learned skill.
                 </li>
                 <li>
                   Served forecasts and RAG search behind a FastAPI backend using Sentence
