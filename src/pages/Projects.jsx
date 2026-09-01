@@ -101,6 +101,12 @@ function Projects() {
                   past 30 minutes, consistent with overfitting rather than learned drift.
                 </li>
                 <li>
+                  Ran the identical benchmark against air temperature from a nearby ONC
+                  weather station and found real forecasting skill there (48% lower RMSE
+                  at a 12-hour horizon), confirming the water temperature result reflects
+                  the physics of the signal rather than a limitation of the method.
+                </li>
+                <li>
                   Served forecasts and RAG search behind a FastAPI backend using Sentence
                   Transformers, Qdrant, and Ollama, evaluated against a held-out query set
                   (hit@k: 1.0, term recall: 0.875), with a Streamlit front end.
