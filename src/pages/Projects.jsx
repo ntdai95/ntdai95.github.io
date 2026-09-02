@@ -81,8 +81,9 @@ function Projects() {
               <ul className="bullet-list">
                 <li>
                   Built a distributed ML pipeline in Apache Spark (Bronze → Silver → Gold
-                  layers) to harmonize 10M+ NOAA and ONC ocean sensor observations into one
-                  queryable model for feature engineering and forecasting.
+                  layers) to harmonize 10M+ NOAA and ONC ocean and weather sensor
+                  observations into one queryable model for feature engineering and
+                  forecasting.
                 </li>
                 <li>
                   Tuned XGBoost forecasting models with Optuna and tracked runs in MLflow,
@@ -101,10 +102,11 @@ function Projects() {
                   past 30 minutes, consistent with overfitting rather than learned drift.
                 </li>
                 <li>
-                  Ran the identical benchmark against air temperature from a nearby ONC
-                  weather station and found real forecasting skill there (48% lower RMSE
-                  at a 12-hour horizon), confirming the water temperature result reflects
-                  the physics of the signal rather than a limitation of the method.
+                  Ran the identical benchmark against air temperature from the same ONC
+                  sensor network's weather station, as a control, and found real
+                  forecasting skill there (48% lower RMSE at a 12-hour horizon), confirming
+                  the water temperature result reflects the signal's physics rather than a
+                  limitation of the method.
                 </li>
                 <li>
                   Served forecasts and RAG search behind a FastAPI backend using Sentence
