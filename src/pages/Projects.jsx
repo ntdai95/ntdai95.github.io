@@ -81,41 +81,25 @@ function Projects() {
               <ul className="bullet-list">
                 <li>
                   Built an ML pipeline in Apache Spark (Bronze → Silver → Gold layers) to
-                  harmonize 10M+ NOAA and ONC ocean and weather sensor observations into
-                  one queryable model for feature engineering and forecasting.
+                  harmonize 10M+ NOAA and ONC ocean and weather sensor observations, then
+                  served forecasts and RAG search (hit@k: 0.9, term recall: 0.85 on a
+                  held-out query set) behind a FastAPI backend using Sentence Transformers,
+                  Qdrant, and Ollama, containerized with Docker Compose.
                 </li>
                 <li>
-                  Tuned XGBoost forecasting models with Optuna and tracked runs in MLflow,
-                  validating on chronological holdouts rather than random splits
-                  (RMSE: 0.00710, R²: 0.99975).
+                  Tuned XGBoost forecasting models with Optuna, validating on chronological
+                  holdouts (RMSE: 0.00710, R²: 0.99975), then benchmarked against a naive
+                  persistence baseline that won on raw error (RMSE: 0.00442), confirming the
+                  near-perfect R² reflects the data's autocorrelation rather than learned
+                  skill.
                 </li>
                 <li>
-                  Benchmarked the tuned model against a naive persistence baseline
-                  (RMSE: 0.00442), which won on raw error and confirmed the near-perfect
-                  R² reflects the data's autocorrelation rather than learned skill.
-                </li>
-                <li>
-                  Extended the check across seven forecast horizons (1 second to 2 hours)
-                  and a version with cross-sensor context added (salinity, dissolved
-                  oxygen); persistence won every horizon, and XGBoost's R² turned negative
-                  past 30 minutes, consistent with overfitting rather than learned drift.
-                </li>
-                <li>
-                  Ran the identical benchmark against air temperature from the same ONC
-                  sensor network's weather station, as a control, and found real
-                  forecasting skill there (48% lower RMSE at a 12-hour horizon), confirming
-                  the water temperature result reflects the signal's physics rather than a
-                  limitation of the method.
-                </li>
-                <li>
-                  Served forecasts and RAG search behind a FastAPI backend using Sentence
-                  Transformers, Qdrant, and Ollama, evaluated against a held-out query set
-                  of 10 natural-language questions (hit@k: 0.9, term recall: 0.85), with a
-                  Streamlit front end.
-                </li>
-                <li>
-                  Containerized the FastAPI service and vector store with Docker Compose so
-                  the live system could be stood up identically anywhere.
+                  Extended that check across seven forecast horizons and a cross-sensor
+                  context variant: persistence won every horizon on water temperature
+                  (XGBoost turning net-negative past 30 minutes), while on air temperature
+                  from the same network, as a control, XGBoost won decisively (48% lower
+                  RMSE at 12 hours), confirming the null result is the signal's physics, not
+                  the method.
                 </li>
               </ul>
               <div className="tag-list">
