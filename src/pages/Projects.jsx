@@ -80,10 +80,9 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Built a distributed ML pipeline in Apache Spark (Bronze → Silver → Gold
-                  layers) to harmonize 10M+ NOAA and ONC ocean and weather sensor
-                  observations into one queryable model for feature engineering and
-                  forecasting.
+                  Built an ML pipeline in Apache Spark (Bronze → Silver → Gold layers) to
+                  harmonize 10M+ NOAA and ONC ocean and weather sensor observations into
+                  one queryable model for feature engineering and forecasting.
                 </li>
                 <li>
                   Tuned XGBoost forecasting models with Optuna and tracked runs in MLflow,
