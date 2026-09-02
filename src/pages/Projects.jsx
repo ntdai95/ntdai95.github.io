@@ -69,10 +69,10 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/ocean-data.jpg" alt="Ocean Data Platform with RAG" loading="lazy" />
+                <img src="images/ocean-data.jpg" alt="Distributed Ocean Data ML Platform with RAG" loading="lazy" />
               </div>
               <span className="featured-badge">★ Featured Project</span>
-              <h3>Ocean Data Platform with RAG</h3>
+              <h3>Distributed Ocean Data ML Platform with RAG</h3>
               <p className="edu-meta">
                 Personal Project
                 <br />
