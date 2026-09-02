@@ -69,10 +69,10 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/ocean-data.jpg" alt="Distributed Ocean Data ML Platform with RAG" loading="lazy" />
+                <img src="images/ocean-data.jpg" alt="Ocean Data ML Platform with RAG" loading="lazy" />
               </div>
               <span className="featured-badge">★ Featured Project</span>
-              <h3>Distributed Ocean Data ML Platform with RAG</h3>
+              <h3>Ocean Data ML Platform with RAG</h3>
               <p className="edu-meta">
                 Personal Project
                 <br />
@@ -135,7 +135,7 @@ function Projects() {
               </div>
               <p style={{ marginTop: '1rem' }}>
                 <a
-                  href="https://github.com/ntdai95/Resume-Projects/tree/main/Distributed%20Ocean%20Data%20ML%20Platform%20with%20RAG"
+                  href="https://github.com/ntdai95/Resume-Projects/tree/main/Ocean%20Data%20ML%20Platform%20with%20RAG"
                   target="_blank"
                   rel="noreferrer"
                   className="btn primary"
