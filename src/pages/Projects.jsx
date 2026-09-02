@@ -88,7 +88,7 @@ function Projects() {
                 <li>
                   Tuned XGBoost forecasting models with Optuna and tracked runs in MLflow,
                   validating on chronological holdouts rather than random splits
-                  (RMSE: 0.00715, R²: 0.99975).
+                  (RMSE: 0.00710, R²: 0.99975).
                 </li>
                 <li>
                   Benchmarked the tuned model against a naive persistence baseline
