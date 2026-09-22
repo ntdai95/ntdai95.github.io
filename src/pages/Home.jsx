@@ -315,7 +315,7 @@ function Home() {
             <StaggerItem as="article" className="card">
               <h3>Software Developer</h3>
               <p className="edu-meta">
-                T-Mobile (via BeaconFire Inc.)
+                T-Mobile
                 <br />
                 Jun 2022 – Apr 2024 · Bellevue, WA, USA
               </p>
