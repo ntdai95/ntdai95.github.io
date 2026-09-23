@@ -73,8 +73,8 @@ function Hackathons() {
                   the paths that were too slow to place.
                 </li>
                 <li>
-                  Reached the final round, placing in the top 15% of 1,500
-                  participants (top 250).
+                  Reached the final round, placing top 250 of 1,500
+                  participants.
                 </li>
               </ul>
               <div className="tag-list">
