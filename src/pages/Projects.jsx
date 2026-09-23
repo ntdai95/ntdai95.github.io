@@ -386,9 +386,9 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Built an automated Coinbase trading bot in Python around an 8/20/200 EMA
-                  crossover with a trend filter, gating entries on positive fee-adjusted
-                  returns and exiting on a take-profit threshold.
+                  Built an automated Coinbase trading bot in Python that buys only when the
+                  8-period EMA is above the 20-period EMA, price is above the 200-period
+                  EMA, and the fee-adjusted return is positive.
                 </li>
                 <li>
                   Deployed the bot on AWS EC2 to run unattended, adding an AWS Lambda and
