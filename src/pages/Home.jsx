@@ -54,7 +54,7 @@ function Home() {
           <motion.div className="hero-text" variants={heroItem} style={{ y: textY }}>
             <span className="badge-available">
               <span className="badge-pulse" />
-              Available · Co-op Jan – Dec 2027 · Canada (Remote OK)
+              Available · Co-op Jan – Aug 2027 · Canada (Remote OK)
             </span>
             <h1 style={{ margin: '0 0 0.2rem' }}>
               <SplitText delay={0.35}>Tan Dai Ngo</SplitText>
@@ -236,7 +236,7 @@ function Home() {
                   </div>
                 </div>
                 <div>
-                  <h3>Master of Engineering (MEng), Applied Data Science</h3>
+                  <h3>Master of Engineering (MEng), Applied Data Science (Co-op)</h3>
                   <p className="edu-meta">
                     University of Victoria · Sep 2025 – Dec 2027 (Expected)
                     <br />
@@ -376,9 +376,9 @@ function Home() {
             <StaggerItem as="article" className="card">
               <h3>Projects</h3>
               <p className="muted">
-                Ten projects spanning network security, distributed data
-                platforms, NLP, and financial modeling, each with GitHub
-                code behind it.
+                Eleven projects spanning network security, distributed data
+                platforms, NLP, algorithmic trading, and financial modeling,
+                most with GitHub code behind them.
               </p>
               <Link to="/projects" className="btn primary">
                 View all projects →
