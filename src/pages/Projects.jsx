@@ -293,7 +293,7 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Built a sentiment pipeline over 15K+ tweets across 10 tech stocks,
+                  Built a sentiment pipeline over 15,194 raw tweets of which 861 were tied to 10 tech stocks,
                   combining X API data, SQLite and Neo4j storage, and FinTwitBERT sentiment
                   scoring.
                 </li>
