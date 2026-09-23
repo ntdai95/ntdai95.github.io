@@ -213,7 +213,7 @@ function Home() {
                     Shell.ai Hackathon 2025 – end-to-end machine learning system for sustainable fuel blending
                   </li>
                   <li>
-                    IMC 64 Bids Coding Challenge – final round (top 15% of 1,500 participants)
+                    IMC 64 Bids Coding Challenge – final round (top 250 of 1,500 participants)
                   </li>
                 </ul>
               </div>
