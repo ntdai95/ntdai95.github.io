@@ -30,7 +30,7 @@ function Projects() {
                   flows using a two-stage pipeline: unsupervised packet scoring feeding a
                   supervised flow classifier, with the best model, a multiclass XGBoost
                   classifier, reaching 98.7% recall at 0.98% false-positive rate under a
-                  1% FPR budget. All figures use split-first preprocessing. The full two-stage cascade scores 95.5% recall at 7.75%
+                  1% FPR budget. The multiclass XGBoost figures were re-run under split-first preprocessing; the other five models' rows predate that fix. The full two-stage cascade scores 95.5% recall at 7.75%
                   FPR.
                 </li>
                 <li>
