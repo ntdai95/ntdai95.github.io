@@ -76,7 +76,7 @@ function Projects() {
               <p className="edu-meta">
                 Personal Project
                 <br />
-                Apr 2026 – Sep 2026
+                Feb 2026 – Mar 2026
               </p>
               <ul className="bullet-list">
                 <li>
