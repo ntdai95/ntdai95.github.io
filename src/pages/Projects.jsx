@@ -26,11 +26,12 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Compared six detection models on 200K+ CIC IoT-DIAD 2024 network flows
-                  using a two-stage pipeline: unsupervised packet scoring feeding a
+                  Compared six detection models on 195,940 CIC IoT-DIAD 2024 network
+                  flows using a two-stage pipeline: unsupervised packet scoring feeding a
                   supervised flow classifier, with the best model, a multiclass XGBoost
                   classifier, reaching 99.6% recall at 0.82% false-positive rate under a
-                  1% FPR budget.
+                  1% FPR budget. The full two-stage cascade scores 95.5% recall at 7.75%
+                  FPR.
                 </li>
                 <li>
                   Ran a four-condition holdout experiment and found the benchmark leaks
