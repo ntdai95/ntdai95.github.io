@@ -391,6 +391,11 @@ function Projects() {
                   EMA, and the fee-adjusted return is positive.
                 </li>
                 <li>
+                  Implemented a mean-reversion engine that buys a 1% dip inside a rolling
+                  60-minute window and sells on a 2% rise, with per-market thresholds,
+                  cooldowns and open-trade caps in a CSV config.
+                </li>
+                <li>
                   Deployed the bot on AWS EC2 to run unattended, adding an AWS Lambda and
                   SNS service that alerts on unusual trading volume.
                 </li>
