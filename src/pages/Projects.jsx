@@ -43,7 +43,7 @@ function Projects() {
                   Reported the honest cost of closing that leak instead of the headline
                   number. PR-AUC drops from 0.981 to 0.125 and the FPR budget blows out to
                   over 34% under a session-disjoint split. Wrote an integrity check
-                  confirming every engineered feature stayed causal and label-free.
+                  confirming the 60-second context features stayed causal and label-free.
                 </li>
               </ul>
               <div className="tag-list">
