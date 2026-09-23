@@ -376,6 +376,49 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
+                <img src="images/crypto-trading-bot.jpg" alt="Bitcoin price history chart" loading="lazy" />
+              </div>
+              <h3>Automated Crypto Trading Bot</h3>
+              <p className="edu-meta">
+                Personal Project
+                <br />
+                Feb 2025 – Jul 2025
+              </p>
+              <ul className="bullet-list">
+                <li>
+                  Built an automated Coinbase trading bot in Python around an 8/20/200 EMA
+                  crossover with a trend filter, gating entries on positive fee-adjusted
+                  returns and exiting on a take-profit threshold.
+                </li>
+                <li>
+                  Deployed the bot on AWS EC2 to run unattended, adding an AWS Lambda and
+                  SNS service that alerts on unusual trading volume.
+                </li>
+                <li>
+                  Drove per-market risk controls from a CSV configuration: price-drop
+                  thresholds in basis points, buy and sell cooldowns, maximum open trades,
+                  and maximum hold time.
+                </li>
+                <li>
+                  Polled live Coinbase market data on a fixed interval, holding rolling
+                  price windows in memory for signal evaluation.
+                </li>
+              </ul>
+              <div className="tag-list">
+                <span className="tag">Python</span>
+                <span className="tag">Coinbase Advanced Trade API</span>
+                <span className="tag">AWS EC2</span>
+                <span className="tag">AWS Lambda</span>
+                <span className="tag">Amazon SNS</span>
+                <span className="tag">boto3</span>
+                <span className="tag">pandas</span>
+                <span className="tag">Algorithmic Trading</span>
+                <span className="tag">Automation</span>
+              </div>
+            </TiltCard>
+
+            <TiltCard className="card project-card">
+              <div className="project-card-img-wrap">
                 <img src="images/loan-approval.jpg" alt="Loan Approval Classifier" loading="lazy" />
               </div>
               <h3>Loan Approval Classifier (Team of 6)</h3>

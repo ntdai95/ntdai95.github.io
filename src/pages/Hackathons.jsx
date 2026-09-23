@@ -18,7 +18,7 @@ function Hackathons() {
                 <img src="images/shell-fuel.jpg" alt="Sustainable fuel blending graphs" loading="lazy" />
               </div>
               <span className="featured-badge">★ Featured</span>
-              <h3>End-to-End Machine Learning System for Multi-Output Fuel Blending</h3>
+              <h3>Fuel Blending Prediction Service</h3>
               <p className="edu-meta">Shell.ai Hackathon 2025 · Jul 2025</p>
               <ul className="bullet-list">
                 <li>
