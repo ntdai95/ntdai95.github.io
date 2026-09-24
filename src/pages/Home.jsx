@@ -54,7 +54,7 @@ function Home() {
           <motion.div className="hero-text" variants={heroItem} style={{ y: textY }}>
             <span className="badge-available">
               <span className="badge-pulse" />
-              Available · Co-op Jan – Aug 2027 · Canada (Remote OK)
+              Available · Co-op Jan – Dec 2027 · Canada (Remote OK)
             </span>
             <h1 style={{ margin: '0 0 0.2rem' }}>
               <SplitText delay={0.35}>Tan Dai Ngo</SplitText>
@@ -315,7 +315,7 @@ function Home() {
             <StaggerItem as="article" className="card">
               <h3>Software Developer</h3>
               <p className="edu-meta">
-                T-Mobile
+                T-Mobile (via BeaconFire Inc.)
                 <br />
                 Jun 2022 – Apr 2024 · Bellevue, WA, USA
               </p>
