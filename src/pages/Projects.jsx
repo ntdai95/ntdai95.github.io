@@ -22,7 +22,7 @@ function Projects() {
               <p className="edu-meta">
                 Capstone Project (ECE 592B)
                 <br />
-                University of Victoria · May 2026 – Aug 2026
+                University of Victoria, May 2026 – Aug 2026
               </p>
               <ul className="bullet-list">
                 <li>
@@ -127,7 +127,7 @@ function Projects() {
               <p className="edu-meta">
                 Systems for Massive Datasets (CSC 502)
                 <br />
-                University of Victoria · Mar 2026 – Apr 2026
+                University of Victoria, Mar 2026 – Apr 2026
               </p>
               <ul className="bullet-list">
                 <li>
@@ -178,7 +178,7 @@ function Projects() {
               <p className="edu-meta">
                 Applied Software Engineering (MPCS 51220)
                 <br />
-                University of Chicago · Apr 2021 – May 2021
+                University of Chicago, Apr 2021 – May 2021
               </p>
               <ul className="bullet-list">
                 <li>
@@ -229,7 +229,7 @@ function Projects() {
               <p className="edu-meta">
                 Topics in Software Engineering (MPCS 51205)
                 <br />
-                University of Chicago · Feb 2021 – Mar 2021
+                University of Chicago, Feb 2021 – Mar 2021
               </p>
               <ul className="bullet-list">
                 <li>
@@ -277,7 +277,7 @@ function Projects() {
               <p className="edu-meta">
                 Algorithms and Data Models (CSC 501)
                 <br />
-                University of Victoria · Nov 2025 – Dec 2025
+                University of Victoria, Nov 2025 – Dec 2025
               </p>
               <ul className="bullet-list">
                 <li>
@@ -410,7 +410,7 @@ function Projects() {
               <p className="edu-meta">
                 Data Mining (CSC 503)
                 <br />
-                University of Victoria · Jul 2026 – Aug 2026
+                University of Victoria, Jul 2026 – Aug 2026
               </p>
               <ul className="bullet-list">
                 <li>
@@ -459,7 +459,7 @@ function Projects() {
               <p className="edu-meta">
                 Selected Topics in Computer Engineering: AI (ECE 569A)
                 <br />
-                University of Victoria · May 2026 – Jun 2026
+                University of Victoria, May 2026 – Jun 2026
               </p>
               <ul className="bullet-list">
                 <li>
@@ -505,7 +505,7 @@ function Projects() {
               <p className="edu-meta">
                 Web Development (MPCS 52553)
                 <br />
-                University of Chicago · Jan 2022 – Feb 2022
+                University of Chicago, Jan 2022 – Feb 2022
               </p>
               <ul className="bullet-list">
                 <li>
