@@ -23,6 +23,16 @@ function Experience() {
                     Taught Python, algorithms, object oriented design and software
                     engineering fundamentals to 50+ students.
                   </li>
+                  <li>
+                    Designed project-based assignments around top-down design,
+                    OOP, and code modularity, adjusting the pace and depth of
+                    each explanation live based on how the class responded.
+                  </li>
+                  <li>
+                    Mentored students one-on-one on debugging and algorithmic
+                    reasoning, walking through their own broken code instead of
+                    handing them the fix.
+                  </li>
                 </ul>
                 <div className="tag-list">
                   <span className="tag">Python</span>
