@@ -58,7 +58,7 @@ function Credentials() {
               </div>
               <p style={{ marginTop: '1rem' }}>
                 <a
-                  href="documents/Quantitative Managerial Economics.JPG"
+                  href="/documents/Quantitative Managerial Economics.JPG"
                   target="_blank"
                   rel="noreferrer"
                   className="btn primary"
@@ -87,7 +87,7 @@ function Credentials() {
               <div className="activity-header">
                 <div className="activity-photo-wrapper">
                   <div className="activity-photo">
-                    <img src="images/uvic-logo.png" alt="University of Victoria logo" loading="lazy" />
+                    <img src="/images/uvic-logo.png" alt="University of Victoria logo" loading="lazy" />
                   </div>
                 </div>
                 <div>
@@ -112,7 +112,7 @@ function Credentials() {
               <div className="activity-header">
                 <div className="activity-photo-wrapper">
                   <div className="activity-photo">
-                    <img src="images/uchicago-logo.png" alt="University of Chicago logo" loading="lazy" />
+                    <img src="/images/uchicago-logo.png" alt="University of Chicago logo" loading="lazy" />
                   </div>
                 </div>
                 <div>
@@ -137,7 +137,7 @@ function Credentials() {
               <div className="activity-header">
                 <div className="activity-photo-wrapper">
                   <div className="activity-photo">
-                    <img src="images/uw-logo.png" alt="University of Washington logo" loading="lazy" />
+                    <img src="/images/uw-logo.png" alt="University of Washington logo" loading="lazy" />
                   </div>
                 </div>
                 <div>
@@ -176,7 +176,7 @@ function Credentials() {
                 Listening: 7.5 · Reading: 8.5 · Writing: 7.5 · Speaking: 7.5
               </p>
               <p style={{ marginTop: '1rem' }}>
-                <a href="documents/IELTS.pdf" target="_blank" rel="noreferrer" className="btn primary">
+                <a href="/documents/IELTS.pdf" target="_blank" rel="noreferrer" className="btn primary">
                   View score →
                 </a>
               </p>
@@ -190,7 +190,7 @@ function Credentials() {
                 Economics, Informatics, and Applied Mathematics.
               </p>
               <p style={{ marginTop: '1rem' }}>
-                <a href="documents/Annual Dean's List.jpg" target="_blank" rel="noreferrer" className="btn primary">
+                <a href="/documents/Annual Dean's List.jpg" target="_blank" rel="noreferrer" className="btn primary">
                   View award →
                 </a>
               </p>
