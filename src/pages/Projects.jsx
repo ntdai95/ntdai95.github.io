@@ -20,7 +20,9 @@ function Projects() {
               <span className="featured-badge">★ Featured Project</span>
               <h3>Multi-Stage IoT Intrusion Detection (Team of 7)</h3>
               <p className="edu-meta">
-                Capstone Project (ECE 592B), University of Victoria
+                Capstone Project (ECE 592B)
+                <br />
+                University of Victoria
                 <br />
                 May 2026 – Aug 2026
               </p>
@@ -125,7 +127,9 @@ function Projects() {
               <span className="featured-badge">★ Featured Project</span>
               <h3>Anomaly Detection at Scale on Species Data (Team of 3)</h3>
               <p className="edu-meta">
-                Systems for Massive Datasets (CSC 502), University of Victoria
+                Systems for Massive Datasets (CSC 502)
+                <br />
+                University of Victoria
                 <br />
                 Mar 2026 – Apr 2026
               </p>
@@ -176,7 +180,9 @@ function Projects() {
               </div>
               <h3>Distributed Facility Reservation System (Team of 4)</h3>
               <p className="edu-meta">
-                Applied Software Engineering (MPCS 51220), University of Chicago
+                Applied Software Engineering (MPCS 51220)
+                <br />
+                University of Chicago
                 <br />
                 Apr 2021 – May 2021
               </p>
@@ -227,7 +233,9 @@ function Projects() {
               </div>
               <h3>Auction Marketplace Microservices (Team of 4)</h3>
               <p className="edu-meta">
-                Topics in Software Engineering (MPCS 51205), University of Chicago
+                Topics in Software Engineering (MPCS 51205)
+                <br />
+                University of Chicago
                 <br />
                 Feb 2021 – Mar 2021
               </p>
@@ -275,7 +283,9 @@ function Projects() {
               </div>
               <h3>Stock Sentiment Analysis (Team of 4)</h3>
               <p className="edu-meta">
-                Algorithms and Data Models (CSC 501), University of Victoria
+                Algorithms and Data Models (CSC 501)
+                <br />
+                University of Victoria
                 <br />
                 Nov 2025 – Dec 2025
               </p>
@@ -408,7 +418,9 @@ function Projects() {
               </div>
               <h3>Loan Approval Classifier (Team of 6)</h3>
               <p className="edu-meta">
-                Data Mining (CSC 503), University of Victoria
+                Data Mining (CSC 503)
+                <br />
+                University of Victoria
                 <br />
                 Jul 2026 – Aug 2026
               </p>
@@ -457,7 +469,9 @@ function Projects() {
               </div>
               <h3>Support Ticket Triage (Team of 4)</h3>
               <p className="edu-meta">
-                Selected Topics in Computer Engineering: AI (ECE 569A), University of Victoria
+                Selected Topics in Computer Engineering: AI (ECE 569A)
+                <br />
+                University of Victoria
                 <br />
                 May 2026 – Jun 2026
               </p>
@@ -503,7 +517,9 @@ function Projects() {
               </div>
               <h3>Belay Real-Time Chat Application</h3>
               <p className="edu-meta">
-                Web Development (MPCS 52553), University of Chicago
+                Web Development (MPCS 52553)
+                <br />
+                University of Chicago
                 <br />
                 Jan 2022 – Feb 2022
               </p>
