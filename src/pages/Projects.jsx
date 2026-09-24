@@ -138,7 +138,6 @@ function Projects() {
               <div className="project-card-img-wrap">
                 <img src="images/reservation-system.jpeg" alt="Distributed Facility Reservation System" loading="lazy" />
               </div>
-              <span className="featured-badge">★ Featured Project</span>
               <h3>Distributed Facility Reservation System (Team of 4)</h3>
               <p className="edu-meta">
                 Applied Software Engineering (MPCS 51220), University of Chicago
