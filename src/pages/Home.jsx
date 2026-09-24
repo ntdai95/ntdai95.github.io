@@ -73,7 +73,7 @@ function Home() {
 
             <div className="hero-actions">
               <MagneticWrap>
-                <a href="documents/Ngo Tan Dai - Resume.pdf" target="_blank" rel="noreferrer" className="btn primary">
+                <a href="/documents/Ngo Tan Dai - Resume.pdf" target="_blank" rel="noreferrer" className="btn primary">
                   Resume (PDF) →
                 </a>
               </MagneticWrap>
@@ -119,7 +119,7 @@ function Home() {
 
           <motion.div className="hero-photo-wrapper" variants={heroItem} style={{ y: photoY }}>
             <div className="hero-photo">
-              <img src="images/profile.jpg" alt="Photo of Tan Dai Ngo" fetchPriority="high" />
+              <img src="/images/profile.jpg" alt="Photo of Tan Dai Ngo" fetchPriority="high" />
             </div>
           </motion.div>
         </motion.div>
@@ -232,7 +232,7 @@ function Home() {
               <div className="activity-header">
                 <div className="activity-photo-wrapper">
                   <div className="activity-photo">
-                    <img src="images/uvic-logo.png" alt="University of Victoria logo" loading="lazy" />
+                    <img src="/images/uvic-logo.png" alt="University of Victoria logo" loading="lazy" />
                   </div>
                 </div>
                 <div>
@@ -250,7 +250,7 @@ function Home() {
               <div className="activity-header">
                 <div className="activity-photo-wrapper">
                   <div className="activity-photo">
-                    <img src="images/uchicago-logo.png" alt="University of Chicago logo" loading="lazy" />
+                    <img src="/images/uchicago-logo.png" alt="University of Chicago logo" loading="lazy" />
                   </div>
                 </div>
                 <div>
@@ -266,7 +266,7 @@ function Home() {
               <div className="activity-header">
                 <div className="activity-photo-wrapper">
                   <div className="activity-photo">
-                    <img src="images/uw-logo.png" alt="University of Washington logo" loading="lazy" />
+                    <img src="/images/uw-logo.png" alt="University of Washington logo" loading="lazy" />
                   </div>
                 </div>
                 <div>
