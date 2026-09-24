@@ -157,7 +157,7 @@ function Projects() {
                   bins to keep the class distribution honest.
                 </li>
                 <li>
-                  Found a previously undescribed geographic variant of feature-specific
+                  Observed a geographic form of feature-specific
                   swamping: skewed spatial density made the model miss anomalies in dense
                   regions. Proposed rank transformation and density-aware subsampling to
                   fix it.
