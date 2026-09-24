@@ -172,6 +172,93 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
+                <img src="/images/auction-microservices.jpg" alt="Auction Marketplace Microservices" loading="lazy" />
+              </div>
+              <h3>Auction Marketplace Microservices (Team of 4)</h3>
+              <p className="edu-meta">
+                Topics in Software Engineering (MPCS 51205)
+                <br />
+                University of Chicago, Feb 2021 – Mar 2021
+              </p>
+              <ul className="bullet-list">
+                <li>
+                  Split an auction platform into six Flask REST services (items, users,
+                  auctions, transactions, watchlist, and messaging), each with its own
+                  MySQL database so one schema change couldn't break another service.
+                </li>
+                <li>
+                  Routed cross-service events through RabbitMQ and stored delivered
+                  messages in MongoDB, pairing a relational and a document store in the
+                  same system.
+                </li>
+                <li>
+                  Orchestrated all 14 containers with Docker Compose, sequencing startup
+                  so each service's database was ready before the service depending on it.
+                </li>
+              </ul>
+              <div className="tag-list">
+                <span className="tag">Python</span>
+                <span className="tag">Flask</span>
+                <span className="tag">MySQL</span>
+                <span className="tag">MongoDB</span>
+                <span className="tag">RabbitMQ</span>
+                <span className="tag">Docker Compose</span>
+                <span className="tag">Microservices</span>
+                <span className="tag">REST API</span>
+              </div>
+              <p style={{ marginTop: '1rem' }}>
+                <a
+                  href="https://github.com/ntdai95/Auction-Website"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn primary"
+                >
+                  View GitHub code →
+                </a>
+              </p>
+            </TiltCard>
+
+            <TiltCard className="card project-card">
+              <div className="project-card-img-wrap">
+                <img src="/images/crypto-trading-bot.jpg" alt="Bitcoin price history chart" loading="lazy" />
+              </div>
+              <h3>Automated Crypto Trading Bot</h3>
+              <p className="edu-meta">
+                Personal Project
+                <br />
+                Feb 2025 – Jul 2025
+              </p>
+              <ul className="bullet-list">
+                <li>
+                  Built an automated Coinbase trading bot in Python that buys only when the
+                  8 period EMA is above the 20 period EMA, price is above the 200 period
+                  EMA, and the fee adjusted return is positive.
+                </li>
+                <li>
+                  Implemented a mean reversion engine that buys a 1% dip inside a rolling
+                  60 minute window and sells on a 2% rise, with per market thresholds,
+                  cooldowns and open trade caps in a CSV config.
+                </li>
+                <li>
+                  Deployed it on AWS EC2 to run unattended, adding a Lambda and SNS
+                  service that alerted on volume spikes.
+                </li>
+              </ul>
+              <div className="tag-list">
+                <span className="tag">Python</span>
+                <span className="tag">Coinbase Advanced Trade API</span>
+                <span className="tag">AWS EC2</span>
+                <span className="tag">AWS Lambda</span>
+                <span className="tag">Amazon SNS</span>
+                <span className="tag">boto3</span>
+                <span className="tag">pandas</span>
+                <span className="tag">Algorithmic Trading</span>
+                <span className="tag">Automation</span>
+              </div>
+            </TiltCard>
+
+            <TiltCard className="card project-card">
+              <div className="project-card-img-wrap">
                 <img src="/images/reservation-system.jpeg" alt="Distributed Facility Reservation System" loading="lazy" />
               </div>
               <h3>Distributed Facility Reservation System (Team of 4)</h3>
@@ -223,54 +310,6 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="/images/auction-microservices.jpg" alt="Auction Marketplace Microservices" loading="lazy" />
-              </div>
-              <h3>Auction Marketplace Microservices (Team of 4)</h3>
-              <p className="edu-meta">
-                Topics in Software Engineering (MPCS 51205)
-                <br />
-                University of Chicago, Feb 2021 – Mar 2021
-              </p>
-              <ul className="bullet-list">
-                <li>
-                  Split an auction platform into six Flask REST services (items, users,
-                  auctions, transactions, watchlist, and messaging), each with its own
-                  MySQL database so one schema change couldn't break another service.
-                </li>
-                <li>
-                  Routed cross-service events through RabbitMQ and stored delivered
-                  messages in MongoDB, pairing a relational and a document store in the
-                  same system.
-                </li>
-                <li>
-                  Orchestrated all 14 containers with Docker Compose, sequencing startup
-                  so each service's database was ready before the service depending on it.
-                </li>
-              </ul>
-              <div className="tag-list">
-                <span className="tag">Python</span>
-                <span className="tag">Flask</span>
-                <span className="tag">MySQL</span>
-                <span className="tag">MongoDB</span>
-                <span className="tag">RabbitMQ</span>
-                <span className="tag">Docker Compose</span>
-                <span className="tag">Microservices</span>
-                <span className="tag">REST API</span>
-              </div>
-              <p style={{ marginTop: '1rem' }}>
-                <a
-                  href="https://github.com/ntdai95/Auction-Website"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn primary"
-                >
-                  View GitHub code →
-                </a>
-              </p>
-            </TiltCard>
-
-            <TiltCard className="card project-card">
-              <div className="project-card-img-wrap">
                 <img src="/images/stock-sentiment-analysis.jpg" alt="Stock Sentiment Analysis" loading="lazy" />
               </div>
               <h3>Stock Sentiment Analysis (Team of 4)</h3>
@@ -306,6 +345,100 @@ function Projects() {
               <p style={{ marginTop: '1rem' }}>
                 <a
                   href="https://github.com/ntdai95/Resume-Projects/tree/main/Stock%20Sentiment%20Analysis"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn primary"
+                >
+                  View GitHub code →
+                </a>
+              </p>
+            </TiltCard>
+
+            <TiltCard className="card project-card">
+              <div className="project-card-img-wrap">
+                <img src="/images/belay-chat.jpg" alt="Belay Real-Time Chat Application" loading="lazy" />
+              </div>
+              <h3>Belay Real-Time Chat Application</h3>
+              <p className="edu-meta">
+                Web Development (MPCS 52553)
+                <br />
+                University of Chicago, Jan 2022 – Feb 2022
+              </p>
+              <ul className="bullet-list">
+                <li>
+                  Designed nested REST routes for channels, messages, and threaded replies,
+                  backing a single-page client with ten fetch-based calls against a Flask API.
+                </li>
+                <li>
+                  Modeled users, channels, messages, and membership across four SQLite
+                  tables, including a last-seen join table used to compute unread counts.
+                </li>
+                <li>
+                  Routed the client with the History API so channel and thread URLs stayed
+                  shareable, and secured accounts with hashed passwords and per-session
+                  authkey tokens checked on every request.
+                </li>
+              </ul>
+              <div className="tag-list">
+                <span className="tag">Python</span>
+                <span className="tag">Flask</span>
+                <span className="tag">SQLite</span>
+                <span className="tag">JavaScript</span>
+                <span className="tag">REST API</span>
+                <span className="tag">Session Authentication</span>
+              </div>
+              <p style={{ marginTop: '1rem' }}>
+                <a
+                  href="https://github.com/ntdai95/Personal-Projects/tree/main/Belay"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn primary"
+                >
+                  View GitHub code →
+                </a>
+              </p>
+            </TiltCard>
+
+            <TiltCard className="card project-card">
+              <div className="project-card-img-wrap">
+                <img src="/images/loan-approval.jpg" alt="Loan Approval Classifier" loading="lazy" />
+              </div>
+              <h3>Loan Approval Classifier (Team of 6)</h3>
+              <p className="edu-meta">
+                Data Mining (CSC 503)
+                <br />
+                University of Victoria, Jul 2026 – Aug 2026
+              </p>
+              <ul className="bullet-list">
+                <li>
+                  Compared baseline, SMOTE, class-weighted, and quantum-transformed versions
+                  of tuned XGBoost and neural network classifiers on an imbalanced
+                  loan-approval dataset.
+                </li>
+                <li>
+                  Split rows into inlier and outlier partitions with Isolation Forest and
+                  trained a specialist ensemble per partition, pooling their predictions as
+                  a mixture of experts at evaluation time.
+                </li>
+                <li>
+                  Added a 12-qubit PennyLane feature transform and wrapped every tuned
+                  model in a custom Fairlearn constraint enforcing false-positive and
+                  false-negative parity across age and income at once.
+                </li>
+              </ul>
+              <div className="tag-list">
+                <span className="tag">Python</span>
+                <span className="tag">scikit-learn</span>
+                <span className="tag">XGBoost</span>
+                <span className="tag">PennyLane</span>
+                <span className="tag">Fairlearn</span>
+                <span className="tag">SMOTE</span>
+                <span className="tag">Imbalanced Classification</span>
+                <span className="tag">Credit Risk</span>
+              </div>
+              <p style={{ marginTop: '1rem' }}>
+                <a
+                  href="https://github.com/ntdai95/CSC503-Final-Project"
                   target="_blank"
                   rel="noreferrer"
                   className="btn primary"
@@ -365,94 +498,6 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="/images/crypto-trading-bot.jpg" alt="Bitcoin price history chart" loading="lazy" />
-              </div>
-              <h3>Automated Crypto Trading Bot</h3>
-              <p className="edu-meta">
-                Personal Project
-                <br />
-                Feb 2025 – Jul 2025
-              </p>
-              <ul className="bullet-list">
-                <li>
-                  Built an automated Coinbase trading bot in Python that buys only when the
-                  8 period EMA is above the 20 period EMA, price is above the 200 period
-                  EMA, and the fee adjusted return is positive.
-                </li>
-                <li>
-                  Implemented a mean reversion engine that buys a 1% dip inside a rolling
-                  60 minute window and sells on a 2% rise, with per market thresholds,
-                  cooldowns and open trade caps in a CSV config.
-                </li>
-                <li>
-                  Deployed it on AWS EC2 to run unattended, adding a Lambda and SNS
-                  service that alerted on volume spikes.
-                </li>
-              </ul>
-              <div className="tag-list">
-                <span className="tag">Python</span>
-                <span className="tag">Coinbase Advanced Trade API</span>
-                <span className="tag">AWS EC2</span>
-                <span className="tag">AWS Lambda</span>
-                <span className="tag">Amazon SNS</span>
-                <span className="tag">boto3</span>
-                <span className="tag">pandas</span>
-                <span className="tag">Algorithmic Trading</span>
-                <span className="tag">Automation</span>
-              </div>
-            </TiltCard>
-
-            <TiltCard className="card project-card">
-              <div className="project-card-img-wrap">
-                <img src="/images/loan-approval.jpg" alt="Loan Approval Classifier" loading="lazy" />
-              </div>
-              <h3>Loan Approval Classifier (Team of 6)</h3>
-              <p className="edu-meta">
-                Data Mining (CSC 503)
-                <br />
-                University of Victoria, Jul 2026 – Aug 2026
-              </p>
-              <ul className="bullet-list">
-                <li>
-                  Compared baseline, SMOTE, class-weighted, and quantum-transformed versions
-                  of tuned XGBoost and neural network classifiers on an imbalanced
-                  loan-approval dataset.
-                </li>
-                <li>
-                  Split rows into inlier and outlier partitions with Isolation Forest and
-                  trained a specialist ensemble per partition, pooling their predictions as
-                  a mixture of experts at evaluation time.
-                </li>
-                <li>
-                  Added a 12-qubit PennyLane feature transform and wrapped every tuned
-                  model in a custom Fairlearn constraint enforcing false-positive and
-                  false-negative parity across age and income at once.
-                </li>
-              </ul>
-              <div className="tag-list">
-                <span className="tag">Python</span>
-                <span className="tag">scikit-learn</span>
-                <span className="tag">XGBoost</span>
-                <span className="tag">PennyLane</span>
-                <span className="tag">Fairlearn</span>
-                <span className="tag">SMOTE</span>
-                <span className="tag">Imbalanced Classification</span>
-                <span className="tag">Credit Risk</span>
-              </div>
-              <p style={{ marginTop: '1rem' }}>
-                <a
-                  href="https://github.com/ntdai95/CSC503-Final-Project"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn primary"
-                >
-                  View GitHub code →
-                </a>
-              </p>
-            </TiltCard>
-
-            <TiltCard className="card project-card">
-              <div className="project-card-img-wrap">
                 <img src="/images/ticket-triage.jpg" alt="Support Ticket Triage" loading="lazy" />
               </div>
               <h3>Support Ticket Triage (Team of 4)</h3>
@@ -488,51 +533,6 @@ function Projects() {
               <p style={{ marginTop: '1rem' }}>
                 <a
                   href="https://github.com/ntdai95/ECE569A-Final-Project"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn primary"
-                >
-                  View GitHub code →
-                </a>
-              </p>
-            </TiltCard>
-
-            <TiltCard className="card project-card">
-              <div className="project-card-img-wrap">
-                <img src="/images/belay-chat.jpg" alt="Belay Real-Time Chat Application" loading="lazy" />
-              </div>
-              <h3>Belay Real-Time Chat Application</h3>
-              <p className="edu-meta">
-                Web Development (MPCS 52553)
-                <br />
-                University of Chicago, Jan 2022 – Feb 2022
-              </p>
-              <ul className="bullet-list">
-                <li>
-                  Designed nested REST routes for channels, messages, and threaded replies,
-                  backing a single-page client with ten fetch-based calls against a Flask API.
-                </li>
-                <li>
-                  Modeled users, channels, messages, and membership across four SQLite
-                  tables, including a last-seen join table used to compute unread counts.
-                </li>
-                <li>
-                  Routed the client with the History API so channel and thread URLs stayed
-                  shareable, and secured accounts with hashed passwords and per-session
-                  authkey tokens checked on every request.
-                </li>
-              </ul>
-              <div className="tag-list">
-                <span className="tag">Python</span>
-                <span className="tag">Flask</span>
-                <span className="tag">SQLite</span>
-                <span className="tag">JavaScript</span>
-                <span className="tag">REST API</span>
-                <span className="tag">Session Authentication</span>
-              </div>
-              <p style={{ marginTop: '1rem' }}>
-                <a
-                  href="https://github.com/ntdai95/Personal-Projects/tree/main/Belay"
                   target="_blank"
                   rel="noreferrer"
                   className="btn primary"
