@@ -15,7 +15,7 @@ function Projects() {
           <StaggerGrid className="cards-grid two-col">
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/ids-network.jpg" alt="Multi-Stage IoT Intrusion Detection" loading="lazy" />
+                <img src="/images/ids-network.jpg" alt="Multi-Stage IoT Intrusion Detection" loading="lazy" />
               </div>
               <span className="featured-badge">★ Featured Project</span>
               <h3>Multi-Stage IoT Intrusion Detection (Team of 7)</h3>
@@ -73,7 +73,7 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/ocean-data.jpg" alt="Ocean Data ML Platform with RAG" loading="lazy" />
+                <img src="/images/ocean-data.jpg" alt="Ocean Data ML Platform with RAG" loading="lazy" />
               </div>
               <span className="featured-badge">★ Featured Project</span>
               <h3>Ocean Data ML Platform with RAG</h3>
@@ -136,7 +136,7 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/isolation-forest.jpg" alt="Anomaly Detection at Scale on Species Data" loading="lazy" />
+                <img src="/images/isolation-forest.jpg" alt="Anomaly Detection at Scale on Species Data" loading="lazy" />
               </div>
               <span className="featured-badge">★ Featured Project</span>
               <h3>Anomaly Detection at Scale on Species Data (Team of 3)</h3>
@@ -188,7 +188,7 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/reservation-system.jpeg" alt="Distributed Facility Reservation System" loading="lazy" />
+                <img src="/images/reservation-system.jpeg" alt="Distributed Facility Reservation System" loading="lazy" />
               </div>
               <h3>Distributed Facility Reservation System (Team of 4)</h3>
               <p className="edu-meta">
@@ -242,7 +242,7 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/auction-microservices.jpg" alt="Auction Marketplace Microservices" loading="lazy" />
+                <img src="/images/auction-microservices.jpg" alt="Auction Marketplace Microservices" loading="lazy" />
               </div>
               <h3>Auction Marketplace Microservices (Team of 4)</h3>
               <p className="edu-meta">
@@ -290,7 +290,7 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/stock-sentiment-analysis.jpg" alt="Stock Sentiment Analysis" loading="lazy" />
+                <img src="/images/stock-sentiment-analysis.jpg" alt="Stock Sentiment Analysis" loading="lazy" />
               </div>
               <h3>Stock Sentiment Analysis (Team of 4)</h3>
               <p className="edu-meta">
@@ -336,7 +336,7 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/parallel-engine.jpg" alt="Parallel Image Processing Engine" loading="lazy" />
+                <img src="/images/parallel-engine.jpg" alt="Parallel Image Processing Engine" loading="lazy" />
               </div>
               <h3>Parallel Image Processing Engine</h3>
               <p className="edu-meta">
@@ -384,7 +384,7 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/crypto-trading-bot.jpg" alt="Bitcoin price history chart" loading="lazy" />
+                <img src="/images/crypto-trading-bot.jpg" alt="Bitcoin price history chart" loading="lazy" />
               </div>
               <h3>Automated Crypto Trading Bot</h3>
               <p className="edu-meta">
@@ -432,7 +432,7 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/loan-approval.jpg" alt="Loan Approval Classifier" loading="lazy" />
+                <img src="/images/loan-approval.jpg" alt="Loan Approval Classifier" loading="lazy" />
               </div>
               <h3>Loan Approval Classifier (Team of 6)</h3>
               <p className="edu-meta">
@@ -486,7 +486,7 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/ticket-triage.jpg" alt="Support Ticket Triage" loading="lazy" />
+                <img src="/images/ticket-triage.jpg" alt="Support Ticket Triage" loading="lazy" />
               </div>
               <h3>Support Ticket Triage (Team of 4)</h3>
               <p className="edu-meta">
@@ -532,7 +532,7 @@ function Projects() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/belay-chat.jpg" alt="Belay Real-Time Chat Application" loading="lazy" />
+                <img src="/images/belay-chat.jpg" alt="Belay Real-Time Chat Application" loading="lazy" />
               </div>
               <h3>Belay Real-Time Chat Application</h3>
               <p className="edu-meta">

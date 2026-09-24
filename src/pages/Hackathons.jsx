@@ -15,7 +15,7 @@ function Hackathons() {
           <StaggerGrid className="cards-grid two-col">
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/shell-fuel.jpg" alt="Sustainable fuel blending graphs" loading="lazy" />
+                <img src="/images/shell-fuel.jpg" alt="Sustainable fuel blending graphs" loading="lazy" />
               </div>
               <span className="featured-badge">★ Featured</span>
               <h3>Fuel Blending Prediction Service</h3>
@@ -59,7 +59,7 @@ function Hackathons() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/imc-trading.jpg" alt="Trading candlestick chart" loading="lazy" />
+                <img src="/images/imc-trading.jpg" alt="Trading candlestick chart" loading="lazy" />
               </div>
               <h3>Algorithmic Trading &amp; Execution Optimization</h3>
               <p className="edu-meta">IMC 64 Bids Coding Challenge · Oct 2021</p>
@@ -86,7 +86,7 @@ function Hackathons() {
 
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="images/koronakiller-game.jpg" alt="KoronaKiller 2D game screenshot" loading="lazy" />
+                <img src="/images/koronakiller-game.jpg" alt="KoronaKiller 2D game screenshot" loading="lazy" />
               </div>
               <h3>KoronaKiller (Game Developer)</h3>
               <p className="edu-meta">Uncommon Hacks · Apr 2021</p>
