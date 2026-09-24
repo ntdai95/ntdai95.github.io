@@ -26,25 +26,17 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Compared six detection models on 206,000 CIC IoT-DIAD 2024 network
-                  flows using a two-stage pipeline: unsupervised packet scoring feeding a
-                  supervised flow classifier, with the best model, a binary XGBoost
-                  classifier, reaching 99.5% recall at 0.94% false-positive rate under a
-                  1% FPR budget. All six models were re-run under split-first
-                  preprocessing and binary XGBoost leads. The full two-stage cascade
-                  scores 95.5% recall at 7.75% FPR.
+                  Compared six supervised classifiers on 206,000 CIC IoT-DIAD 2024
+                  flows under split first preprocessing; binary XGBoost reached 99.5%
+                  recall at 0.94% FPR.
                 </li>
                 <li>
-                  Ran a four-condition holdout experiment and found the benchmark leaks
-                  capture-session identity: benign and attack traffic were recorded on
-                  different days, and a threshold that holds 1% FPR on one capture day
-                  costs over 30% on another.
+                  Designed a four condition holdout that exposed session leakage,
+                  dropping PR-AUC from 0.981 to 0.125.
                 </li>
                 <li>
-                  Reported the honest cost of closing that leak instead of the headline
-                  number. PR-AUC drops from 0.981 to 0.125 and the FPR budget blows out to
-                  over 34% under a session-disjoint split. Wrote an integrity check
-                  confirming the 60-second context features stayed causal and label-free.
+                  Scripted an integrity check rebuilding the 60 second connection count
+                  on a truncated capture, proving causality.
                 </li>
               </ul>
               <div className="tag-list">
@@ -84,26 +76,18 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Built an ML pipeline in Apache Spark (Bronze → Silver → Gold layers) to
-                  harmonize 10M+ NOAA and ONC ocean and weather sensor observations, then
-                  served forecasts and RAG search (hit@k: 0.9, term recall: 0.85 on a
-                  held-out query set) behind a FastAPI backend using Sentence Transformers,
-                  Qdrant, and Ollama, containerized with Docker Compose.
+                  Ingested 10.8M NOAA and Ocean Networks Canada observations into Bronze
+                  and Spark Silver layers, then built a 3.69M row Gold feature table for
+                  forecasting.
                 </li>
                 <li>
-                  Tuned XGBoost forecasting models with Optuna, validating on chronological
-                  holdouts (RMSE: 0.00710, R²: 0.99975), then benchmarked against a naive
-                  persistence baseline that won on raw error (RMSE: 0.00442), confirming the
-                  near-perfect R² reflects the data's autocorrelation rather than learned
-                  skill.
+                  Served model inference and plain English retrieval behind FastAPI with
+                  Qdrant and Ollama, at hit@k 0.90.
                 </li>
                 <li>
-                  Extended that check across seven forecast horizons and a cross-sensor
-                  context variant: persistence won every horizon on water temperature
-                  (XGBoost turning net-negative past 30 minutes), while on air temperature
-                  from the same network, as a control, XGBoost won decisively (48% lower
-                  RMSE at 12 hours), confirming the null result is the signal's physics, not
-                  the method.
+                  Tuned XGBoost with Optuna and tracked runs in MLflow, and in a separate
+                  benchmark beat persistence on air temperature by 48% RMSE at 12 hours,
+                  with a Streamlit dashboard.
                 </li>
               </ul>
               <div className="tag-list">
@@ -205,15 +189,12 @@ function Projects() {
                 <li>
                   Modeled users, reservations, and transactions as 30-minute blocks to
                   support conflict detection and cancellations, then backed it with 71
-                  pytest tests across the API, database, and rules layers.
+                  pytest tests across the API, database, and rules layers. Secured every
+                  endpoint behind session tokens checked for freshness and permission scope.
                 </li>
                 <li>
                   Negotiated a shared HTTP contract with the other four teams and tested our
                   service against their live implementations rather than mocks.
-                </li>
-                <li>
-                  Secured every endpoint behind session tokens checked for freshness and
-                  permission scope.
                 </li>
               </ul>
               <div className="tag-list">
@@ -395,26 +376,17 @@ function Projects() {
               <ul className="bullet-list">
                 <li>
                   Built an automated Coinbase trading bot in Python that buys only when the
-                  8-period EMA is above the 20-period EMA, price is above the 200-period
-                  EMA, and the fee-adjusted return is positive.
+                  8 period EMA is above the 20 period EMA, price is above the 200 period
+                  EMA, and the fee adjusted return is positive.
                 </li>
                 <li>
-                  Implemented a mean-reversion engine that buys a 1% dip inside a rolling
-                  60-minute window and sells on a 2% rise, with per-market thresholds,
-                  cooldowns and open-trade caps in a CSV config.
+                  Implemented a mean reversion engine that buys a 1% dip inside a rolling
+                  60 minute window and sells on a 2% rise, with per market thresholds,
+                  cooldowns and open trade caps in a CSV config.
                 </li>
                 <li>
-                  Deployed the bot on AWS EC2 to run unattended, adding an AWS Lambda and
-                  SNS service that alerts on unusual trading volume.
-                </li>
-                <li>
-                  Drove per-market risk controls from a CSV configuration: price-drop
-                  thresholds in basis points, buy and sell cooldowns, maximum open trades,
-                  and maximum hold time.
-                </li>
-                <li>
-                  Polled live Coinbase market data on a fixed interval, holding rolling
-                  price windows in memory for signal evaluation.
+                  Deployed it on AWS EC2 to run unattended, adding a Lambda and SNS
+                  service that alerted on volume spikes.
                 </li>
               </ul>
               <div className="tag-list">
@@ -452,14 +424,9 @@ function Projects() {
                   a mixture of experts at evaluation time.
                 </li>
                 <li>
-                  Simulated a 12-qubit quantum reservoir in PennyLane, angle-encoding each
-                  row into a Trotterized Ising circuit, as a fixed nonlinear feature
-                  transform ahead of the classical classifiers.
-                </li>
-                <li>
-                  Wrapped every tuned model in a custom Fairlearn constraint enforcing
-                  false-positive/false-negative parity across age and income at once, then
-                  reported the resulting precision/recall trade-off instead of hiding it.
+                  Added a 12-qubit PennyLane feature transform and wrapped every tuned
+                  model in a custom Fairlearn constraint enforcing false-positive and
+                  false-negative parity across age and income at once.
                 </li>
               </ul>
               <div className="tag-list">
