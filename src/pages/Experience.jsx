@@ -54,22 +54,21 @@ function Experience() {
                 </p>
                 <ul className="bullet-list">
                   <li>
-                    Built and maintained REST endpoints across 5+ RBS
-                    (Roaming Business System) microservices in Java and Spring
-                    Boot, keeping Cassandra query response times under 3
-                    seconds across multiple data sources.
+                    Built and maintained REST endpoints across 5+ Roaming Business
+                    System microservices in Java and Spring Boot, keeping Cassandra
+                    query response times under 3 seconds.
                   </li>
                   <li>
-                    Traced 20+ cross-service defects to their root cause and
+                    Automated reprocessing of rejected roaming tests with weekly
+                    Kafka retries, cutting manual effort by 80%.
+                  </li>
+                  <li>
+                    Traced 20+ cross service defects to their root cause and
                     deployed features via Jenkins across 50+ releases.
                   </li>
                   <li>
                     Debugged production issues with Splunk and built a
-                    Mobileum test-rejection email notifier via MS Graph API.
-                  </li>
-                  <li>
-                    Automated reprocessing of rejected roaming tests with
-                    weekly retries using Kafka, cutting manual effort by 80%.
+                    Mobileum email notifier over the Microsoft Graph API.
                   </li>
                 </ul>
                 <div className="tag-list">
@@ -82,7 +81,6 @@ function Experience() {
                   <span className="tag">MS Graph API</span>
                   <span className="tag">Data Pipelines</span>
                   <span className="tag">Automation</span>
-                  <span className="tag">CI/CD</span>
                 </div>
               </article>
             </StaggerItem>
