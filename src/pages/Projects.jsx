@@ -49,9 +49,11 @@ function Projects() {
               </ul>
               <div className="tag-list">
                 <span className="tag">Python</span>
-                <span className="tag">scikit-learn</span>
-                <span className="tag">XGBoost</span>
                 <span className="tag">PyTorch</span>
+                <span className="tag">XGBoost</span>
+                <span className="tag">scikit-learn</span>
+                <span className="tag">K-Means</span>
+                <span className="tag">Autoencoder</span>
                 <span className="tag">Anomaly Detection</span>
                 <span className="tag">Data Leakage Auditing</span>
                 <span className="tag">Model Evaluation</span>
@@ -105,17 +107,19 @@ function Projects() {
                 </li>
               </ul>
               <div className="tag-list">
+                <span className="tag">Python</span>
                 <span className="tag">Apache Spark</span>
+                <span className="tag">PySpark</span>
                 <span className="tag">XGBoost</span>
+                <span className="tag">Optuna</span>
+                <span className="tag">MLflow</span>
                 <span className="tag">RAG</span>
                 <span className="tag">Vector Search</span>
                 <span className="tag">Sentence Transformers</span>
                 <span className="tag">Qdrant</span>
+                <span className="tag">Ollama</span>
                 <span className="tag">FastAPI</span>
                 <span className="tag">Docker</span>
-                <span className="tag">MLflow</span>
-                <span className="tag">Ollama LLM</span>
-                <span className="tag">Optuna</span>
                 <span className="tag">Streamlit</span>
               </div>
               <p style={{ marginTop: '1rem' }}>
@@ -165,7 +169,9 @@ function Projects() {
                 <span className="tag">Python</span>
                 <span className="tag">FastAPI</span>
                 <span className="tag">SQLite</span>
+                <span className="tag">OpenAPI</span>
                 <span className="tag">REST API</span>
+                <span className="tag">pytest</span>
                 <span className="tag">Distributed Systems</span>
                 <span className="tag">Service Interoperability</span>
                 <span className="tag">Database Design</span>
@@ -213,6 +219,7 @@ function Projects() {
                 </li>
               </ul>
               <div className="tag-list">
+                <span className="tag">Python</span>
                 <span className="tag">PySpark</span>
                 <span className="tag">Isolation Forest</span>
                 <span className="tag">Anomaly Detection</span>
