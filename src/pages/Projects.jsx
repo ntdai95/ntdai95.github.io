@@ -34,7 +34,8 @@ function Projects() {
                   FPR.
                 </li>
                 <li>
-                  Ran a four-condition holdout experiment and found the benchmark leaks
+                  Ran a four-condition holdout experiment on the multiclass XGBoost model
+                  and found the benchmark leaks
                   capture-session identity: benign and attack traffic were recorded on
                   different days, and a threshold that holds 1% FPR on one capture day
                   costs over 30% on another.
