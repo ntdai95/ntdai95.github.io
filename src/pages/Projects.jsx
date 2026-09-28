@@ -31,12 +31,14 @@ function Projects() {
                   recall at 0.94% FPR.
                 </li>
                 <li>
-                  Designed a four condition holdout that exposed session leakage,
-                  dropping PR-AUC from 0.981 to 0.125.
+                  Designed a four-condition session-disjoint holdout that exposed
+                  capture-session leakage; PR-AUC fell from 0.981 to 0.125 and the
+                  operating point cost 25.35% FPR.
                 </li>
                 <li>
-                  Scripted an integrity check rebuilding the 60 second connection count
-                  on a truncated capture, proving causality.
+                  Scripted an integrity check that rebuilt 60-second connection counts
+                  on a truncated capture and asserted invariance, confirming the context
+                  features were causal and label-free.
                 </li>
               </ul>
               <div className="tag-list">
@@ -81,8 +83,9 @@ function Projects() {
                   forecasting.
                 </li>
                 <li>
-                  Served model inference and plain English retrieval behind FastAPI with
-                  Qdrant and Ollama, at hit@k 0.90.
+                  Served model inference and plain-English retrieval behind FastAPI with
+                  Qdrant and Ollama, scoring hit@k 0.90 and term recall 0.85 on a held-out
+                  query set.
                 </li>
                 <li>
                   Tuned XGBoost with Optuna and tracked runs in MLflow, and in a separate
@@ -230,17 +233,19 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Implemented a mean reversion engine that buys 1% dips and sells on 2%
-                  rises over rolling 60 minute windows, with per market CSV thresholds,
-                  cooldowns and trade caps.
+                  Implemented a mean reversion engine that polls live Coinbase data on a
+                  fixed interval, keeps rolling 60-minute price windows in memory, buys
+                  1% dips and sells on 2% rises.
                 </li>
                 <li>
-                  Added a second EMA trend strategy gated on the 8 over 20 crossover,
-                  price above the 200, and fee adjusted return.
+                  Built a second EMA trend strategy gated on an 8/20 crossover, price
+                  above the 200-period EMA and positive fee-adjusted return, while enforcing
+                  cooldowns, open-trade caps and maximum hold time from CSV.
                 </li>
                 <li>
-                  Backtested both strategies on four months of Coinbase data, then
-                  deployed the bot on EC2 with Lambda and SNS alerts.
+                  Backtested both strategies on four months of polled Coinbase market data
+                  before release, then deployed the service to AWS EC2 for continuous
+                  operation with Lambda and SNS monitoring for volume spikes.
                 </li>
               </ul>
               <div className="tag-list">
@@ -273,14 +278,14 @@ function Projects() {
                   versioned REST endpoints with published OpenAPI docs.
                 </li>
                 <li>
-                  Modeled users, reservations, and transactions as 30-minute blocks to
-                  support conflict detection and cancellations, then backed it with 71
-                  pytest tests across the API, database, and rules layers. Secured every
-                  endpoint behind session tokens checked for freshness and permission scope.
+                  Modeled users, reservations and transactions as 30-minute blocks for
+                  conflict detection and cancellations, backed by 71 pytest tests across
+                  the API, database and reservation-rules layers.
                 </li>
                 <li>
-                  Negotiated a shared HTTP contract with the other four teams and tested our
-                  service against their live implementations rather than mocks.
+                  Negotiated a shared HTTP contract with four other teams, tested against
+                  their live implementations and secured each endpoint with session-freshness
+                  and permission-scope checks.
                 </li>
               </ul>
               <div className="tag-list">
@@ -468,8 +473,8 @@ function Projects() {
                   atomic counters for coordination.
                 </li>
                 <li>
-                  Cut runtime 20% with the fan-in/fan-out pipeline and 30% with the BSP
-                  model when processing 30+ images.
+                  Reduced runtime by 20% with the fan-in/fan-out pipeline and 30% with the
+                  BSP model while processing batches of more than 30 images.
                 </li>
               </ul>
               <div className="tag-list">
