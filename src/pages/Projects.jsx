@@ -237,9 +237,9 @@ function Projects() {
                   1% dips and sells on 2% rises.
                 </li>
                 <li>
-                  Built a second strategy that bought only when the EMA over 8 periods was
-                  above the EMA over 20, price was above the EMA over 200 periods and the
-                  trade stayed positive after fees. CSV settings controlled its limits.
+                  Added a second strategy that buys only when the 8 period EMA is above
+                  the 20 period EMA, price is above the 200 period EMA, and the return
+                  clears fees. CSV settings control its per market limits.
                 </li>
                 <li>
                   Backtested both strategies on four months of polled Coinbase market data
