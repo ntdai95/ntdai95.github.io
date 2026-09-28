@@ -239,9 +239,7 @@ function Projects() {
                   clears fees. CSV settings control its per market limits.
                 </li>
                 <li>
-                  Backtested both strategies on four months of polled Coinbase market data
-                  before release, then deployed the service to AWS EC2 for continuous
-                  operation with Lambda and SNS monitoring for volume spikes.
+                  Backtested both strategies on four months of polled Coinbase market data, then shipped the service to AWS EC2 through a CI/CD pipeline with Lambda and SNS monitoring for volume spikes.
                 </li>
               </ul>
               <div className="tag-list">
@@ -505,15 +503,13 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Compared three model families on the same ticket routing task: TF-IDF with a linear SVM, retrieval over a kNN index, and DistilBERT embeddings.
+                  Compared three model families on the same ticket routing task: TF-IDF with a linear SVM, retrieval over a kNN index, and DistilBERT embeddings feeding a classifier.
                 </li>
                 <li>
-                  Trained one DistilBERT embedding to predict ticket type, priority, and
-                  queue together instead of building three separate models.
+                  Trained a single DistilBERT embedding to predict ticket type, priority and queue from one shared representation, rather than maintaining three separate classifiers.
                 </li>
                 <li>
-                  Built a Streamlit demo that shows the retrieved neighbor tickets behind
-                  each prediction, so a reviewer can see why the model made a call.
+                  Built a Streamlit demo that shows the retrieved neighbor tickets behind each prediction, so a reviewer can see why the model routed a ticket the way it did.
                 </li>
               </ul>
               <div className="tag-list">
