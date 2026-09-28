@@ -301,7 +301,7 @@ function Home() {
                   background, adjusting the pitch in real time.
                 </li>
                 <li>
-                  Designed assignments around top-down design, object oriented programming and code modularity, each one building on the one before it.
+                  Designed assignments around top-down design, object oriented programming and code modularity, each one building on the previous one.
                 </li>
                 <li>
                   Mentored students one-on-one on debugging and algorithmic
@@ -345,8 +345,7 @@ function Home() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Managed 30+ client datasets in QuickBooks, processing 100+
-                  financial transactions a day.
+                  Managed 30+ client datasets in QuickBooks, processing over 100 financial transactions each day.
                 </li>
                 <li>
                   Automated recurring payroll and tax reporting workflows,
@@ -354,8 +353,7 @@ function Home() {
                   reports on schedule.
                 </li>
                 <li>
-                  Built profit and loss dashboards clients used to track cash flow
-                  and profitability month to month.
+                  Architected profit and loss dashboards clients used to track cash flow and profitability month to month.
                 </li>
               </ul>
             </StaggerItem>
