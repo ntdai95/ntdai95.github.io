@@ -301,9 +301,7 @@ function Home() {
                   background, adjusting the pitch in real time.
                 </li>
                 <li>
-                  Designed project-based assignments around top-down design,
-                  OOP, and code modularity, adjusting the pace and depth of
-                  each explanation live based on how the class responded.
+                  Designed assignments around top-down design, object oriented programming and code modularity, each one building on the one before it.
                 </li>
                 <li>
                   Mentored students one-on-one on debugging and algorithmic
@@ -333,7 +331,7 @@ function Home() {
                   deployed features via Jenkins across 50+ releases.
                 </li>
                 <li>
-                  Kept Cassandra query response times under 3 seconds and debugged production issues with Splunk.
+                  Tuned Cassandra queries to respond in under 3 seconds and debugged production issues with Splunk.
                 </li>
               </ul>
             </StaggerItem>
