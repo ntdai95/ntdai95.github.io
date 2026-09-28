@@ -230,23 +230,17 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Implemented a mean reversion engine that buys a 1% dip inside a rolling
-                  60 minute window and sells on a 2% rise, with per market thresholds,
-                  cooldowns and open trade caps in a CSV config.
+                  Implemented a mean reversion engine that buys 1% dips and sells on 2%
+                  rises over rolling 60 minute windows, with per market CSV thresholds,
+                  cooldowns and trade caps.
                 </li>
                 <li>
-                  Built a second strategy on an EMA trend rule that buys only when the
-                  8 period EMA is above the 20 period EMA, price is above the 200 period
-                  EMA, and the fee adjusted return is positive.
+                  Added a second EMA trend strategy gated on the 8 over 20 crossover,
+                  price above the 200, and fee adjusted return.
                 </li>
                 <li>
-                  Collected four months of live Coinbase market data and backtested the
-                  strategy on it before letting it trade live, the validation any trading
-                  algorithm needs before deployment.
-                </li>
-                <li>
-                  Deployed it on AWS EC2 to run unattended, adding a Lambda and SNS
-                  service that alerted on volume spikes.
+                  Backtested both strategies on four months of Coinbase data, then
+                  deployed the bot on EC2 with Lambda and SNS alerts.
                 </li>
               </ul>
               <div className="tag-list">
