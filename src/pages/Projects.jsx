@@ -238,9 +238,9 @@ function Projects() {
                   1% dips and sells on 2% rises.
                 </li>
                 <li>
-                  Built a second EMA trend strategy gated on an 8/20 crossover, price
-                  above the 200-period EMA and positive fee-adjusted return, while enforcing
-                  cooldowns, open-trade caps and maximum hold time from CSV.
+                  Built a second strategy that bought only when the 8-period EMA was above
+                  the 20-period EMA, price was above the 200-period EMA and the trade stayed
+                  positive after fees, with cooldowns, trade caps and hold time set in CSV.
                 </li>
                 <li>
                   Backtested both strategies on four months of polled Coinbase market data
