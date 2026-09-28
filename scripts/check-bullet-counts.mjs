@@ -2,6 +2,11 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
+// A few slashed terms are standard industry usage, not compressed prose.
+const SLASH_OK = ['CI/CD', 'A/B', 'I/O', 'TCP/IP', '24/7', 'and/or']
+const stripKnownSlashes = (text) =>
+  SLASH_OK.reduce((acc, term) => acc.split(term).join(term.replace('/', '')), text)
+
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 
 const expectations = {
@@ -62,7 +67,7 @@ for (const project of projects) {
       )
       failed = true
     }
-    if (bullet.includes('/') || bullet.includes(';')) {
+    if (stripKnownSlashes(bullet).includes('/') || bullet.includes(';')) {
       console.error(
         `FAIL ${projectsPath}: ${project.title} bullet ${index + 1} uses compressed slash or semicolon prose`
       )
@@ -82,7 +87,7 @@ for (const relativePath of ['src/pages/Home.jsx', 'src/pages/Experience.jsx', 's
   const lists = bulletLists(fs.readFileSync(path.join(root, relativePath), 'utf8'))
   for (const list of lists) {
     for (const [index, bullet] of list.bullets.entries()) {
-      if (bullet.includes('/') || bullet.includes(';')) {
+      if (stripKnownSlashes(bullet).includes('/') || bullet.includes(';')) {
         console.error(
           `FAIL ${relativePath}: ${list.title} bullet ${index + 1} uses compressed slash or semicolon prose`
         )
