@@ -31,14 +31,10 @@ function Projects() {
                   recall at a 0.94% false positive rate.
                 </li>
                 <li>
-                  Tested the models on four separate holdout conditions and found that
-                  capture sessions were leaking into the benchmark. PR AUC fell from
-                  0.981 to 0.125, with a 25.35% false positive rate.
+                  Tested the models on four separate holdout conditions and identified capture sessions leaking into the benchmark. PR AUC fell from 0.981 to 0.125, with a 25.35% false positive rate.
                 </li>
                 <li>
-                  Wrote an integrity check that rebuilt connection counts over 60 second
-                  windows on a shortened capture. It confirmed that the context features
-                  used only past data and no labels.
+                  Engineered an integrity check that rebuilt connection counts over 60 second windows on a shortened capture. It confirmed that the context features used only past data and no labels.
                 </li>
               </ul>
               <div className="tag-list">
@@ -144,9 +140,7 @@ function Projects() {
                   bins to keep the class distribution honest.
                 </li>
                 <li>
-                  Found that uneven geographic density made the model miss unusual records
-                  in crowded regions. Proposed rank transformation and sampling based on
-                  local density to address the problem.
+                  Identified uneven geographic density that made the model miss unusual records in crowded regions. Proposed rank transformation and sampling based on local density to address the problem.
                 </li>
               </ul>
               <div className="tag-list">
@@ -326,7 +320,7 @@ function Projects() {
                   for NVIDIA but weak signal elsewhere.
                 </li>
                 <li>
-                  Modeled volatility with GARCH(1,1) after checking stationarity for each series, and found persistent volatility clustering across the major tech names.
+                  Modeled volatility with GARCH(1,1) after checking stationarity for each series, and identified persistent volatility clustering across the major tech names.
                 </li>
               </ul>
               <div className="tag-list">
