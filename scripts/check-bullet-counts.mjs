@@ -29,6 +29,9 @@ function bulletLists(source) {
   return [...source.matchAll(/<ul className="bullet-list">(.*?)<\/ul>/gs)].map((match) => ({
     title: titleBefore(source, match.index),
     count: [...match[1].matchAll(/<li(?:\s|>)/g)].length,
+    bullets: [...match[1].matchAll(/<li>(.*?)<\/li>/gs)].map((item) =>
+      item[1].replace(/<.*?>/gs, '').replace(/\s+/g, ' ').trim()
+    ),
   }))
 }
 
@@ -50,6 +53,14 @@ for (const project of projects) {
   if (project.count !== 3) {
     console.error(`FAIL ${projectsPath}: ${project.title} has ${project.count} bullets; expected 3`)
     failed = true
+  }
+  for (const [index, bullet] of project.bullets.entries()) {
+    if (bullet.length < 120 || bullet.length > 230) {
+      console.error(
+        `FAIL ${projectsPath}: ${project.title} bullet ${index + 1} has ${bullet.length} characters; expected 120-230`
+      )
+      failed = true
+    }
   }
 }
 
