@@ -230,14 +230,19 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Built an automated Coinbase trading bot in Python that buys only when the
+                  Implemented a mean reversion engine that buys a 1% dip inside a rolling
+                  60 minute window and sells on a 2% rise, with per market thresholds,
+                  cooldowns and open trade caps in a CSV config.
+                </li>
+                <li>
+                  Built a second strategy on an EMA trend rule that buys only when the
                   8 period EMA is above the 20 period EMA, price is above the 200 period
                   EMA, and the fee adjusted return is positive.
                 </li>
                 <li>
-                  Implemented a mean reversion engine that buys a 1% dip inside a rolling
-                  60 minute window and sells on a 2% rise, with per market thresholds,
-                  cooldowns and open trade caps in a CSV config.
+                  Collected four months of live Coinbase market data and backtested the
+                  strategy on it before letting it trade live, the validation any trading
+                  algorithm needs before deployment.
                 </li>
                 <li>
                   Deployed it on AWS EC2 to run unattended, adding a Lambda and SNS
