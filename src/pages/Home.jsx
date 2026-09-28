@@ -297,12 +297,18 @@ function Home() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Taught Python, algorithms, object oriented design and software
-                  engineering fundamentals to 50+ students.
+                  Explained technical material to 50+ students with no prior
+                  background, adjusting the pitch in real time.
                 </li>
                 <li>
-                  Led hands-on coding projects focused on debugging,
-                  algorithmic reasoning and performance optimization.
+                  Designed project-based assignments around top-down design,
+                  OOP, and code modularity, adjusting the pace and depth of
+                  each explanation live based on how the class responded.
+                </li>
+                <li>
+                  Mentored students one-on-one on debugging and algorithmic
+                  reasoning, walking through their own broken code instead of
+                  handing them the fix.
                 </li>
               </ul>
             </StaggerItem>
