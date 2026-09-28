@@ -504,7 +504,7 @@ function Projects() {
                   Compared three model families on the same ticket routing task: TF-IDF with a linear SVM, retrieval over a kNN index, and DistilBERT embeddings feeding a classifier.
                 </li>
                 <li>
-                  Used one DistilBERT encoder to label ticket type, priority and queue together, so the three labels stay consistent rather than drifting apart across three separate models.
+                  Trained one DistilBERT encoder to label ticket type, priority and queue together, so the three labels stay consistent rather than drifting apart across three separate models.
                 </li>
                 <li>
                   Built a Streamlit demo that shows the retrieved neighbor tickets behind each prediction, so a reviewer can see why the model routed a ticket the way it did.
