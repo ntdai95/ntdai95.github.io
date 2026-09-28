@@ -322,9 +322,7 @@ function Home() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Built and maintained REST endpoints across 5+ Roaming Business
-                  System microservices in Java and Spring Boot, keeping Cassandra
-                  query response times under 3 seconds.
+                  Built and maintained REST endpoints across 5+ Roaming Business System microservices in Java and Spring Boot.
                 </li>
                 <li>
                   Automated reprocessing of rejected roaming tests with weekly
@@ -335,8 +333,7 @@ function Home() {
                   deployed features via Jenkins across 50+ releases.
                 </li>
                 <li>
-                  Debugged production issues with Splunk and built a Mobileum
-                  email notifier over the Microsoft Graph API.
+                  Kept Cassandra query response times under 3 seconds and debugged production issues with Splunk.
                 </li>
               </ul>
             </StaggerItem>
