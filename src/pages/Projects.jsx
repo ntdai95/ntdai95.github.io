@@ -239,7 +239,7 @@ function Projects() {
                   clears fees. CSV settings control its per market limits.
                 </li>
                 <li>
-                  Backtested both strategies on four months of polled Coinbase market data, then shipped the service to AWS EC2 through a CI/CD pipeline with Lambda and SNS monitoring for volume spikes.
+                  Backtested both strategies on four months of polled Coinbase market data, then deployed the bot to AWS EC2 with per market thresholds, cooldowns and open trade caps driven from a CSV config.
                 </li>
               </ul>
               <div className="tag-list">
@@ -506,7 +506,7 @@ function Projects() {
                   Compared three model families on the same ticket routing task: TF-IDF with a linear SVM, retrieval over a kNN index, and DistilBERT embeddings feeding a classifier.
                 </li>
                 <li>
-                  Trained a single DistilBERT embedding to predict ticket type, priority and queue from one shared representation, rather than maintaining three separate classifiers.
+                  Used a single DistilBERT encoder to label ticket type, priority and queue at once, which kept the three labels consistent instead of letting three separate models disagree with each other.
                 </li>
                 <li>
                   Built a Streamlit demo that shows the retrieved neighbor tickets behind each prediction, so a reviewer can see why the model routed a ticket the way it did.
