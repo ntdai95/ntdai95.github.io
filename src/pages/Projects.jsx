@@ -81,7 +81,7 @@ function Projects() {
                 <li>
                   Served model predictions and natural language search through FastAPI,
                   Qdrant and Ollama. Retrieval reached hit@k of 0.90 and term recall of
-                  0.85 on queries kept aside for testing.
+                  0.85 on queries held out for testing.
                 </li>
                 <li>
                   Tuned XGBoost with Optuna, tracked the runs in MLflow and tested it

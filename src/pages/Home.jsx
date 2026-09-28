@@ -351,7 +351,7 @@ function Home() {
                   Streamlined recurring payroll and tax reporting workflows, delivering 10+ monthly filings and quarterly compliance reports on schedule.
                 </li>
                 <li>
-                  Architected profit and loss dashboards clients used to track cash flow and profitability month to month.
+                  Architected profit and loss dashboards clients relied on to track cash flow and profitability month to month.
                 </li>
               </ul>
             </StaggerItem>
