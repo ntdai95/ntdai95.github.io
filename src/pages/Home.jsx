@@ -66,7 +66,7 @@ function Home() {
               Data scientist and software engineer with experience in
               predictive modeling, distributed ML systems, backend
               microservices, and analytics dashboards. Actively seeking
-              co-op / internship roles in data science, ML engineering,
+              co-op and internship roles in data science, ML engineering,
               or software development, open to remote work or relocating
               anywhere in Canada.
             </p>
@@ -359,7 +359,7 @@ function Home() {
                   reports on schedule.
                 </li>
                 <li>
-                  Built profit/loss dashboards clients used to track cash flow
+                  Built profit and loss dashboards clients used to track cash flow
                   and profitability month to month.
                 </li>
               </ul>

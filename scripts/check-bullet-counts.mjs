@@ -49,6 +49,7 @@ for (const [relativePath, expected] of Object.entries(expectations)) {
 
 const projectsPath = 'src/pages/Projects.jsx'
 const projects = bulletLists(fs.readFileSync(path.join(root, projectsPath), 'utf8'))
+const compressed = /\b(?:\d+(?:\.\d+)?M-row|(?:8|20|200)-period|12-hour|60-second|four-condition|session-disjoint|capture-session|held-out|plain-English|feature-specific|density-aware|cross-service|reservation-rules|session-freshness|permission-scope|single-page|fetch-based|last-seen|per-session|class-weighted|quantum-transformed|loan-approval|12-qubit|false-positive|false-negative|bulk-synchronous|ticket-triage)\b|fan-in\/fan-out/i
 for (const project of projects) {
   if (project.count !== 3) {
     console.error(`FAIL ${projectsPath}: ${project.title} has ${project.count} bullets; expected 3`)
@@ -60,6 +61,40 @@ for (const project of projects) {
         `FAIL ${projectsPath}: ${project.title} bullet ${index + 1} has ${bullet.length} characters; expected 120-230`
       )
       failed = true
+    }
+    if (bullet.includes('/') || bullet.includes(';')) {
+      console.error(
+        `FAIL ${projectsPath}: ${project.title} bullet ${index + 1} uses compressed slash or semicolon prose`
+      )
+      failed = true
+    }
+    const hit = bullet.match(compressed)
+    if (hit) {
+      console.error(
+        `FAIL ${projectsPath}: ${project.title} bullet ${index + 1} contains compressed fragment '${hit[0]}'`
+      )
+      failed = true
+    }
+  }
+}
+
+for (const relativePath of ['src/pages/Home.jsx', 'src/pages/Experience.jsx', 'src/pages/Hackathons.jsx']) {
+  const lists = bulletLists(fs.readFileSync(path.join(root, relativePath), 'utf8'))
+  for (const list of lists) {
+    for (const [index, bullet] of list.bullets.entries()) {
+      if (bullet.includes('/') || bullet.includes(';')) {
+        console.error(
+          `FAIL ${relativePath}: ${list.title} bullet ${index + 1} uses compressed slash or semicolon prose`
+        )
+        failed = true
+      }
+      const hit = bullet.match(compressed)
+      if (hit) {
+        console.error(
+          `FAIL ${relativePath}: ${list.title} bullet ${index + 1} contains compressed fragment '${hit[0]}'`
+        )
+        failed = true
+      }
     }
   }
 }

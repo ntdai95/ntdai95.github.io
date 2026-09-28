@@ -27,18 +27,18 @@ function Projects() {
               <ul className="bullet-list">
                 <li>
                   Compared six supervised classifiers on 206,000 CIC IoT-DIAD 2024
-                  flows under split first preprocessing; binary XGBoost reached 99.5%
-                  recall at 0.94% FPR.
+                  flows after splitting the data first. Binary XGBoost reached 99.5%
+                  recall at a 0.94% false positive rate.
                 </li>
                 <li>
-                  Designed a four-condition session-disjoint holdout that exposed
-                  capture-session leakage; PR-AUC fell from 0.981 to 0.125 and the
-                  operating point cost 25.35% FPR.
+                  Tested the models on four separate holdout conditions and found that
+                  capture sessions were leaking into the benchmark. PR AUC fell from
+                  0.981 to 0.125, with a 25.35% false positive rate.
                 </li>
                 <li>
-                  Scripted an integrity check that rebuilt 60-second connection counts
-                  on a truncated capture and asserted invariance, confirming the context
-                  features were causal and label-free.
+                  Wrote an integrity check that rebuilt connection counts over 60 second
+                  windows on a shortened capture. It confirmed that the context features
+                  used only past data and no labels.
                 </li>
               </ul>
               <div className="tag-list">
@@ -78,19 +78,19 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Ingested 10.8M NOAA and Ocean Networks Canada observations into Bronze
-                  and Spark Silver layers, then built a 3.69M row Gold feature table for
-                  forecasting.
+                  Ingested 10.8 million observations from NOAA and Ocean Networks Canada
+                  into Bronze and Spark Silver layers, then built a Gold forecasting table
+                  with 3.69 million rows.
                 </li>
                 <li>
-                  Served model inference and plain-English retrieval behind FastAPI with
-                  Qdrant and Ollama, scoring hit@k 0.90 and term recall 0.85 on a held-out
-                  query set.
+                  Served model predictions and natural language search through FastAPI,
+                  Qdrant and Ollama. Retrieval reached hit@k of 0.90 and term recall of
+                  0.85 on queries kept aside for testing.
                 </li>
                 <li>
-                  Tuned XGBoost with Optuna and tracked runs in MLflow, and in a separate
-                  benchmark beat persistence on air temperature by 48% RMSE at 12 hours,
-                  with a Streamlit dashboard.
+                  Tuned XGBoost with Optuna, tracked the runs in MLflow and tested it
+                  against persistence in a separate benchmark. Air temperature RMSE fell
+                  by 48% for forecasts twelve hours ahead.
                 </li>
               </ul>
               <div className="tag-list">
@@ -144,10 +144,9 @@ function Projects() {
                   bins to keep the class distribution honest.
                 </li>
                 <li>
-                  Observed a geographic form of feature-specific
-                  swamping: skewed spatial density made the model miss anomalies in dense
-                  regions. Proposed rank transformation and density-aware subsampling to
-                  fix it.
+                  Found that uneven geographic density made the model miss unusual records
+                  in crowded regions. Proposed rank transformation and sampling based on
+                  local density to address the problem.
                 </li>
               </ul>
               <div className="tag-list">
@@ -190,7 +189,7 @@ function Projects() {
                   MySQL database so one schema change couldn't break another service.
                 </li>
                 <li>
-                  Routed cross-service events through RabbitMQ and stored delivered
+                  Routed events between services through RabbitMQ and stored delivered
                   messages in MongoDB, pairing a relational and a document store in the
                   same system.
                 </li>
@@ -234,13 +233,13 @@ function Projects() {
               <ul className="bullet-list">
                 <li>
                   Implemented a mean reversion engine that polls live Coinbase data on a
-                  fixed interval, keeps rolling 60-minute price windows in memory, buys
+                  fixed interval, keeps rolling one hour price windows in memory, buys
                   1% dips and sells on 2% rises.
                 </li>
                 <li>
-                  Built a second strategy that bought only when the 8-period EMA was above
-                  the 20-period EMA, price was above the 200-period EMA and the trade stayed
-                  positive after fees, with cooldowns, trade caps and hold time set in CSV.
+                  Built a second strategy that bought only when the EMA over 8 periods was
+                  above the EMA over 20, price was above the EMA over 200 periods and the
+                  trade stayed positive after fees. CSV settings controlled its limits.
                 </li>
                 <li>
                   Backtested both strategies on four months of polled Coinbase market data
@@ -278,14 +277,14 @@ function Projects() {
                   versioned REST endpoints with published OpenAPI docs.
                 </li>
                 <li>
-                  Modeled users, reservations and transactions as 30-minute blocks for
+                  Modeled users, reservations and transactions as half hour blocks for
                   conflict detection and cancellations, backed by 71 pytest tests across
-                  the API, database and reservation-rules layers.
+                  the API, database and reservation rules.
                 </li>
                 <li>
                   Negotiated a shared HTTP contract with four other teams, tested against
-                  their live implementations and secured each endpoint with session-freshness
-                  and permission-scope checks.
+                  their live implementations and secured each endpoint by checking the age
+                  and permissions of every session.
                 </li>
               </ul>
               <div className="tag-list">
@@ -371,16 +370,16 @@ function Projects() {
               <ul className="bullet-list">
                 <li>
                   Designed nested REST routes for channels, messages, and threaded replies,
-                  backing a single-page client with ten fetch-based calls against a Flask API.
+                  backing a browser client that made ten fetch calls to a Flask API.
                 </li>
                 <li>
                   Modeled users, channels, messages, and membership across four SQLite
-                  tables, including a last-seen join table used to compute unread counts.
+                  tables, including a join table that tracked the last message each user saw.
                 </li>
                 <li>
                   Routed the client with the History API so channel and thread URLs stayed
-                  shareable, and secured accounts with hashed passwords and per-session
-                  authkey tokens checked on every request.
+                  shareable, and secured accounts with hashed passwords and an authkey token
+                  checked on every request.
                 </li>
               </ul>
               <div className="tag-list">
@@ -415,9 +414,9 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Compared baseline, SMOTE, class-weighted, and quantum-transformed versions
-                  of tuned XGBoost and neural network classifiers on an imbalanced
-                  loan-approval dataset.
+                  Compared baseline, SMOTE, class weighting and a quantum feature transform
+                  across tuned XGBoost and neural network classifiers on imbalanced loan
+                  approval data.
                 </li>
                 <li>
                   Split rows into inlier and outlier partitions with Isolation Forest and
@@ -425,9 +424,9 @@ function Projects() {
                   a mixture of experts at evaluation time.
                 </li>
                 <li>
-                  Added a 12-qubit PennyLane feature transform and wrapped every tuned
-                  model in a custom Fairlearn constraint enforcing false-positive and
-                  false-negative parity across age and income at once.
+                  Added a PennyLane feature transform using 12 simulated qubits and wrapped
+                  every tuned model in a Fairlearn constraint that balanced false positive
+                  and false negative rates across age and income.
                 </li>
               </ul>
               <div className="tag-list">
@@ -468,12 +467,12 @@ function Projects() {
                   blurring, and edge detection through custom 2D convolution kernels.
                 </li>
                 <li>
-                  Implemented sequential, fan-in/fan-out, and bulk-synchronous parallel
+                  Implemented sequential, staged pipeline and bulk synchronous parallel
                   (BSP) execution models using goroutines, channels, sync.WaitGroup, and
                   atomic counters for coordination.
                 </li>
                 <li>
-                  Reduced runtime by 20% with the fan-in/fan-out pipeline and 30% with the
+                  Reduced runtime by 20% with the staged pipeline and 30% with the
                   BSP model while processing batches of more than 30 images.
                 </li>
               </ul>
@@ -512,7 +511,7 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Compared three model families on the same ticket-triage task: TF-IDF
+                  Compared three model families on the same ticket routing task: TF-IDF
                   with a linear SVM, retrieval by cosine similarity over a kNN index, and
                   DistilBERT embeddings feeding a small classifier.
                 </li>
