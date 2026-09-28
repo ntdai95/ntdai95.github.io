@@ -234,9 +234,7 @@ function Projects() {
                   1% dips and sells on 2% rises.
                 </li>
                 <li>
-                  Added a second strategy that buys only when the 8 period EMA is above
-                  the 20 period EMA, price is above the 200 period EMA, and the return
-                  clears fees. CSV settings control its per market limits.
+                  Added a second strategy that buys only when the 8 period EMA is above the 20 period EMA, price is above the 200 period EMA and the trade still clears fees, with per market limits set in a CSV file.
                 </li>
                 <li>
                   Backtested both strategies on four months of polled Coinbase market data, then deployed the bot to AWS EC2 with per market thresholds, cooldowns and open trade caps driven from a CSV config.
@@ -506,7 +504,7 @@ function Projects() {
                   Compared three model families on the same ticket routing task: TF-IDF with a linear SVM, retrieval over a kNN index, and DistilBERT embeddings feeding a classifier.
                 </li>
                 <li>
-                  Used a single DistilBERT encoder to label ticket type, priority and queue at once, which kept the three labels consistent instead of letting three separate models disagree with each other.
+                  Used one DistilBERT encoder to label ticket type, priority and queue together, so the three labels stay consistent rather than drifting apart across three separate models.
                 </li>
                 <li>
                   Built a Streamlit demo that shows the retrieved neighbor tickets behind each prediction, so a reviewer can see why the model routed a ticket the way it did.
