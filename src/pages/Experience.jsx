@@ -91,10 +91,8 @@ function Experience() {
                   Managed 30+ client datasets in QuickBooks, processing over 100 financial transactions each day.
                 </li>
                   <li>
-                    Automated recurring payroll and tax reporting workflows,
-                    delivering 10+ monthly filings and quarterly compliance
-                    reports on schedule.
-                  </li>
+                  Streamlined recurring payroll and tax reporting workflows, delivering 10+ monthly filings and quarterly compliance reports on schedule.
+                </li>
                   <li>
                   Architected profit and loss dashboards clients used to track cash flow and profitability month to month.
                 </li>

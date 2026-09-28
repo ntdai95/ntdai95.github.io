@@ -65,8 +65,7 @@ function Hackathons() {
               <p className="edu-meta">IMC 64 Bids Coding Challenge · Oct 2021</p>
               <ul className="bullet-list">
                 <li>
-                  Wrote Java trading algorithms for order execution and portfolio
-                  rebalancing against a hard time budget per round.
+                  Engineered Java trading algorithms for order execution and portfolio rebalancing against a hard time budget per round.
                 </li>
                 <li>
                   Tested and profiled the code under competition constraints, fixing
