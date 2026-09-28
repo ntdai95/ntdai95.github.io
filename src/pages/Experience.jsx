@@ -102,7 +102,7 @@ function Experience() {
                     reports on schedule.
                   </li>
                   <li>
-                    Built profit/loss dashboards clients used to track cash flow
+                    Built profit and loss dashboards clients used to track cash flow
                     and profitability month to month.
                   </li>
                 </ul>
