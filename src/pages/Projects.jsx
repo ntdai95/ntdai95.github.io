@@ -184,9 +184,7 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Split an auction platform into six Flask REST services (items, users,
-                  auctions, transactions, watchlist, and messaging), each with its own
-                  MySQL database so one schema change couldn't break another service.
+                  Split an auction platform into six Flask REST services covering items, users, auctions, transactions, watchlist and messaging, each behind its own MySQL database.
                 </li>
                 <li>
                   Routed events between services through RabbitMQ and stored delivered
@@ -194,8 +192,7 @@ function Projects() {
                   same system.
                 </li>
                 <li>
-                  Orchestrated all 14 containers with Docker Compose, sequencing startup
-                  so each service's database was ready before the service depending on it.
+                  Deployed all 14 containers with Docker Compose, sequencing startup so each service's database was ready before the service depending on it.
                 </li>
               </ul>
               <div className="tag-list">
@@ -333,8 +330,7 @@ function Projects() {
                   for NVIDIA but weak signal elsewhere.
                 </li>
                 <li>
-                  Modeled volatility with GARCH(1,1) after checking stationarity, and found
-                  persistent volatility clustering across the major tech names.
+                  Modeled volatility with GARCH(1,1) after checking stationarity for each series, and found persistent volatility clustering across the major tech names.
                 </li>
               </ul>
               <div className="tag-list">
@@ -467,9 +463,7 @@ function Projects() {
                   blurring, and edge detection through custom 2D convolution kernels.
                 </li>
                 <li>
-                  Implemented sequential, staged pipeline and bulk synchronous parallel
-                  (BSP) execution models using goroutines, channels, sync.WaitGroup, and
-                  atomic counters for coordination.
+                  Implemented sequential, staged pipeline and bulk synchronous parallel execution models using goroutines, channels and sync.WaitGroup.
                 </li>
                 <li>
                   Reduced runtime by 20% with the staged pipeline and 30% with the
@@ -511,9 +505,7 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Compared three model families on the same ticket routing task: TF-IDF
-                  with a linear SVM, retrieval by cosine similarity over a kNN index, and
-                  DistilBERT embeddings feeding a small classifier.
+                  Compared three model families on the same ticket routing task: TF-IDF with a linear SVM, retrieval over a kNN index, and DistilBERT embeddings.
                 </li>
                 <li>
                   Trained one DistilBERT embedding to predict ticket type, priority, and
