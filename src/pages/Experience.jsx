@@ -28,8 +28,7 @@ function Experience() {
                 </li>
                   <li>
                     Mentored students one-on-one on debugging and algorithmic
-                    reasoning, walking through their own broken code instead of
-                    handing them the fix.
+                    reasoning by working through their own broken code.
                   </li>
                 </ul>
                 <div className="tag-list">
