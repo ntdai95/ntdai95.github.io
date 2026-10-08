@@ -74,20 +74,19 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Ingested 10.8 million observations from NOAA and Ocean Networks Canada
-                  into Bronze and Spark Silver layers, then built a Gold forecasting table
-                  with 3.69 million rows.
+                  Harmonized 10.8 million NOAA and Ocean Networks Canada observations into
+                  raw, cleaned and curated layers, validating each boundary so any figure can
+                  be traced back to what the instrument actually reported.
                 </li>
                 <li>
-                  Served model predictions and natural language search through FastAPI,
-                  Qdrant and Ollama. Retrieval reached hit@k of 0.90 and term recall of
-                  0.85 on queries held out for testing.
+                  Benchmarked XGBoost against a naive baseline on water temperature, where the
+                  baseline won at all seven horizons. The same pipeline cut air temperature
+                  forecast error by 48% at twelve hours, so the null was the signal.
                 </li>
                 <li>
-                  Benchmarked XGBoost against persistence across seven water temperature
-                  horizons, where persistence won every one. The same pipeline cut air
-                  temperature RMSE by 48% at twelve hours, so the null was the signal, not
-                  the method.
+                  Served predictions and natural language search through FastAPI, Qdrant and
+                  Ollama, reaching 90% retrieval success and 85% term recall on held out
+                  queries covering every document.
                 </li>
               </ul>
               <div className="tag-list">
