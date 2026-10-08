@@ -27,15 +27,13 @@ function Hackathons() {
                   Dockerized AWS EC2 instance.
                 </li>
                 <li>
-                  Selected multi-output CatBoost on five-fold out-of-fold predictions,
-                  scoring 0.64 MAPE against XGBoost's 1.29 with MAPE computed in the
-                  targets' original units rather than scaled ones.
+                  Benchmarked CatBoost against XGBoost under 5-fold cross-validation and
+                  shipped CatBoost after it came in at 0.64 MAPE against XGBoost's 1.29.
                 </li>
                 <li>
-                  Engineered weighted component aggregates, a per-property spread and
-                  Shannon entropy over the five blend fractions, then packaged the fitted
-                  scaler and training medians with the model so serving reused the same
-                  transforms.
+                  Engineered entropy-based mixture metrics as model features and
+                  serialized the preprocessing pipeline so training and inference stayed
+                  consistent.
                 </li>
               </ul>
               <div className="tag-list">

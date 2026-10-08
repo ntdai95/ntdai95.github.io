@@ -26,16 +26,15 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Tuned a binary XGBoost decision threshold to a 1% false positive
-                  budget, reaching 99.5% recall at a 0.94% false positive rate, the highest
-                  recall of six classifiers compared on 206,000 CIC IoT-DIAD 2024 flows at
-                  0.989 PR AUC.
+                  Compared six supervised classifiers on 206,000 CIC IoT-DIAD 2024
+                  flows after splitting the data first. Binary XGBoost reached 99.5%
+                  recall at a 0.94% false positive rate.
                 </li>
                 <li>
                   Tested the models on four separate holdout conditions and identified capture sessions leaking into the benchmark. PR AUC fell from 0.981 to 0.125, with a 25.35% false positive rate.
                 </li>
                 <li>
-                  Refit imputation, outlier handling and scaling on training rows only, after the original pipeline had used the label before splitting. The correction reordered the six models and changed which one was selected.
+                  Engineered an integrity check that rebuilt connection counts over 60 second windows on a shortened capture. It confirmed that the context features used only past data and no labels.
                 </li>
               </ul>
               <div className="tag-list">
@@ -81,8 +80,8 @@ function Projects() {
                 </li>
                 <li>
                   Served model predictions and natural language search through FastAPI,
-                  Qdrant and Ollama. Retrieval scored hit@k of 0.9 and term recall of 0.85
-                  over ten held out questions at top_k of 2.
+                  Qdrant and Ollama. Retrieval reached hit@k of 0.90 and term recall of
+                  0.85 on queries held out for testing.
                 </li>
                 <li>
                   Tuned the water temperature forecaster with Optuna and tracked the runs
@@ -225,8 +224,8 @@ function Projects() {
               <ul className="bullet-list">
                 <li>
                   Implemented a mean reversion engine that polls live Coinbase data on a
-                  fixed interval, keeps rolling one hour price windows in memory, and buys
-                  and sells on per market thresholds set in basis points.
+                  fixed interval, keeps rolling one hour price windows in memory, buys
+                  1% dips and sells on 2% rises.
                 </li>
                 <li>
                   Added a second strategy that buys only when the 8 period EMA is above the 20 period EMA, price is above the 200 period EMA and the trade still clears fees, with per market limits set in a CSV file.
