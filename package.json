@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "prebuild": "node scripts/check-bullet-counts.mjs",
+    "prebuild": "node scripts/check-bullet-counts.mjs && node scripts/test-content-guards.mjs",
     "build": "vite build",
     "postbuild": "node scripts/generate-static-routes.mjs",
     "preview": "vite preview"
