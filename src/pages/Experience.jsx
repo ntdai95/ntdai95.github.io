@@ -56,12 +56,12 @@ function Experience() {
                     Kafka retries, cutting manual effort by 80%.
                   </li>
                   <li>
-                    Built REST endpoints on 5+ Java and Spring Boot roaming services, holding
+                    Owned REST endpoints on 5+ Java and Spring Boot roaming services, holding
                     Cassandra reads under 1 second across multiple data sources.
                   </li>
                   <li>
-                    Debugged production issues with Splunk and built a Mobileum
-                    test-rejection email notifier over the Microsoft Graph API.
+                    Debugged production issues in Splunk and documented the systems and
+                    runbooks in Confluence so the work survived handover.
                   </li>
                   <li>
                     Traced 20+ cross service defects to their root cause and

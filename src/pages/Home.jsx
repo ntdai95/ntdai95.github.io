@@ -320,7 +320,7 @@ function Home() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Built and maintained REST endpoints across 5+ Roaming Business System microservices in Java and Spring Boot.
+                  Owned REST endpoints on 5+ Java and Spring Boot roaming services, holding Cassandra reads under 1 second.
                 </li>
                 <li>
                   Automated reprocessing of rejected roaming tests with weekly
@@ -331,7 +331,7 @@ function Home() {
                   deployed features via Jenkins across 50+ releases.
                 </li>
                 <li>
-                  Held Cassandra query response times under 1 second and debugged production issues with Splunk.
+                  Debugged production issues in Splunk and documented systems and runbooks so the work survived handover.
                 </li>
               </ul>
             </StaggerItem>
