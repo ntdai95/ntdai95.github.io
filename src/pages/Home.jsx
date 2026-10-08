@@ -303,7 +303,7 @@ function Home() {
                   background, adjusting the pitch in real time.
                 </li>
                 <li>
-                  Designed assignments around top-down design, object oriented programming and code modularity, each one building on the previous one.
+                  Designed a sequence of assignments on top-down design, object oriented programming and code modularity, with each assignment building on the last.
                 </li>
                 <li>
                   Mentored students one-on-one on debugging and algorithmic

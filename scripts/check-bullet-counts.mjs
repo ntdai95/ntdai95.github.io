@@ -25,6 +25,36 @@ const expectations = {
 
 const TEACHING_MENTORSHIP =
   'Mentored students one-on-one on debugging and algorithmic reasoning by working through their own broken code.'
+const TEACHING_ASSIGNMENTS =
+  'Designed a sequence of assignments on top-down design, object oriented programming and code modularity, with each assignment building on the last.'
+
+const normalize = (text) =>
+  text
+    .replaceAll('&amp;', '&')
+    .replace(/[\-\u2010-\u2015]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase()
+
+// Stable identity facts shared with cv.md and resume_master.json. The Python
+// cross-surface verifier checks all three sources; this local guard stops a
+// website-only edit from bypassing that contract during build and deployment.
+const projectContract = [
+  ['Multi-Stage IoT Intrusion Detection', ['206,000', '99.5%', '0.94%', '0.981', '0.125', '60 second']],
+  ['Ocean Data ML Platform with RAG', ['water temperature', 'persistence', 'seven', 'horizons', 'air temperature', '48%', 'hit@k', '0.9', 'term recall', '0.85', 'FastAPI', 'Qdrant', 'Ollama']],
+  ['Anomaly Detection at Scale on Species Data', ['Isolation Forest', 'PySpark', 'geographic', 'density']],
+  ['Auction Marketplace Microservices', ['Flask REST services', 'MySQL', 'RabbitMQ', 'MongoDB', '14 containers', 'Docker Compose']],
+  ['Automated Crypto Trading Bot', ['1%', '2%', '8 period', '20', '200 period', 'four months', 'AWS EC2', 'CSV', 'cooldowns', 'open trade']],
+  ['Distributed Facility Reservation System', ['27', 'OpenAPI', '71', 'pytest', 'session', 'permission']],
+  ['End-to-End Multi-Output Fuel Blending System', ['10', 'blend properties', 'FastAPI', 'Docker', 'AWS EC2', 'CatBoost', 'XGBoost', '0.64', '1.29', 'entropy', 'serialized', 'preprocessing']],
+  ['Stock Sentiment Analysis', ['15,194', '861', '10 tech stocks', 'NVIDIA', 'GARCH(1,1)', 'SQLite', 'Neo4j']],
+  ['Belay Real-Time Chat Application', ['nested REST routes', 'History API', 'hashed passwords', 'authkey', 'fetch']],
+  ['Loan Approval Classifier', ['XGBoost', 'SMOTE', 'quantum', 'Isolation Forest', 'mixture of experts', '12', 'Fairlearn', 'age', 'income']],
+  ['Parallel Image Processing Engine', ['20%', '30%', 'staged pipeline', 'bulk synchronous', '2D convolution']],
+  ['Support Ticket Triage', ['TF IDF', 'SVM', 'kNN', 'DistilBERT', 'type', 'priority', 'queue', 'Streamlit', 'retrieved']],
+  ['Algorithmic Trading & Execution Optimization', ['Java', 'order execution', 'portfolio rebalancing', 'final round', 'top 250', '1,500']],
+  ['KoronaKiller', ['team of 3', 'Python', '2D simulation', 'player health', 'event driven', 'continuous background scrolling', 'randomized object', 'collision detection', '48 hour']],
+]
 
 let failed = false
 
@@ -59,11 +89,20 @@ for (const [relativePath, expected] of Object.entries(expectations)) {
       )
       failed = true
     }
+    if (title === 'Math and Computer Science Teacher' && entry?.bullets.at(1) !== TEACHING_ASSIGNMENTS) {
+      console.error(
+        `FAIL ${relativePath}: second teaching bullet drifted; expected exact resume wording`
+      )
+      failed = true
+    }
   }
 }
 
 const projectsPath = 'src/pages/Projects.jsx'
 const projects = bulletLists(fs.readFileSync(path.join(root, projectsPath), 'utf8'))
+const hackathonsPath = 'src/pages/Hackathons.jsx'
+const hackathons = bulletLists(fs.readFileSync(path.join(root, hackathonsPath), 'utf8'))
+const projectCards = [...projects, ...hackathons]
 const compressed = /\b(?:\d+(?:\.\d+)?M-row|(?:8|20|200)-period|12-hour|60-second|four-condition|session-disjoint|capture-session|held-out|plain-English|feature-specific|density-aware|cross-service|reservation-rules|session-freshness|permission-scope|single-page|fetch-based|last-seen|per-session|class-weighted|quantum-transformed|loan-approval|12-qubit|false-positive|false-negative|bulk-synchronous|ticket-triage)\b|fan-in\/fan-out/i
 for (const project of projects) {
   if (project.count !== 3) {
@@ -93,6 +132,37 @@ for (const project of projects) {
   }
 }
 
+const matchedProjectTitles = new Set()
+for (const [canonicalTitle, facts] of projectContract) {
+  const matches = projectCards.filter((project) =>
+    normalize(project.title).includes(normalize(canonicalTitle))
+  )
+  if (matches.length !== 1) {
+    console.error(
+      `FAIL website project parity: expected one '${canonicalTitle}' card; found ${matches.length}`
+    )
+    failed = true
+    continue
+  }
+  const project = matches[0]
+  matchedProjectTitles.add(project.title)
+  const text = normalize(`${project.title} ${project.bullets.join(' ')}`)
+  for (const fact of facts) {
+    if (!text.includes(normalize(fact))) {
+      console.error(
+        `FAIL website project parity: ${canonicalTitle} is missing resume fact '${fact}'`
+      )
+      failed = true
+    }
+  }
+}
+for (const project of projectCards) {
+  if (!matchedProjectTitles.has(project.title)) {
+    console.error(`FAIL website project parity: uncontracted project card '${project.title}'`)
+    failed = true
+  }
+}
+
 for (const relativePath of ['src/pages/Home.jsx', 'src/pages/Experience.jsx', 'src/pages/Hackathons.jsx']) {
   const lists = bulletLists(fs.readFileSync(path.join(root, relativePath), 'utf8'))
   for (const list of lists) {
@@ -115,4 +185,4 @@ for (const relativePath of ['src/pages/Home.jsx', 'src/pages/Experience.jsx', 's
 }
 
 if (failed) process.exit(1)
-console.log(`PASS website bullet counts: T-Mobile 4; ${projects.length} projects and every other listed card 3`)
+console.log(`PASS website bullet counts and resume parity: T-Mobile 4; ${projectCards.length} project cards covered`)

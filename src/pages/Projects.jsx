@@ -79,9 +79,9 @@ function Projects() {
                   traced back to what the instrument actually reported.
                 </li>
                 <li>
-                  Ran the pipeline on two temperature series. On air temperature it cut RMSE
-                  by 48% at twelve hours, while on water temperature a persistence baseline won
-                  at all seven horizons, placing the limit in the data, not the method.
+                  Diagnosed the data as the limit on water temperature after persistence beat
+                  XGBoost across all seven horizons. The same pipeline cut air temperature
+                  RMSE by 48% at twelve hours.
                 </li>
                 <li>
                   Served predictions and natural language search through FastAPI, Qdrant and
