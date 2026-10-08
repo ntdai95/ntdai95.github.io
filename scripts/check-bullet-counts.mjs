@@ -23,6 +23,9 @@ const expectations = {
   },
 }
 
+const TEACHING_MENTORSHIP =
+  'Mentored students one-on-one on debugging and algorithmic reasoning by working through their own broken code.'
+
 let failed = false
 
 function titleBefore(source, offset) {
@@ -44,9 +47,16 @@ for (const [relativePath, expected] of Object.entries(expectations)) {
   const source = fs.readFileSync(path.join(root, relativePath), 'utf8')
   const lists = bulletLists(source)
   for (const [title, count] of Object.entries(expected)) {
-    const actual = lists.find((entry) => entry.title === title)?.count
+    const entry = lists.find((item) => item.title === title)
+    const actual = entry?.count
     if (actual !== count) {
       console.error(`FAIL ${relativePath}: ${title} has ${actual ?? 0} bullets; expected ${count}`)
+      failed = true
+    }
+    if (title === 'Math and Computer Science Teacher' && entry?.bullets.at(-1) !== TEACHING_MENTORSHIP) {
+      console.error(
+        `FAIL ${relativePath}: final teaching bullet drifted; expected exact resume wording`
+      )
       failed = true
     }
   }
