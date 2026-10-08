@@ -81,8 +81,8 @@ function Projects() {
                 </li>
                 <li>
                   Served model predictions and natural language search through FastAPI,
-                  Qdrant and Ollama. The target document came back in the top two for 9 of
-                  10 held out questions, with term recall of 0.85.
+                  Qdrant and Ollama. Retrieval scored hit@k of 0.9 and term recall of 0.85
+                  over ten held out questions at top_k of 2.
                 </li>
                 <li>
                   Tuned the water temperature forecaster with Optuna and tracked the runs
@@ -225,8 +225,8 @@ function Projects() {
               <ul className="bullet-list">
                 <li>
                   Implemented a mean reversion engine that polls live Coinbase data on a
-                  fixed interval, keeps rolling one hour price windows in memory, buys
-                  1% dips and sells on 2% rises.
+                  fixed interval, keeps rolling one hour price windows in memory, and buys
+                  and sells on per market thresholds set in basis points.
                 </li>
                 <li>
                   Added a second strategy that buys only when the 8 period EMA is above the 20 period EMA, price is above the 200 period EMA and the trade still clears fees, with per market limits set in a CSV file.
