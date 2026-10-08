@@ -331,7 +331,7 @@ function Home() {
                   deployed features via Jenkins across 50+ releases.
                 </li>
                 <li>
-                  Tuned Cassandra queries to respond in under 3 seconds and debugged production issues with Splunk.
+                  Held Cassandra query response times under 500 ms and debugged production issues with Splunk.
                 </li>
               </ul>
             </StaggerItem>
