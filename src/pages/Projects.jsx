@@ -75,18 +75,18 @@ function Projects() {
               <ul className="bullet-list">
                 <li>
                   Harmonized 10.8 million NOAA and Ocean Networks Canada observations into
-                  raw, cleaned and curated layers, validating each boundary so any figure can
-                  be traced back to what the instrument actually reported.
+                  Bronze, Silver and Gold layers, validating each boundary so any figure can be
+                  traced back to what the instrument actually reported.
                 </li>
                 <li>
-                  Benchmarked XGBoost against a naive baseline on water temperature, where the
-                  baseline won at all seven horizons. The same pipeline cut air temperature
-                  forecast error by 48% at twelve hours, so the null was the signal.
+                  Ran one pipeline on two signals to separate a weak method from a weak
+                  signal. On air temperature it cut RMSE by 48% at the twelve hour horizon, while
+                  on water temperature a naive persistence baseline won at all seven horizons.
                 </li>
                 <li>
                   Served predictions and natural language search through FastAPI, Qdrant and
-                  Ollama, reaching 90% retrieval success and 85% term recall on held out
-                  queries covering every document.
+                  Ollama, reaching hit@k of 0.9 and term recall of 0.85 on held out queries
+                  covering every document.
                 </li>
               </ul>
               <div className="tag-list">
