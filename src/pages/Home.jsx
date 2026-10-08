@@ -275,6 +275,8 @@ function Home() {
                     University of Washington · Sep 2015 – Aug 2019
                     <br />
                     Minors: Informatics, Applied Mathematics · GPA: 3.57 / 4.00
+                    <br />
+                    Certificate in Quantitative Managerial Economics · Annual Dean's List
                   </p>
                 </div>
               </div>
