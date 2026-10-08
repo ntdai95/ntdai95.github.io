@@ -26,15 +26,16 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Compared six supervised classifiers on 206,000 CIC IoT-DIAD 2024
-                  flows after splitting the data first. Binary XGBoost reached 99.5%
-                  recall at a 0.94% false positive rate.
+                  Calibrated binary XGBoost to a 1% false positive budget, reaching
+                  99.5% recall at a 0.94% false positive rate and 0.989 PR AUC, the
+                  highest recall of six classifiers compared on 206,000 CIC IoT-DIAD
+                  2024 flows.
                 </li>
                 <li>
                   Tested the models on four separate holdout conditions and identified capture sessions leaking into the benchmark. PR AUC fell from 0.981 to 0.125, with a 25.35% false positive rate.
                 </li>
                 <li>
-                  Engineered an integrity check that rebuilt connection counts over 60 second windows on a shortened capture. It confirmed that the context features used only past data and no labels.
+                  Refit imputation, outlier handling and scaling on training rows only, after the original pipeline had used the label before splitting. The correction reordered the six models and changed which one was selected.
                 </li>
               </ul>
               <div className="tag-list">
@@ -84,9 +85,10 @@ function Projects() {
                   0.85 on queries held out for testing.
                 </li>
                 <li>
-                  Tuned XGBoost with Optuna, tracked the runs in MLflow and tested it
-                  against persistence in a separate benchmark. Air temperature RMSE fell
-                  by 48% for forecasts twelve hours ahead.
+                  Tuned XGBoost with Optuna against a naive persistence baseline,
+                  tracking every run in MLflow. Air temperature RMSE fell by 48% at the
+                  twelve hour horizon, while the same pipeline found no forecast skill on
+                  water temperature.
                 </li>
               </ul>
               <div className="tag-list">

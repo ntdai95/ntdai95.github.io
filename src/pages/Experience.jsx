@@ -52,19 +52,20 @@ function Experience() {
                 </p>
                 <ul className="bullet-list">
                   <li>
-                  Built and maintained REST endpoints across 5+ Roaming Business System microservices in Java and Spring Boot.
-                </li>
-                  <li>
                     Automated reprocessing of rejected roaming tests with weekly
                     Kafka retries, cutting manual effort by 80%.
+                  </li>
+                  <li>
+                    Built and maintained REST endpoints across 5+ Roaming Business System microservices in Java and Spring Boot.
+                  </li>
+                  <li>
+                    Cut Cassandra query response times below a 3 second budget across
+                    multiple data sources, debugging production issues with Splunk.
                   </li>
                   <li>
                     Traced 20+ cross service defects to their root cause and
                     deployed features via Jenkins across 50+ releases.
                   </li>
-                  <li>
-                  Tuned Cassandra queries to respond in under 3 seconds and debugged production issues with Splunk.
-                </li>
                 </ul>
                 <div className="tag-list">
                   <span className="tag">Java</span>
