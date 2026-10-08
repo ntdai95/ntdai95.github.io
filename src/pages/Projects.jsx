@@ -81,8 +81,8 @@ function Projects() {
                 </li>
                 <li>
                   Served model predictions and natural language search through FastAPI,
-                  Qdrant and Ollama. Retrieval reached hit@k of 0.90 and term recall of
-                  0.85 on queries held out for testing.
+                  Qdrant and Ollama. The target document came back in the top two for 9 of
+                  10 held out questions, with term recall of 0.85.
                 </li>
                 <li>
                   Tuned the water temperature forecaster with Optuna and tracked the runs
