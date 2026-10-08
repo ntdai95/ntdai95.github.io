@@ -57,7 +57,7 @@ function Experience() {
                   </li>
                   <li>
                     Built REST endpoints on 5+ Java and Spring Boot roaming services, holding
-                    Cassandra reads under 500 ms across multiple data sources.
+                    Cassandra reads under 1 second across multiple data sources.
                   </li>
                   <li>
                     Debugged production issues with Splunk and built a Mobileum
