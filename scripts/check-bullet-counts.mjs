@@ -26,7 +26,7 @@ const expectations = {
 const TEACHING_MENTORSHIP =
   'Mentored students one-on-one on debugging and algorithmic reasoning by working through their own broken code.'
 const TEACHING_ASSIGNMENTS =
-  'Designed a sequence of assignments on top-down design, object oriented programming and code modularity, with each assignment building on the last.'
+  'Designed progressive assignments on top-down design, object-oriented programming, and code modularity.'
 
 const normalize = (text) =>
   text

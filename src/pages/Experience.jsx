@@ -24,7 +24,7 @@ function Experience() {
                     background, adjusting the pitch in real time.
                   </li>
                   <li>
-                  Designed a sequence of assignments on top-down design, object oriented programming and code modularity, with each assignment building on the last.
+                  Designed progressive assignments on top-down design, object-oriented programming, and code modularity.
                 </li>
                   <li>
                     Mentored students one-on-one on debugging and algorithmic
