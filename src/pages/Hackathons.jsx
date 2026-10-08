@@ -34,8 +34,8 @@ function Hackathons() {
                 <li>
                   Engineered weighted component aggregates, a per-property spread and
                   Shannon entropy over the five blend fractions, then packaged the fitted
-                  scaler and training medians with the model so serving matched training
-                  exactly.
+                  scaler and training medians with the model so serving reused the same
+                  transforms.
                 </li>
               </ul>
               <div className="tag-list">

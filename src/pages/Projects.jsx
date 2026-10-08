@@ -26,10 +26,10 @@ function Projects() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Calibrated binary XGBoost to a 1% false positive budget, reaching
-                  99.5% recall at a 0.94% false positive rate and 0.989 PR AUC, the
-                  highest recall of six classifiers compared on 206,000 CIC IoT-DIAD
-                  2024 flows.
+                  Tuned a binary XGBoost decision threshold to a 1% false positive
+                  budget, reaching 99.5% recall at a 0.94% false positive rate, the highest
+                  recall of six classifiers compared on 206,000 CIC IoT-DIAD 2024 flows at
+                  0.989 PR AUC.
                 </li>
                 <li>
                   Tested the models on four separate holdout conditions and identified capture sessions leaking into the benchmark. PR AUC fell from 0.981 to 0.125, with a 25.35% false positive rate.
