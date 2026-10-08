@@ -320,18 +320,16 @@ function Home() {
               </p>
               <ul className="bullet-list">
                 <li>
-                  Owned REST endpoints on 5+ Java and Spring Boot roaming services, holding Cassandra reads under 1 second.
+                  Developed and maintained REST endpoints across 5+ Roaming Business System microservices in Java and Spring Boot.
                 </li>
                 <li>
-                  Automated reprocessing of rejected roaming tests with weekly
-                  Kafka retries, cutting manual effort by 80%.
+                  Automated reprocessing of rejected roaming tests with weekly Kafka retries, cutting manual effort by 80%.
                 </li>
                 <li>
-                  Traced 20+ cross service defects to their root cause and
-                  deployed features via Jenkins across 50+ releases.
+                  Traced 20+ cross service defects to their root cause and deployed features via Jenkins across 50+ releases.
                 </li>
                 <li>
-                  Debugged production issues in Splunk and documented systems and runbooks so the work survived handover.
+                  Tuned Cassandra queries to respond in under 1 second and debugged production issues with Splunk.
                 </li>
               </ul>
             </StaggerItem>
