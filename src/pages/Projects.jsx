@@ -79,9 +79,9 @@ function Projects() {
                   traced back to what the instrument actually reported.
                 </li>
                 <li>
-                  Ran one pipeline on two signals to separate a weak method from a weak
-                  signal. On air temperature it cut RMSE by 48% at the twelve hour horizon, while
-                  on water temperature a naive persistence baseline won at all seven horizons.
+                  Ran the pipeline on two temperature series to separate a weak method from a
+                  weak signal. On air temperature it cut RMSE by 48% at twelve hours, while on
+                  water temperature a persistence baseline won at all seven horizons.
                 </li>
                 <li>
                   Served predictions and natural language search through FastAPI, Qdrant and
