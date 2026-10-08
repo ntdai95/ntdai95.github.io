@@ -85,10 +85,9 @@ function Projects() {
                   0.85 on queries held out for testing.
                 </li>
                 <li>
-                  Tuned XGBoost with Optuna against a naive persistence baseline,
-                  tracking every run in MLflow. Air temperature RMSE fell by 48% at the
-                  twelve hour horizon, while the same pipeline found no forecast skill on
-                  water temperature.
+                  Tuned the water temperature forecaster with Optuna and tracked the runs
+                  in MLflow, then ran a separate fixed-parameter benchmark on air
+                  temperature that cut 12 hour RMSE by 48% against persistence.
                 </li>
               </ul>
               <div className="tag-list">
