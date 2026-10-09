@@ -85,6 +85,13 @@ try {
     '<h3>Fuel Blending Prediction Model</h3>',
     "expected one 'End-to-End Multi-Output Fuel Blending System' card"
   )
+  assertMutationBlocked(
+    'Shell model-selection wording drift',
+    'src/pages/Hackathons.jsx',
+    'Advanced CatBoost to deployment based on 5-fold cross-validation with a',
+    'Benchmarked CatBoost against XGBoost with 5-fold cross-validation and',
+    'second Shell bullet drifted from approved wording'
+  )
 } finally {
   const resolvedTemporaryRoot = path.resolve(temporaryRoot)
   const resolvedSystemTemp = path.resolve(os.tmpdir())

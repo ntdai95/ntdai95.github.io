@@ -27,6 +27,8 @@ const TEACHING_MENTORSHIP =
   'Mentored students one-on-one on debugging and algorithmic reasoning by working through their own broken code.'
 const TEACHING_ASSIGNMENTS =
   'Designed progressive assignments on top-down design, object-oriented programming, and code modularity.'
+const SHELL_MODEL_BULLET =
+  'Advanced CatBoost to deployment based on 5-fold cross-validation with a MAPE of 0.64 versus XGBoost’s 1.29.'
 
 const normalize = (text) =>
   text
@@ -103,6 +105,13 @@ const projects = bulletLists(fs.readFileSync(path.join(root, projectsPath), 'utf
 const hackathonsPath = 'src/pages/Hackathons.jsx'
 const hackathons = bulletLists(fs.readFileSync(path.join(root, hackathonsPath), 'utf8'))
 const projectCards = [...projects, ...hackathons]
+const shellCard = hackathons.find(
+  (project) => project.title === 'End-to-End Multi-Output Fuel Blending System'
+)
+if (shellCard?.bullets.at(1) !== SHELL_MODEL_BULLET) {
+  console.error('FAIL src/pages/Hackathons.jsx: second Shell bullet drifted from approved wording')
+  failed = true
+}
 const compressed = /\b(?:\d+(?:\.\d+)?M-row|(?:8|20|200)-period|12-hour|60-second|four-condition|session-disjoint|capture-session|held-out|plain-English|feature-specific|density-aware|cross-service|reservation-rules|session-freshness|permission-scope|single-page|fetch-based|last-seen|per-session|class-weighted|quantum-transformed|loan-approval|12-qubit|false-positive|false-negative|bulk-synchronous|ticket-triage)\b|fan-in\/fan-out/i
 for (const project of projects) {
   if (project.count !== 3) {

@@ -27,8 +27,8 @@ function Hackathons() {
                   Dockerized AWS EC2 instance.
                 </li>
                 <li>
-                  Benchmarked CatBoost against XGBoost under 5-fold cross-validation and
-                  shipped CatBoost after it came in at 0.64 MAPE against XGBoost's 1.29.
+                  Advanced CatBoost to deployment based on 5-fold cross-validation with a
+                  MAPE of 0.64 versus XGBoost’s 1.29.
                 </li>
                 <li>
                   Engineered entropy-based mixture metrics as model features and
