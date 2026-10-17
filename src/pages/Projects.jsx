@@ -453,10 +453,10 @@ function Projects() {
                   blurring, and edge detection through custom 2D convolution kernels.
                 </li>
                 <li>
-                  Implemented sequential, staged pipeline and bulk synchronous parallel execution models using goroutines, channels and sync.WaitGroup.
+                  Implemented sequential, fan out pipeline and bulk synchronous parallel execution models using goroutines, channels and sync.WaitGroup.
                 </li>
                 <li>
-                  Reduced runtime by 20% with the staged pipeline and 30% with the
+                  Reduced runtime by 20% with the fan out pipeline and 30% with the
                   BSP model while processing batches of more than 30 images.
                 </li>
               </ul>

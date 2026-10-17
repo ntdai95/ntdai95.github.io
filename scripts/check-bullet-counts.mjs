@@ -52,7 +52,7 @@ const projectContract = [
   ['Stock Sentiment Analysis', ['15,194', '861', '10 tech stocks', 'NVIDIA', 'GARCH(1,1)', 'SQLite', 'Neo4j']],
   ['Belay Real-Time Chat Application', ['nested REST routes', 'History API', 'hashed passwords', 'authkey', 'fetch']],
   ['Loan Approval Classifier', ['XGBoost', 'SMOTE', 'quantum', 'Isolation Forest', 'mixture of experts', '12', 'Fairlearn', 'age', 'income']],
-  ['Parallel Image Processing Engine', ['20%', '30%', 'staged pipeline', 'bulk synchronous', '2D convolution']],
+  ['Parallel Image Processing Engine', ['20%', '30%', 'fan out', 'bulk synchronous', '2D convolution']],
   ['Support Ticket Triage', ['TF IDF', 'SVM', 'kNN', 'DistilBERT', 'type', 'priority', 'queue', 'Streamlit', 'retrieved']],
   ['Algorithmic Trading & Execution Optimization', ['Java', 'order execution', 'portfolio rebalancing', 'final round', 'top 250', '1,500']],
   ['KoronaKiller', ['team of 3', 'Python', '2D simulation', 'player health', 'event driven', 'continuous background scrolling', 'randomized object', 'collision detection', '48 hour']],
