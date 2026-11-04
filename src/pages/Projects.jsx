@@ -31,7 +31,7 @@ function Projects() {
                   recall at a 0.94% false positive rate.
                 </li>
                 <li>
-                  Tested the models on four separate holdout conditions and identified capture sessions leaking into the benchmark. PR AUC fell from 0.981 to 0.125, with a 25.35% false positive rate.
+                  Tested the models on four separate holdout conditions and identified capture sessions leaking into the benchmark. PR-AUC fell from 0.981 to 0.125, with a 25.35% false positive rate.
                 </li>
                 <li>
                   Engineered an integrity check that rebuilt connection counts over 60 second windows on a shortened capture. It confirmed that the context features used only past data and no labels.
@@ -145,7 +145,7 @@ function Projects() {
                 <span className="tag">Anomaly Detection</span>
                 <span className="tag">Feature Engineering</span>
                 <span className="tag">Stratified Sampling</span>
-                <span className="tag">ROC AUC</span>
+                <span className="tag">ROC-AUC</span>
                 <span className="tag">Data Pipeline</span>
                 <span className="tag">Experimentation</span>
               </div>
