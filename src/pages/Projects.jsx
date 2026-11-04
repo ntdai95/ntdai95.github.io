@@ -39,11 +39,8 @@ function Projects() {
               </ul>
               <div className="tag-list">
                 <span className="tag">Python</span>
-                <span className="tag">PyTorch</span>
                 <span className="tag">XGBoost</span>
                 <span className="tag">scikit-learn</span>
-                <span className="tag">K-Means</span>
-                <span className="tag">Autoencoder</span>
                 <span className="tag">Anomaly Detection</span>
                 <span className="tag">Data Leakage Auditing</span>
                 <span className="tag">Model Evaluation</span>
