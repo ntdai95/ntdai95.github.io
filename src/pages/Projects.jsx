@@ -17,7 +17,7 @@ function Projects() {
               <div className="project-card-img-wrap">
                 <img src="/images/ids-network.jpg" alt="Multi-Stage IoT Intrusion Detection" loading="lazy" />
               </div>
-              <span className="featured-badge">★ Featured Project</span>
+              <span className="featured-badge">★ Featured</span>
               <h3>Multi-Stage IoT Intrusion Detection (Team of 7)</h3>
               <p className="edu-meta">
                 Capstone Project (ECE 592B)
@@ -57,12 +57,11 @@ function Projects() {
                 </a>
               </p>
             </TiltCard>
-
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
                 <img src="/images/ocean-data.jpg" alt="Ocean Data ML Platform with RAG" loading="lazy" />
               </div>
-              <span className="featured-badge">★ Featured Project</span>
+              <span className="featured-badge">★ Featured</span>
               <h3>Ocean Data ML Platform with RAG</h3>
               <p className="edu-meta">
                 Personal Project
@@ -113,12 +112,11 @@ function Projects() {
                 </a>
               </p>
             </TiltCard>
-
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
                 <img src="/images/isolation-forest.jpg" alt="Anomaly Detection at Scale on Species Data" loading="lazy" />
               </div>
-              <span className="featured-badge">★ Featured Project</span>
+              <span className="featured-badge">★ Featured</span>
               <h3>Anomaly Detection at Scale on Species Data (Team of 3)</h3>
               <p className="edu-meta">
                 Systems for Massive Datasets (CSC 502)
@@ -162,11 +160,11 @@ function Projects() {
                 </a>
               </p>
             </TiltCard>
-
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
                 <img src="/images/auction-microservices.jpg" alt="Auction Marketplace Microservices" loading="lazy" />
               </div>
+              <span className="featured-badge">★ Featured</span>
               <h3>Auction Marketplace Microservices (Team of 4)</h3>
               <p className="edu-meta">
                 Topics in Software Engineering (MPCS 51205)
@@ -207,47 +205,11 @@ function Projects() {
                 </a>
               </p>
             </TiltCard>
-
-            <TiltCard className="card project-card">
-              <div className="project-card-img-wrap">
-                <img src="/images/crypto-trading-bot.jpg" alt="Bitcoin price history chart" loading="lazy" />
-              </div>
-              <h3>Automated Crypto Trading Bot</h3>
-              <p className="edu-meta">
-                Personal Project
-                <br />
-                Feb 2025 – Jul 2025
-              </p>
-              <ul className="bullet-list">
-                <li>
-                  Implemented a mean reversion engine that polls live Coinbase data on a
-                  fixed interval, keeps rolling one hour price windows in memory, buys
-                  1% dips and sells on 2% rises.
-                </li>
-                <li>
-                  Added a second strategy that buys only when the 8 period EMA is above the 20 period EMA, price is above the 200 period EMA and the trade still clears fees, with per market limits set in a CSV file.
-                </li>
-                <li>
-                  Backtested both strategies on four months of polled Coinbase market data, then deployed the bot to AWS EC2 with per market thresholds, cooldowns and open trade caps driven from a CSV config.
-                </li>
-              </ul>
-              <div className="tag-list">
-                <span className="tag">Python</span>
-                <span className="tag">Coinbase Advanced Trade API</span>
-                <span className="tag">AWS EC2</span>
-                <span className="tag">AWS Lambda</span>
-                <span className="tag">Amazon SNS</span>
-                <span className="tag">boto3</span>
-                <span className="tag">pandas</span>
-                <span className="tag">Algorithmic Trading</span>
-                <span className="tag">Automation</span>
-              </div>
-            </TiltCard>
-
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
                 <img src="/images/reservation-system.jpeg" alt="Distributed Facility Reservation System" loading="lazy" />
               </div>
+              <span className="featured-badge">★ Featured</span>
               <h3>Distributed Facility Reservation System (Team of 4)</h3>
               <p className="edu-meta">
                 Applied Software Engineering (MPCS 51220)
@@ -294,7 +256,41 @@ function Projects() {
                 </a>
               </p>
             </TiltCard>
-
+            <TiltCard className="card project-card">
+              <div className="project-card-img-wrap">
+                <img src="/images/crypto-trading-bot.jpg" alt="Bitcoin price history chart" loading="lazy" />
+              </div>
+              <h3>Automated Crypto Trading Bot</h3>
+              <p className="edu-meta">
+                Personal Project
+                <br />
+                Feb 2025 – Jul 2025
+              </p>
+              <ul className="bullet-list">
+                <li>
+                  Implemented a mean reversion engine that polls live Coinbase data on a
+                  fixed interval, keeps rolling one hour price windows in memory, buys
+                  1% dips and sells on 2% rises.
+                </li>
+                <li>
+                  Added a second strategy that buys only when the 8 period EMA is above the 20 period EMA, price is above the 200 period EMA and the trade still clears fees, with per market limits set in a CSV file.
+                </li>
+                <li>
+                  Backtested both strategies on four months of polled Coinbase market data, then deployed the bot to AWS EC2 with per market thresholds, cooldowns and open trade caps driven from a CSV config.
+                </li>
+              </ul>
+              <div className="tag-list">
+                <span className="tag">Python</span>
+                <span className="tag">Coinbase Advanced Trade API</span>
+                <span className="tag">AWS EC2</span>
+                <span className="tag">AWS Lambda</span>
+                <span className="tag">Amazon SNS</span>
+                <span className="tag">boto3</span>
+                <span className="tag">pandas</span>
+                <span className="tag">Algorithmic Trading</span>
+                <span className="tag">Automation</span>
+              </div>
+            </TiltCard>
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
                 <img src="/images/stock-sentiment-analysis.jpg" alt="Stock Sentiment Analysis" loading="lazy" />
@@ -339,7 +335,6 @@ function Projects() {
                 </a>
               </p>
             </TiltCard>
-
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
                 <img src="/images/belay-chat.jpg" alt="Belay Real-Time Chat Application" loading="lazy" />
@@ -384,7 +379,6 @@ function Projects() {
                 </a>
               </p>
             </TiltCard>
-
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
                 <img src="/images/loan-approval.jpg" alt="Loan Approval Classifier" loading="lazy" />
@@ -433,7 +427,6 @@ function Projects() {
                 </a>
               </p>
             </TiltCard>
-
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
                 <img src="/images/parallel-engine.jpg" alt="Parallel Image Processing Engine" loading="lazy" />
@@ -479,7 +472,6 @@ function Projects() {
                 </a>
               </p>
             </TiltCard>
-
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
                 <img src="/images/ticket-triage.jpg" alt="Support Ticket Triage" loading="lazy" />
