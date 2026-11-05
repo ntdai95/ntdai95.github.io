@@ -21,7 +21,7 @@ function Experience() {
                 <ul className="bullet-list">
                   <li>
                     Explained technical material to 50+ students with no prior
-                    background, adjusting the pitch for each student.
+                    background, adjusting the pitch for each student in real time.
                   </li>
                   <li>
                   Designed progressive assignments on top-down design, object-oriented programming, and code modularity.
