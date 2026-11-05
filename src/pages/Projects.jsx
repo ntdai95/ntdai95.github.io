@@ -283,7 +283,6 @@ function Projects() {
                 <span className="tag">Python</span>
                 <span className="tag">Coinbase Advanced Trade API</span>
                 <span className="tag">AWS EC2</span>
-                <span className="tag">AWS Lambda</span>
                 <span className="tag">Amazon SNS</span>
                 <span className="tag">boto3</span>
                 <span className="tag">pandas</span>
