@@ -300,7 +300,7 @@ function Home() {
               <ul className="bullet-list">
                 <li>
                   Explained technical material to 50+ students with no prior
-                  background, adjusting the pitch in real time.
+                  background, adjusting the pitch for each student.
                 </li>
                 <li>
                   Designed progressive assignments on top-down design, object-oriented programming, and code modularity.
@@ -330,7 +330,7 @@ function Home() {
                   Traced 20+ cross service defects to their root cause and deployed features via Jenkins across 50+ releases.
                 </li>
                 <li>
-                  Tuned Cassandra queries to respond in under 1 second and debugged production issues with Splunk.
+                  Tuned Cassandra queries across multiple data sources to respond in under 1 second, debugging in Splunk.
                 </li>
               </ul>
             </StaggerItem>
