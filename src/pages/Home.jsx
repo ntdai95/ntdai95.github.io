@@ -210,7 +210,7 @@ function Home() {
                 <ul className="bullet-list">
                   <li>Google Advanced Data Analytics Specialization (Google, 2025)</li>
                   <li>
-                    Shell.ai Hackathon 2025 – end-to-end machine learning system for sustainable fuel blending
+                    Shell.ai Hackathon 2025 – machine learning system for sustainable fuel blending, built and deployed
                   </li>
                   <li>
                     IMC 64 Bids Coding Challenge – final round (top 250 of 1,500 participants)

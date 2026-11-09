@@ -136,7 +136,7 @@ a:hover {
   height: 60px;
 }
 
-/* Logo — shown (overrides old display:none) */
+/* Logo, shown (overrides old display:none) */
 .logo {
   display: inline-flex !important;
   align-items: center;
@@ -380,7 +380,7 @@ a:hover {
   background: linear-gradient(90deg, transparent, rgba(56,189,248,0.4), rgba(74,222,128,0.3), transparent);
 }
 
-/* Role typewriter — sits below the name as the subtitle identity line */
+/* Role typewriter, sits below the name as the subtitle identity line */
 .hero-kicker {
   font-size: clamp(1.05rem, 2.2vw, 1.3rem);
   font-weight: 600;
@@ -519,7 +519,7 @@ a:hover {
 
 .btn:hover { text-decoration: none; }
 
-/* ── Primary — gradient fill ── */
+/* ── Primary, gradient fill ── */
 .btn.primary {
   background: var(--grad);
   color: #071428;
@@ -532,7 +532,7 @@ a:hover {
   filter: brightness(1.04);
 }
 
-/* ── Secondary — outline style ── */
+/* ── Secondary, outline style ── */
 .btn.secondary {
   background: rgba(56, 189, 248, 0.1);
   color: var(--blue);
@@ -885,7 +885,7 @@ a:hover {
   text-decoration: none;
 }
 
-/* ── Nav links — never underline ── */
+/* ── Nav links, never underline ── */
 .site-header .nav-links a,
 .site-header .nav-links a:hover,
 .site-header .nav-links a:focus,
@@ -1001,7 +1001,7 @@ a:hover {
 }
 
 /* ============================================================
-   PROJECT CARD — full-width banner image
+   PROJECT CARD, full-width banner image
    ============================================================ */
 .project-card-img-wrap {
   margin: -1.75rem -2rem 1.5rem;
@@ -1166,7 +1166,7 @@ a:hover {
   inset: 0;
   pointer-events: none;
   z-index: 9;
-  /* initial default — JS replaces this on mouse move */
+  /* initial default, JS replaces this on mouse move */
   background: radial-gradient(
     600px circle at 50% 50%,
     rgba(56, 189, 248, 0),
@@ -1344,7 +1344,7 @@ body::after {
 }
 
 /* ============================================================
-   HEADING FONT — Plus Jakarta Sans
+   HEADING FONT, Plus Jakarta Sans
    ============================================================ */
 h1, h2, h3 {
   font-family: var(--font-heading);
@@ -1421,7 +1421,7 @@ h1, h2, h3 {
   }
 }
 
-/* Light theme — dimmer cursor */
+/* Light theme, dimmer cursor */
 [data-theme="light"] .cursor-dot {
   box-shadow: none;
   background: var(--blue);

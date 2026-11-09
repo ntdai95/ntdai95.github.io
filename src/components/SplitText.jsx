@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 /**
  * Splits text into words and reveals each one by sliding up from behind
- * a clipping mask — the "masked text reveal" used by Apple, Linear, Stripe.
+ * a clipping mask, the "masked text reveal" used by Apple, Linear, Stripe.
  */
 export default function SplitText({ children, delay = 0, className, tag: Tag = 'span' }) {
   const words = children.split(' ')

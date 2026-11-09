@@ -1,7 +1,7 @@
 import { useCallback } from 'react'
 
 /**
- * Wraps a child in a span that slightly attracts toward the cursor —
+ * Wraps a child in a span that slightly attracts toward the cursor, which is
  * the "magnetic button" effect common on premium agency sites.
  */
 export default function MagneticWrap({ children, strength = 0.3 }) {
