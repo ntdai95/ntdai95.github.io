@@ -15,50 +15,6 @@ function Projects() {
           <StaggerGrid className="cards-grid two-col">
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="/images/ids-network.jpg" alt="Multi-Stage IoT Intrusion Detection" loading="lazy" />
-              </div>
-              <span className="featured-badge">★ Featured</span>
-              <h3>Multi-Stage IoT Intrusion Detection (Team of 7)</h3>
-              <p className="edu-meta">
-                Capstone Project (ECE 592B)
-                <br />
-                University of Victoria, May 2026 – Aug 2026
-              </p>
-              <ul className="bullet-list">
-                <li>
-                  Compared six supervised classifiers on 206,000 CIC IoT-DIAD 2024
-                  flows after splitting the data first. Binary XGBoost reached 99.5%
-                  recall at a 0.94% false positive rate.
-                </li>
-                <li>
-                  Tested the models on four separate holdout conditions and identified capture sessions leaking into the benchmark. PR-AUC fell from 0.981 to 0.125, with a 25.35% false positive rate.
-                </li>
-                <li>
-                  Engineered an integrity check that rebuilt connection counts over 60 second windows on a shortened capture. It confirmed that the context features used only past data and no labels.
-                </li>
-              </ul>
-              <div className="tag-list">
-                <span className="tag">Python</span>
-                <span className="tag">XGBoost</span>
-                <span className="tag">scikit-learn</span>
-                <span className="tag">Anomaly Detection</span>
-                <span className="tag">Data Leakage Auditing</span>
-                <span className="tag">Model Evaluation</span>
-                <span className="tag">Network Security</span>
-              </div>
-              <p style={{ marginTop: '1rem' }}>
-                <a
-                  href="https://github.com/ntdai95/ECE592B-Capstone-Project"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn primary"
-                >
-                  View GitHub code →
-                </a>
-              </p>
-            </TiltCard>
-            <TiltCard className="card project-card">
-              <div className="project-card-img-wrap">
                 <img src="/images/ocean-data.jpg" alt="Ocean Data ML Platform with RAG" loading="lazy" />
               </div>
               <span className="featured-badge">★ Featured</span>
@@ -114,6 +70,50 @@ function Projects() {
             </TiltCard>
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
+                <img src="/images/ids-network.jpg" alt="Multi-Stage IoT Intrusion Detection" loading="lazy" />
+              </div>
+              <span className="featured-badge">★ Featured</span>
+              <h3>Multi-Stage IoT Intrusion Detection (Team of 7)</h3>
+              <p className="edu-meta">
+                Capstone Project (ECE 592B)
+                <br />
+                University of Victoria, May 2026 – Aug 2026
+              </p>
+              <ul className="bullet-list">
+                <li>
+                  Compared six supervised classifiers on 206,000 CIC IoT-DIAD 2024
+                  flows after splitting the data first. Binary XGBoost reached 99.5%
+                  recall at a 0.94% false positive rate.
+                </li>
+                <li>
+                  Tested the models on four separate holdout conditions and identified capture sessions leaking into the benchmark. PR-AUC fell from 0.981 to 0.125, with a 25.35% false positive rate.
+                </li>
+                <li>
+                  Engineered an integrity check that rebuilt connection counts over 60 second windows on a shortened capture. It confirmed that the context features used only past data and no labels.
+                </li>
+              </ul>
+              <div className="tag-list">
+                <span className="tag">Python</span>
+                <span className="tag">XGBoost</span>
+                <span className="tag">scikit-learn</span>
+                <span className="tag">Anomaly Detection</span>
+                <span className="tag">Data Leakage Auditing</span>
+                <span className="tag">Model Evaluation</span>
+                <span className="tag">Network Security</span>
+              </div>
+              <p style={{ marginTop: '1rem' }}>
+                <a
+                  href="https://github.com/ntdai95/ECE592B-Capstone-Project"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn primary"
+                >
+                  View GitHub code →
+                </a>
+              </p>
+            </TiltCard>
+            <TiltCard className="card project-card">
+              <div className="project-card-img-wrap">
                 <img src="/images/isolation-forest.jpg" alt="Anomaly Detection at Scale on Species Data" loading="lazy" />
               </div>
               <span className="featured-badge">★ Featured</span>
@@ -152,51 +152,6 @@ function Projects() {
               <p style={{ marginTop: '1rem' }}>
                 <a
                   href="https://github.com/ntdai95/CSC502-Final-Project"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn primary"
-                >
-                  View GitHub code →
-                </a>
-              </p>
-            </TiltCard>
-            <TiltCard className="card project-card">
-              <div className="project-card-img-wrap">
-                <img src="/images/auction-microservices.jpg" alt="Auction Marketplace Microservices" loading="lazy" />
-              </div>
-              <span className="featured-badge">★ Featured</span>
-              <h3>Auction Marketplace Microservices (Team of 4)</h3>
-              <p className="edu-meta">
-                Topics in Software Engineering (MPCS 51205)
-                <br />
-                University of Chicago, Feb 2021 – Mar 2021
-              </p>
-              <ul className="bullet-list">
-                <li>
-                  Split an auction platform into six Flask REST services covering items, users, auctions, transactions, watchlist and messaging, each behind its own MySQL database.
-                </li>
-                <li>
-                  Routed events between services through RabbitMQ and stored delivered
-                  messages in MongoDB, pairing a relational and a document store in the
-                  same system.
-                </li>
-                <li>
-                  Deployed all 14 containers with Docker Compose, sequencing startup so each service's database was ready before the service depending on it.
-                </li>
-              </ul>
-              <div className="tag-list">
-                <span className="tag">Python</span>
-                <span className="tag">Flask</span>
-                <span className="tag">MySQL</span>
-                <span className="tag">MongoDB</span>
-                <span className="tag">RabbitMQ</span>
-                <span className="tag">Docker Compose</span>
-                <span className="tag">Microservices</span>
-                <span className="tag">REST API</span>
-              </div>
-              <p style={{ marginTop: '1rem' }}>
-                <a
-                  href="https://github.com/ntdai95/Auction-Website"
                   target="_blank"
                   rel="noreferrer"
                   className="btn primary"
@@ -258,37 +213,48 @@ function Projects() {
             </TiltCard>
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="/images/crypto-trading-bot.jpg" alt="Bitcoin price history chart" loading="lazy" />
+                <img src="/images/auction-microservices.jpg" alt="Auction Marketplace Microservices" loading="lazy" />
               </div>
-              <h3>Automated Crypto Trading Bot</h3>
+              <span className="featured-badge">★ Featured</span>
+              <h3>Auction Marketplace Microservices (Team of 4)</h3>
               <p className="edu-meta">
-                Personal Project
+                Topics in Software Engineering (MPCS 51205)
                 <br />
-                Feb 2025 – Jul 2025
+                University of Chicago, Feb 2021 – Mar 2021
               </p>
               <ul className="bullet-list">
                 <li>
-                  Implemented a mean reversion engine that polls live Coinbase data on a
-                  fixed interval, keeps rolling one hour price windows in memory, buys
-                  1% dips and sells on 2% rises.
+                  Split an auction platform into six Flask REST services covering items, users, auctions, transactions, watchlist and messaging, each behind its own MySQL database.
                 </li>
                 <li>
-                  Added a second strategy that buys only when the 8 period EMA is above the 20 period EMA, price is above the 200 period EMA and the trade still clears fees, with per market limits set in a CSV file.
+                  Routed events between services through RabbitMQ and stored delivered
+                  messages in MongoDB, pairing a relational and a document store in the
+                  same system.
                 </li>
                 <li>
-                  Backtested both strategies on four months of polled Coinbase market data, then deployed the bot to AWS EC2 with per market thresholds, cooldowns and open trade caps driven from a CSV config.
+                  Deployed all 14 containers with Docker Compose, sequencing startup so each service's database was ready before the service depending on it.
                 </li>
               </ul>
               <div className="tag-list">
                 <span className="tag">Python</span>
-                <span className="tag">Coinbase Advanced Trade API</span>
-                <span className="tag">AWS EC2</span>
-                <span className="tag">Amazon SNS</span>
-                <span className="tag">boto3</span>
-                <span className="tag">pandas</span>
-                <span className="tag">Algorithmic Trading</span>
-                <span className="tag">Automation</span>
+                <span className="tag">Flask</span>
+                <span className="tag">MySQL</span>
+                <span className="tag">MongoDB</span>
+                <span className="tag">RabbitMQ</span>
+                <span className="tag">Docker Compose</span>
+                <span className="tag">Microservices</span>
+                <span className="tag">REST API</span>
               </div>
+              <p style={{ marginTop: '1rem' }}>
+                <a
+                  href="https://github.com/ntdai95/Auction-Website"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn primary"
+                >
+                  View GitHub code →
+                </a>
+              </p>
             </TiltCard>
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
@@ -336,6 +302,51 @@ function Projects() {
             </TiltCard>
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
+                <img src="/images/parallel-engine.jpg" alt="Parallel Image Processing Engine" loading="lazy" />
+              </div>
+              <h3>Parallel Image Processing Engine</h3>
+              <p className="edu-meta">
+                Personal Project
+                <br />
+                Apr 2022 – May 2022
+              </p>
+              <ul className="bullet-list">
+                <li>
+                  Built an image processing engine in Go supporting grayscale, sharpening,
+                  blurring, and edge detection through custom 2D convolution kernels.
+                </li>
+                <li>
+                  Implemented sequential, fan out pipeline and bulk synchronous parallel execution models using goroutines, channels and sync.WaitGroup.
+                </li>
+                <li>
+                  Reduced runtime by 20% with the fan out pipeline and 30% with the
+                  BSP model while processing batches of more than 30 images.
+                </li>
+              </ul>
+              <div className="tag-list">
+                <span className="tag">Go</span>
+                <span className="tag">Concurrency</span>
+                <span className="tag">Goroutines</span>
+                <span className="tag">Channels</span>
+                <span className="tag">Parallel Computing</span>
+                <span className="tag">Image Processing</span>
+                <span className="tag">2D Convolution</span>
+                <span className="tag">BSP</span>
+                <span className="tag">Pipeline</span>
+              </div>
+              <p style={{ marginTop: '1rem' }}>
+                <a
+                  href="https://github.com/ntdai95/Resume-Projects/tree/main/Parallel%20Image%20Processing%20Engine"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn primary"
+                >
+                  View GitHub code →
+                </a>
+              </p>
+            </TiltCard>
+            <TiltCard className="card project-card">
+              <div className="project-card-img-wrap">
                 <img src="/images/belay-chat.jpg" alt="Belay Real-Time Chat Application" loading="lazy" />
               </div>
               <h3>Belay Real-Time Chat Application</h3>
@@ -370,6 +381,47 @@ function Projects() {
               <p style={{ marginTop: '1rem' }}>
                 <a
                   href="https://github.com/ntdai95/Personal-Projects/tree/main/Belay"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn primary"
+                >
+                  View GitHub code →
+                </a>
+              </p>
+            </TiltCard>
+            <TiltCard className="card project-card">
+              <div className="project-card-img-wrap">
+                <img src="/images/ticket-triage.jpg" alt="Support Ticket Triage" loading="lazy" />
+              </div>
+              <h3>Support Ticket Triage (Team of 4)</h3>
+              <p className="edu-meta">
+                Selected Topics in Computer Engineering: AI (ECE 569A)
+                <br />
+                University of Victoria, May 2026 – Jun 2026
+              </p>
+              <ul className="bullet-list">
+                <li>
+                  Compared three model families on the same ticket routing task: TF-IDF with a linear SVM, retrieval over a kNN index, and DistilBERT embeddings feeding a classifier.
+                </li>
+                <li>
+                  Trained one DistilBERT encoder to label ticket type, priority and queue together, so the three labels stay consistent rather than drifting apart across three separate models.
+                </li>
+                <li>
+                  Built a Streamlit demo that shows the retrieved neighbor tickets behind each prediction, so a reviewer can see why the model routed a ticket the way it did.
+                </li>
+              </ul>
+              <div className="tag-list">
+                <span className="tag">Python</span>
+                <span className="tag">scikit-learn</span>
+                <span className="tag">DistilBERT</span>
+                <span className="tag">TF-IDF</span>
+                <span className="tag">kNN</span>
+                <span className="tag">NLP</span>
+                <span className="tag">Streamlit</span>
+              </div>
+              <p style={{ marginTop: '1rem' }}>
+                <a
+                  href="https://github.com/ntdai95/ECE569A-Final-Project"
                   target="_blank"
                   rel="noreferrer"
                   className="btn primary"
@@ -428,89 +480,37 @@ function Projects() {
             </TiltCard>
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="/images/parallel-engine.jpg" alt="Parallel Image Processing Engine" loading="lazy" />
+                <img src="/images/crypto-trading-bot.jpg" alt="Bitcoin price history chart" loading="lazy" />
               </div>
-              <h3>Parallel Image Processing Engine</h3>
+              <h3>Automated Crypto Trading Bot</h3>
               <p className="edu-meta">
                 Personal Project
                 <br />
-                Apr 2022 – May 2022
+                Feb 2025 – Jul 2025
               </p>
               <ul className="bullet-list">
                 <li>
-                  Built an image processing engine in Go supporting grayscale, sharpening,
-                  blurring, and edge detection through custom 2D convolution kernels.
+                  Implemented a mean reversion engine that polls live Coinbase data on a
+                  fixed interval, keeps rolling one hour price windows in memory, buys
+                  1% dips and sells on 2% rises.
                 </li>
                 <li>
-                  Implemented sequential, fan out pipeline and bulk synchronous parallel execution models using goroutines, channels and sync.WaitGroup.
+                  Added a second strategy that buys only when the 8 period EMA is above the 20 period EMA, price is above the 200 period EMA and the trade still clears fees, with per market limits set in a CSV file.
                 </li>
                 <li>
-                  Reduced runtime by 20% with the fan out pipeline and 30% with the
-                  BSP model while processing batches of more than 30 images.
-                </li>
-              </ul>
-              <div className="tag-list">
-                <span className="tag">Go</span>
-                <span className="tag">Concurrency</span>
-                <span className="tag">Goroutines</span>
-                <span className="tag">Channels</span>
-                <span className="tag">Parallel Computing</span>
-                <span className="tag">Image Processing</span>
-                <span className="tag">2D Convolution</span>
-                <span className="tag">BSP</span>
-                <span className="tag">Pipeline</span>
-              </div>
-              <p style={{ marginTop: '1rem' }}>
-                <a
-                  href="https://github.com/ntdai95/Resume-Projects/tree/main/Parallel%20Image%20Processing%20Engine"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn primary"
-                >
-                  View GitHub code →
-                </a>
-              </p>
-            </TiltCard>
-            <TiltCard className="card project-card">
-              <div className="project-card-img-wrap">
-                <img src="/images/ticket-triage.jpg" alt="Support Ticket Triage" loading="lazy" />
-              </div>
-              <h3>Support Ticket Triage (Team of 4)</h3>
-              <p className="edu-meta">
-                Selected Topics in Computer Engineering: AI (ECE 569A)
-                <br />
-                University of Victoria, May 2026 – Jun 2026
-              </p>
-              <ul className="bullet-list">
-                <li>
-                  Compared three model families on the same ticket routing task: TF-IDF with a linear SVM, retrieval over a kNN index, and DistilBERT embeddings feeding a classifier.
-                </li>
-                <li>
-                  Trained one DistilBERT encoder to label ticket type, priority and queue together, so the three labels stay consistent rather than drifting apart across three separate models.
-                </li>
-                <li>
-                  Built a Streamlit demo that shows the retrieved neighbor tickets behind each prediction, so a reviewer can see why the model routed a ticket the way it did.
+                  Backtested both strategies on four months of polled Coinbase market data, then deployed the bot to AWS EC2 with per market thresholds, cooldowns and open trade caps driven from a CSV config.
                 </li>
               </ul>
               <div className="tag-list">
                 <span className="tag">Python</span>
-                <span className="tag">scikit-learn</span>
-                <span className="tag">DistilBERT</span>
-                <span className="tag">TF-IDF</span>
-                <span className="tag">kNN</span>
-                <span className="tag">NLP</span>
-                <span className="tag">Streamlit</span>
+                <span className="tag">Coinbase Advanced Trade API</span>
+                <span className="tag">AWS EC2</span>
+                <span className="tag">Amazon SNS</span>
+                <span className="tag">boto3</span>
+                <span className="tag">pandas</span>
+                <span className="tag">Algorithmic Trading</span>
+                <span className="tag">Automation</span>
               </div>
-              <p style={{ marginTop: '1rem' }}>
-                <a
-                  href="https://github.com/ntdai95/ECE569A-Final-Project"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn primary"
-                >
-                  View GitHub code →
-                </a>
-              </p>
             </TiltCard>
           </StaggerGrid>
 
