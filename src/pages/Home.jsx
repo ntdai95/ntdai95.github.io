@@ -98,9 +98,9 @@ function Home() {
               </div>
               <div className="metric">
                 <span className="metric-value">
-                  <AnimatedNumber to={23} duration={1000} />
+                  Nearly 2
                 </span>
-                <span className="metric-label">Months Software Development</span>
+                <span className="metric-label">Years Software Development</span>
               </div>
               <div className="metric">
                 <span className="metric-value">
