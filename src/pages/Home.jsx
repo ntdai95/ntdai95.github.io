@@ -98,9 +98,9 @@ function Home() {
               </div>
               <div className="metric">
                 <span className="metric-value">
-                  <AnimatedNumber to={2} suffix="+" duration={1000} />
+                  <AnimatedNumber to={23} duration={1000} />
                 </span>
-                <span className="metric-label">Years Industry</span>
+                <span className="metric-label">Months Software Development</span>
               </div>
               <div className="metric">
                 <span className="metric-value">
