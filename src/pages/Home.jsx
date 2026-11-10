@@ -98,9 +98,9 @@ function Home() {
               </div>
               <div className="metric">
                 <span className="metric-value">
-                  Nearly 2
+                  Nearly 2 Years
                 </span>
-                <span className="metric-label">Years Software Development</span>
+                <span className="metric-label">Software Engineering Experience</span>
               </div>
               <div className="metric">
                 <span className="metric-value">
