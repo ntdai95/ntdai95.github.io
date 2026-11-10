@@ -29,7 +29,7 @@ const heroItem = {
 }
 
 function Home() {
-  useEffect(() => { document.title = 'Tan Dai Ngo | Data Scientist & ML Engineer' }, [])
+  useEffect(() => { document.title = 'Tan Dai Ngo | SWE, MLE, Data Scientist & Data Engineer' }, [])
   const role = useTypewriter(ROLES, 80, 45, 2000)
 
   // Parallax on scroll
@@ -67,7 +67,7 @@ function Home() {
               predictive modeling, distributed ML systems, backend
               microservices, and analytics dashboards. Actively seeking
               co-op and internship roles in data science, ML engineering,
-              or software development, open to remote work or relocating
+              data engineering, or software engineering, open to remote work or relocating
               anywhere in Canada.
             </p>
 
@@ -412,7 +412,7 @@ function Home() {
               <h3>Let's work together</h3>
               <p>
                 I'm actively seeking co-op / internship roles in data science, ML engineering,
-                or software development (Jan – Dec 2027). Open to remote or relocating
+                data engineering, or software engineering (Jan – Dec 2027). Open to remote or relocating
                 anywhere in Canada.
               </p>
               <div className="cta-actions">

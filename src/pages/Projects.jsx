@@ -258,6 +258,49 @@ function Projects() {
             </TiltCard>
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
+                <img src="/images/shell-fuel.jpg" alt="Sustainable fuel blending graphs" loading="lazy" />
+              </div>
+              <span className="featured-badge">★ Featured</span>
+              <h3>End-to-End Multi-Output Fuel Blending System</h3>
+              <p className="edu-meta">Solo · Shell.ai Hackathon 2025 · Jul 2025</p>
+              <ul className="bullet-list">
+                <li>
+                  Built and deployed an inference system for multi-output regression
+                  across 10 chemical blend properties, served through FastAPI on a
+                  Dockerized AWS EC2 instance.
+                </li>
+                <li>
+                  Advanced CatBoost to deployment based on 5-fold cross-validation with a
+                  MAPE of 0.64 versus XGBoost’s 1.29.
+                </li>
+                <li>
+                  Engineered entropy-based mixture metrics as model features and
+                  serialized the preprocessing pipeline so training and inference stayed
+                  consistent.
+                </li>
+              </ul>
+              <div className="tag-list">
+                <span className="tag">Python</span>
+                <span className="tag">CatBoost</span>
+                <span className="tag">XGBoost</span>
+                <span className="tag">Exploratory Data Analysis</span>
+                <span className="tag">Feature Engineering</span>
+                <span className="tag">Docker</span>
+                <span className="tag">AWS EC2</span>
+              </div>
+              <p style={{ marginTop: '1rem' }}>
+                <a
+                  href="https://github.com/ntdai95/Shell.ai-Hackathon-2025"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn primary"
+                >
+                  View GitHub code →
+                </a>
+              </p>
+            </TiltCard>
+            <TiltCard className="card project-card">
+              <div className="project-card-img-wrap">
                 <img src="/images/stock-sentiment-analysis.jpg" alt="Stock Sentiment Analysis" loading="lazy" />
               </div>
               <h3>Stock Sentiment Analysis (Team of 4)</h3>
@@ -316,10 +359,10 @@ function Projects() {
                   blurring, and edge detection through custom 2D convolution kernels.
                 </li>
                 <li>
-                  Implemented sequential, fan out pipeline and bulk synchronous parallel execution models using goroutines, channels and sync.WaitGroup.
+                  Implemented sequential, fan-in/fan-out and bulk synchronous parallel execution models using goroutines, channels and sync.WaitGroup.
                 </li>
                 <li>
-                  Reduced runtime by 20% with the fan out pipeline and 30% with the
+                  Reduced runtime by 20% with the fan-in/fan-out pipeline and 30% with the
                   BSP model while processing batches of more than 30 images.
                 </li>
               </ul>

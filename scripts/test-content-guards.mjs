@@ -83,7 +83,7 @@ try {
     'src/pages/Hackathons.jsx',
     '<h3>End-to-End Multi-Output Fuel Blending System</h3>',
     '<h3>Fuel Blending Prediction Model</h3>',
-    "expected one 'End-to-End Multi-Output Fuel Blending System' card"
+    "expected 2 'End-to-End Multi-Output Fuel Blending System' card(s)"
   )
   assertMutationBlocked(
     'Shell model-selection wording drift',
@@ -91,6 +91,13 @@ try {
     'Advanced CatBoost to deployment based on 5-fold cross-validation with a',
     'Benchmarked CatBoost against XGBoost with 5-fold cross-validation and',
     'second Shell bullet drifted from approved wording'
+  )
+  assertMutationBlocked(
+    'featured project order drift',
+    'src/pages/Projects.jsx',
+    '<h3>End-to-End Multi-Output Fuel Blending System</h3>',
+    '<h3>Fuel Blending Prediction Model</h3>',
+    'featured order is'
   )
 } finally {
   const resolvedTemporaryRoot = path.resolve(temporaryRoot)

@@ -19,7 +19,7 @@ function Hackathons() {
               </div>
               <span className="featured-badge">★ Featured</span>
               <h3>End-to-End Multi-Output Fuel Blending System</h3>
-              <p className="edu-meta">Shell.ai Hackathon 2025 · Jul 2025</p>
+              <p className="edu-meta">Solo · Shell.ai Hackathon 2025 · Jul 2025</p>
               <ul className="bullet-list">
                 <li>
                   Built and deployed an inference system for multi-output regression
