@@ -114,54 +114,6 @@ function Projects() {
             </TiltCard>
             <TiltCard className="card project-card">
               <div className="project-card-img-wrap">
-                <img src="/images/isolation-forest.jpg" alt="Anomaly Detection at Scale on Species Data" loading="lazy" />
-              </div>
-              <span className="featured-badge">★ Featured</span>
-              <h3>Anomaly Detection at Scale on Species Data (Team of 3)</h3>
-              <p className="edu-meta">
-                Systems for Massive Datasets (CSC 502)
-                <br />
-                University of Victoria, Mar 2026 – Apr 2026
-              </p>
-              <ul className="bullet-list">
-                <li>
-                  Implemented Isolation Forest from the published algorithm rather than a
-                  library, then ran it on 1,093,203 eBird observations from British
-                  Columbia using PySpark for distributed processing.
-                </li>
-                <li>
-                  Engineered features from species frequency, geospatial position, and
-                  cyclical time encoding, using stratified sampling across eight quantile
-                  bins to keep the class distribution honest.
-                </li>
-                <li>
-                  Identified uneven geographic density that made the model miss unusual records in crowded regions. Proposed rank transformation and sampling based on local density to address the problem.
-                </li>
-              </ul>
-              <div className="tag-list">
-                <span className="tag">Python</span>
-                <span className="tag">PySpark</span>
-                <span className="tag">Isolation Forest</span>
-                <span className="tag">Anomaly Detection</span>
-                <span className="tag">Feature Engineering</span>
-                <span className="tag">Stratified Sampling</span>
-                <span className="tag">ROC-AUC</span>
-                <span className="tag">Data Pipeline</span>
-                <span className="tag">Experimentation</span>
-              </div>
-              <p style={{ marginTop: '1rem' }}>
-                <a
-                  href="https://github.com/ntdai95/CSC502-Final-Project"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn primary"
-                >
-                  View GitHub code →
-                </a>
-              </p>
-            </TiltCard>
-            <TiltCard className="card project-card">
-              <div className="project-card-img-wrap">
                 <img src="/images/reservation-system.jpeg" alt="Distributed Facility Reservation System" loading="lazy" />
               </div>
               <span className="featured-badge">★ Featured</span>
@@ -248,6 +200,54 @@ function Projects() {
               <p style={{ marginTop: '1rem' }}>
                 <a
                   href="https://github.com/ntdai95/Auction-Website"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn primary"
+                >
+                  View GitHub code →
+                </a>
+              </p>
+            </TiltCard>
+            <TiltCard className="card project-card">
+              <div className="project-card-img-wrap">
+                <img src="/images/isolation-forest.jpg" alt="Anomaly Detection at Scale on Species Data" loading="lazy" />
+              </div>
+              <span className="featured-badge">★ Featured</span>
+              <h3>Anomaly Detection at Scale on Species Data (Team of 3)</h3>
+              <p className="edu-meta">
+                Systems for Massive Datasets (CSC 502)
+                <br />
+                University of Victoria, Mar 2026 – Apr 2026
+              </p>
+              <ul className="bullet-list">
+                <li>
+                  Implemented Isolation Forest from the published algorithm rather than a
+                  library, then ran it on 1,093,203 eBird observations from British
+                  Columbia using PySpark for distributed processing.
+                </li>
+                <li>
+                  Engineered features from species frequency, geospatial position, and
+                  cyclical time encoding, using stratified sampling across eight quantile
+                  bins to keep the class distribution honest.
+                </li>
+                <li>
+                  Identified uneven geographic density that made the model miss unusual records in crowded regions. Proposed rank transformation and sampling based on local density to address the problem.
+                </li>
+              </ul>
+              <div className="tag-list">
+                <span className="tag">Python</span>
+                <span className="tag">PySpark</span>
+                <span className="tag">Isolation Forest</span>
+                <span className="tag">Anomaly Detection</span>
+                <span className="tag">Feature Engineering</span>
+                <span className="tag">Stratified Sampling</span>
+                <span className="tag">ROC-AUC</span>
+                <span className="tag">Data Pipeline</span>
+                <span className="tag">Experimentation</span>
+              </div>
+              <p style={{ marginTop: '1rem' }}>
+                <a
+                  href="https://github.com/ntdai95/CSC502-Final-Project"
                   target="_blank"
                   rel="noreferrer"
                   className="btn primary"
