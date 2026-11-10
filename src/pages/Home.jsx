@@ -8,7 +8,7 @@ import MagneticWrap from '../components/MagneticWrap'
 import { FadeIn, StaggerGrid, StaggerItem } from '../components/FadeIn'
 import { useTypewriter } from '../hooks/useTypewriter'
 
-const ROLES = ['Data Scientist', 'Machine Learning Engineer', 'Software Engineer']
+const ROLES = ['Data Scientist', 'Machine Learning Engineer', 'Data Engineer', 'Software Engineer']
 
 const TECHS = [
   'Python', 'SQL', 'Java', 'Go',
