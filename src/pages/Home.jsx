@@ -264,14 +264,16 @@ function Home() {
             </StaggerItem>
             <StaggerItem>
               <div className="card">
-                <h3>Recent Highlights</h3>
+                <h3>Selected Results</h3>
                 <ul className="bullet-list">
-                  <li>Google Advanced Data Analytics Specialization (Google, 2025)</li>
                   <li>
-                    Shell.ai Hackathon 2025 – machine learning system for sustainable fuel blending, built and deployed
+                    Found that an IoT benchmark over 206,000 network flows leaked the identity of the capture session each flow came from. Under an honest split, PR-AUC fell from 0.981 to 0.125.
                   </li>
                   <li>
-                    IMC 64 Bids Coding Challenge – final round (top 250 of 1,500 participants)
+                    Harmonized 10.8 million NOAA and Ocean Networks Canada observations into a 3.69 million-row forecasting table, served through FastAPI.
+                  </li>
+                  <li>
+                    Published 27 versioned REST endpoints that four peer teams built against, backed by 71 pytest tests.
                   </li>
                 </ul>
               </div>

@@ -11,7 +11,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 
 const expectations = {
   'src/pages/Home.jsx': {
-    'Recent Highlights': 3,
+    'Selected Results': 3,
     'Math and Computer Science Teacher': 3,
     'Software Developer': 4,
     'Accounting Intern': 3,
