@@ -63,11 +63,11 @@ function Home() {
               <span aria-live="polite" aria-atomic="true">{role}</span><span className="type-cursor" aria-hidden="true" />
             </p>
             <p className="hero-subtitle">
-              I build data and ML systems from ingestion through evaluation to
-              a deployed service. Nearly two years on production backend at
-              T-Mobile taught me to distrust a good first number, so I
-              benchmark against the simplest baseline. That is how I found our
-              capstone's leak.
+              I build end-to-end data and machine learning systems, from
+              ingestion and feature engineering through model evaluation to a
+              deployed service. Recent work includes a 10.8 million record
+              forecasting pipeline and a six-service marketplace backend, built
+              on nearly two years of production engineering at T-Mobile.
             </p>
 
             <div className="hero-actions">
