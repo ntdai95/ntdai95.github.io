@@ -83,7 +83,7 @@ try {
     'src/pages/Hackathons.jsx',
     '<h3>End-to-End Multi-Output Fuel Blending System</h3>',
     '<h3>Fuel Blending Prediction Model</h3>',
-    "expected 2 'End-to-End Multi-Output Fuel Blending System' card(s)"
+    "expected one 'End-to-End Multi-Output Fuel Blending System' card"
   )
   assertMutationBlocked(
     'Shell model-selection wording drift',
@@ -95,8 +95,8 @@ try {
   assertMutationBlocked(
     'featured project order drift',
     'src/pages/Projects.jsx',
-    '<h3>End-to-End Multi-Output Fuel Blending System</h3>',
-    '<h3>Fuel Blending Prediction Model</h3>',
+    '<span className="featured-badge">★ Featured</span>',
+    '<span className="featured-label">★ Featured</span>',
     'featured order is'
   )
 } finally {

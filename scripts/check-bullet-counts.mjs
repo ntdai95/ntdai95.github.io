@@ -105,7 +105,7 @@ const projects = bulletLists(fs.readFileSync(path.join(root, projectsPath), 'utf
 const hackathonsPath = 'src/pages/Hackathons.jsx'
 const hackathons = bulletLists(fs.readFileSync(path.join(root, hackathonsPath), 'utf8'))
 const projectCards = [...projects, ...hackathons]
-const shellCards = projectCards.filter(
+const shellCards = hackathons.filter(
   (project) => project.title === 'End-to-End Multi-Output Fuel Blending System'
 )
 for (const shellCard of shellCards) {
@@ -148,10 +148,9 @@ for (const [canonicalTitle, facts] of projectContract) {
   const matches = projectCards.filter((project) =>
     normalize(project.title).includes(normalize(canonicalTitle))
   )
-  const expectedMatches = canonicalTitle === 'End-to-End Multi-Output Fuel Blending System' ? 2 : 1
-  if (matches.length !== expectedMatches) {
+  if (matches.length !== 1) {
     console.error(
-      `FAIL website project parity: expected ${expectedMatches} '${canonicalTitle}' card(s); found ${matches.length}`
+      `FAIL website project parity: expected one '${canonicalTitle}' card; found ${matches.length}`
     )
     failed = true
     continue
@@ -182,7 +181,6 @@ const expectedFeaturedOrder = [
   'Distributed Facility Reservation System (Team of 4)',
   'Auction Marketplace Microservices (Team of 4)',
   'Anomaly Detection at Scale on Species Data (Team of 3)',
-  'End-to-End Multi-Output Fuel Blending System',
 ]
 const projectSource = fs.readFileSync(path.join(root, projectsPath), 'utf8')
 const featuredOrder = [...projectSource.matchAll(/<TiltCard className="card project-card">(.*?)<\/TiltCard>/gs)]
