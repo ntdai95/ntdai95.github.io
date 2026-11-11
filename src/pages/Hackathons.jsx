@@ -88,7 +88,7 @@ function Hackathons() {
                 <img src="/images/koronakiller-game.jpg" alt="KoronaKiller 2D game screenshot" loading="lazy" />
               </div>
               <h3>KoronaKiller (Team of 3)</h3>
-              <p className="edu-meta">Uncommon Hacks · Apr 2021</p>
+              <p className="edu-meta">Uncommon Hacks 2021 · Apr 2021</p>
               <ul className="bullet-list">
                 <li>
                   Built KoronaKiller with Python and Pygame, a 2D simulation
