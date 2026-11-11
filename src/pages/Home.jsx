@@ -140,13 +140,25 @@ function Home() {
           <FadeIn><h2>About</h2></FadeIn>
           <FadeIn delay={0.05}>
             <p>
-              I'm a data scientist and software engineer whose work runs
-              through predictive modeling, distributed ML systems, ETL
-              pipelines, and backend microservices. I also have an economics
-              degree, which comes up more often than people expect. I've
-              built this across a production job, two graduate programs, and
-              a handful of competitions. Given the choice, I'd rather ship
-              something small and correct than something large and untested.
+              Economics was my first degree, and statistics came with it. I
+              learned hypothesis testing at the University of Washington
+              before I learned to program properly, and I still use it more
+              than most of what came after.
+            </p>
+            <p>
+              I later spent nearly two years supporting T-Mobile through
+              BeaconFire Inc., building Java and Spring Boot REST services
+              across five or more roaming microservices backed by Kafka and
+              Cassandra. I am now completing an MEng in Applied Data Science
+              at the University of Victoria after earning an MS in Computer
+              Science at the University of Chicago.
+            </p>
+            <p>
+              My work spans data science, machine learning engineering, data
+              engineering, and backend software development. I build systems
+              that can be tested from source data through deployment, and I
+              would rather report an inconvenient result myself than have a
+              reviewer find it later.
             </p>
           </FadeIn>
 
