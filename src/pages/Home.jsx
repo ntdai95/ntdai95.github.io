@@ -63,11 +63,11 @@ function Home() {
               <span aria-live="polite" aria-atomic="true">{role}</span><span className="type-cursor" aria-hidden="true" />
             </p>
             <p className="hero-subtitle">
-              Most of my work runs the whole path from raw data to a running
-              service. I spent nearly two years on backend services for
-              T-Mobile through BeaconFire Inc., and since then I have built a
-              forecasting pipeline over 10.8 million sensor records and a
-              marketplace split into six independent services.
+              I am an Applied Data Science MEng candidate at UVic. Before that
+              I spent nearly two years on backend services for T-Mobile through
+              BeaconFire Inc. I am looking for a 2027 co-op or internship in
+              software engineering, machine learning, data science, or data
+              engineering, and I work mainly in Python, SQL and Spark.
             </p>
 
             <div className="hero-actions">
