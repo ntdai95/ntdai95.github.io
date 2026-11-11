@@ -63,11 +63,11 @@ function Home() {
               <span aria-live="polite" aria-atomic="true">{role}</span><span className="type-cursor" aria-hidden="true" />
             </p>
             <p className="hero-subtitle">
-              I build end-to-end data and machine learning systems, from
-              ingestion and feature engineering through model evaluation to a
-              deployed service. Recent work includes a 10.8 million record
-              forecasting pipeline and a six-service marketplace backend, built
-              on nearly two years of production engineering at T-Mobile.
+              Most of my work runs the whole path from raw data to a running
+              service. I spent nearly two years on backend services for
+              T-Mobile through BeaconFire Inc., and since then I have built a
+              forecasting pipeline over 10.8 million sensor records and a
+              marketplace split into six independent services.
             </p>
 
             <div className="hero-actions">
