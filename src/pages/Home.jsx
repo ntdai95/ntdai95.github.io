@@ -63,12 +63,11 @@ function Home() {
               <span aria-live="polite" aria-atomic="true">{role}</span><span className="type-cursor" aria-hidden="true" />
             </p>
             <p className="hero-subtitle">
-              Data scientist and software engineer with experience in
-              predictive modeling, distributed ML systems, backend
-              microservices, and analytics dashboards. Actively seeking
-              co-op and internship roles in data science, ML engineering,
-              data engineering, or software engineering, open to remote work or relocating
-              anywhere in Canada.
+              I build data and ML systems from ingestion through evaluation to
+              a deployed service. Nearly two years on production backend at
+              T-Mobile taught me to distrust a good first number, so I
+              benchmark against the simplest baseline. That is how I found our
+              capstone's leak.
             </p>
 
             <div className="hero-actions">
@@ -161,23 +160,46 @@ function Home() {
               development.
             </p>
             <p>
-              For my Ocean Data ML Platform I used Spark to harmonize 10.8
-              million NOAA and Ocean Networks Canada observations into a 3.69
-              million-row forecasting table, and served retrieval and inference
-              through FastAPI. For my IoT intrusion-detection capstone I
-              compared six classifiers on 206,000 network flows and selected
-              binary XGBoost under a 1% false-positive budget. On the
-              engineering side I split a marketplace into six Flask services
-              with isolated databases and published 27 versioned REST endpoints
-              with OpenAPI docs that four other teams built against.
+              For my Ocean Data ML Platform, I built Bronze ingestion with
+              pandas and xarray, used Spark to harmonize 10.8 million NOAA and
+              Ocean Networks Canada observations, and produced a 3.69
+              million-row Gold forecasting table. I served retrieval and model
+              inference through FastAPI. A separate air-temperature benchmark
+              cut RMSE by 48% at twelve hours, while persistence still beat
+              XGBoost on water temperature.
             </p>
             <p>
-              Both of those projects taught me the same lesson. The IoT
-              benchmark leaked capture-session identity, and once I split it
-              honestly PR-AUC fell from 0.981 to 0.125. On the ocean forecaster
-              a persistence baseline beat a model with an R² of 0.99975. I
-              would rather find and report results like that myself than have a
-              reviewer find them later.
+              For my IoT intrusion-detection capstone, I compared six
+              classifiers on 206,000 network flows and selected binary XGBoost
+              under a 1% false-positive budget. I also implemented Isolation
+              Forest from the published paper in PySpark and ran it on
+              1,093,203 records, then tested lead-lag relationships with
+              stationarity checks and Granger causality.
+            </p>
+            <p>
+              On the engineering side, I split a marketplace into six Flask
+              services with isolated databases, published 27 versioned REST
+              endpoints with OpenAPI docs that four other teams used, and wrote
+              71 tests for a distributed reservation system.
+            </p>
+            <p>
+              The IoT benchmark initially leaked capture-session identity. Once
+              I split it honestly, PR-AUC fell from 0.981 to 0.125. On the
+              ocean forecaster, a persistence baseline beat a model with an R²
+              of 0.99975. I would rather find and report those results myself
+              than have a reviewer find them later.
+            </p>
+            <p>
+              I placed in the top 250 of about 1,500 teams in IMC's 64 Bids
+              challenge and deployed a multi-output regression service for the
+              Shell.ai Hackathon 2025.
+            </p>
+            <p>
+              I am looking for a co-op or internship in data science, machine
+              learning, data engineering, or software development. I am
+              available for a term beginning and ending between January and
+              December 2027. My Canadian study permit includes employment
+              authorization, so I do not require sponsorship.
             </p>
           </FadeIn>
 
