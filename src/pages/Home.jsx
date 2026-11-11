@@ -146,19 +146,38 @@ function Home() {
               than most of what came after.
             </p>
             <p>
-              I later spent nearly two years supporting T-Mobile through
+              Next, I spent nearly two years supporting T-Mobile through
               BeaconFire Inc., building Java and Spring Boot REST services
               across five or more roaming microservices backed by Kafka and
-              Cassandra. I am now completing an MEng in Applied Data Science
-              at the University of Victoria after earning an MS in Computer
-              Science at the University of Chicago.
+              Cassandra. I traced defects across service boundaries, kept
+              Cassandra queries under one second, and automated weekly Kafka
+              retries for rejected roaming tests, cutting manual effort by 80%.
             </p>
             <p>
-              My work spans data science, machine learning engineering, data
-              engineering, and backend software development. I build systems
-              that can be tested from source data through deployment, and I
-              would rather report an inconvenient result myself than have a
-              reviewer find it later.
+              I am now completing an MEng in Applied Data Science at the
+              University of Victoria after earning an MS in Computer Science at
+              the University of Chicago. My work spans data science, machine
+              learning engineering, data engineering, and backend software
+              development.
+            </p>
+            <p>
+              For my Ocean Data ML Platform I used Spark to harmonize 10.8
+              million NOAA and Ocean Networks Canada observations into a 3.69
+              million-row forecasting table, and served retrieval and inference
+              through FastAPI. For my IoT intrusion-detection capstone I
+              compared six classifiers on 206,000 network flows and selected
+              binary XGBoost under a 1% false-positive budget. On the
+              engineering side I split a marketplace into six Flask services
+              with isolated databases and published 27 versioned REST endpoints
+              with OpenAPI docs that four other teams built against.
+            </p>
+            <p>
+              Both of those projects taught me the same lesson. The IoT
+              benchmark leaked capture-session identity, and once I split it
+              honestly PR-AUC fell from 0.981 to 0.125. On the ocean forecaster
+              a persistence baseline beat a model with an R² of 0.99975. I
+              would rather find and report results like that myself than have a
+              reviewer find them later.
             </p>
           </FadeIn>
 
@@ -171,9 +190,14 @@ function Home() {
                     <span className="skill-label">Languages</span>
                     <div className="skill-tags">
                       <span className="tag">Python</span>
-                      <span className="tag">SQL</span>
                       <span className="tag">Java</span>
                       <span className="tag">Go</span>
+                      <span className="tag">SQL</span>
+                      <span className="tag">MATLAB</span>
+                      <span className="tag">JavaScript</span>
+                      <span className="tag">HTML</span>
+                      <span className="tag">CSS</span>
+                      <span className="tag">Cypher</span>
                     </div>
                   </div>
                   <div className="skill-row">
