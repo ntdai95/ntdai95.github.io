@@ -19,7 +19,7 @@ function Hackathons() {
               </div>
               <span className="featured-badge">★ Featured</span>
               <h3>End-to-End Multi-Output Fuel Blending System</h3>
-              <p className="edu-meta">Solo · Shell.ai Hackathon 2025 · Jul 2025</p>
+              <p className="edu-meta">Shell.ai Hackathon 2025 · Jul 2025</p>
               <ul className="bullet-list">
                 <li>
                   Built and deployed an inference system for multi-output regression
@@ -87,13 +87,13 @@ function Hackathons() {
               <div className="project-card-img-wrap">
                 <img src="/images/koronakiller-game.jpg" alt="KoronaKiller 2D game screenshot" loading="lazy" />
               </div>
-              <h3>KoronaKiller (Game Developer)</h3>
+              <h3>KoronaKiller (Team of 3)</h3>
               <p className="edu-meta">Uncommon Hacks · Apr 2021</p>
               <ul className="bullet-list">
                 <li>
-                  Built KoronaKiller with a team of 3 in Python and Pygame, a 2D
-                  simulation modeling player health and event-driven interactions
-                  in real time.
+                  Built KoronaKiller with Python and Pygame, a 2D simulation
+                  modeling player health and event-driven interactions in real
+                  time.
                 </li>
                 <li>
                   Implemented continuous background scrolling, randomized object
