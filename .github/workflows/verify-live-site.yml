@@ -33,6 +33,9 @@ jobs:
       cancel-in-progress: true
     outputs:
       drifted: ${{ steps.compare.outputs.drifted }}
+      # The commit this run built. The redeploy job refuses to act if main has
+      # moved past it, so a push that lands mid-run is never undone.
+      sha: ${{ github.sha }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -74,6 +77,43 @@ jobs:
       group: pages
       cancel-in-progress: false
     steps:
+      # The artifact was built from needs.check.outputs.sha. If a push landed
+      # while the check was running, that push deploys itself and is newer than
+      # what this job holds, so deploying here would undo it. Stand down: the
+      # next scheduled run re-checks against whatever main is by then.
+      - name: Stand down if main moved while the check was running
+        id: freshness
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BUILT_SHA: ${{ needs.check.outputs.sha }}
+          BRANCH: ${{ github.ref_name }}
+        # Every uncertain path stands down rather than deploying. Not deploying
+        # is always safe here: the next scheduled run re-checks. Deploying on a
+        # stale artifact is the only outcome that could undo a real change, so
+        # a failed lookup must never fail the step into a retry or a red run.
+        run: |
+          set -uo pipefail
+          head=''
+          if body=$(curl -fsS \
+                -H "Authorization: Bearer ${GH_TOKEN}" \
+                -H "Accept: application/vnd.github+json" \
+                "https://api.github.com/repos/${GITHUB_REPOSITORY}/commits/${BRANCH}"); then
+            head=$(printf '%s' "${body}" \
+              | python3 -c 'import json,sys; print(json.load(sys.stdin)["sha"])' 2>/dev/null) || head=''
+          fi
+          echo "built from     : ${BUILT_SHA}"
+          echo "${BRANCH} head now : ${head:-<unreadable>}"
+          if [ -z "${head}" ]; then
+            echo 'fresh=false' >> "${GITHUB_OUTPUT}"
+            echo "::warning::could not read ${BRANCH}; standing down rather than risk undoing a newer deploy."
+          elif [ "${head}" = "${BUILT_SHA}" ]; then
+            echo 'fresh=true' >> "${GITHUB_OUTPUT}"
+          else
+            echo 'fresh=false' >> "${GITHUB_OUTPUT}"
+            echo "::notice::${BRANCH} moved to ${head} during the check; that push deploys itself, so this correction is skipped."
+          fi
+
       - name: Deploy to GitHub Pages
+        if: steps.freshness.outputs.fresh == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
