@@ -1,0 +1,79 @@
+name: Verify live site
+
+# Puts the live site back whenever it stops matching the default branch.
+#
+# A Pages deployment is last-writer-wins, and actions/deploy-pages has no
+# staleness check, so a workflow run created from an older commit would replace
+# a newer deployment if it ever dispatched. A push run executes the workflow
+# file frozen at its own commit, so a guard added to deploy-pages.yml cannot
+# reach a run that already exists. A scheduled run, by contrast, always uses the
+# default branch's latest commit, which is why the correction lives here: this
+# job cannot itself be rolled back by an older run.
+#
+# It is also a general-purpose canary. Any deployment that leaves the site out
+# of step with main is detected and corrected, whatever the cause.
+
+on:
+  schedule:
+    # Every six hours, off the hour: GitHub delays runs scheduled on the hour.
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    # Its own group, so a canary run can never cancel a pending real deploy.
+    concurrency:
+      group: verify-live-site
+      cancel-in-progress: true
+    outputs:
+      drifted: ${{ steps.compare.outputs.drifted }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Runs the content guards too, so a drifted site is never rebuilt from a
+      # tree that would fail them.
+      - name: Build
+        run: npm run build
+
+      - name: Compare the live site with this build
+        id: compare
+        run: node scripts/check-live-parity.mjs
+
+      - name: Upload Pages artifact
+        if: steps.compare.outputs.drifted == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  redeploy:
+    needs: check
+    if: needs.check.outputs.drifted == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    # The same group the real deploy uses, but it waits rather than cancelling,
+    # so a correction never interrupts a deploy that is already running.
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
