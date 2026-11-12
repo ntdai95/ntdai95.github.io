@@ -214,5 +214,113 @@ for (const relativePath of ['src/pages/Home.jsx', 'src/pages/Experience.jsx', 's
   }
 }
 
+// Project attribution convention, settled 2026-11-11. A card names its backing
+// exactly one way: "Personal Project" when no institution and no event is behind
+// it, otherwise the course and institution, or the event under its own full name
+// (the year belongs to that name where the event carries one, as Shell.ai
+// Hackathon 2025 and Uncommon Hacks 2021 do, and never otherwise). A team size
+// rides in the title as "(Team of N)", never in the meta line, and working alone
+// at an institution or an event is marked by nothing at all. Two cards shipped a
+// "Solo" marker that appears in no resume and nothing here caught it, so the
+// meta lines are contracted verbatim.
+const attributionContract = [
+  [
+    projectsPath,
+    {
+      'Ocean Data ML Platform with RAG': 'Personal Project <br /> Feb 2026 – Mar 2026',
+      'Multi-Stage IoT Intrusion Detection (Team of 7)':
+        'Capstone Project (ECE 592B) <br /> University of Victoria, May 2026 – Aug 2026',
+      'Distributed Facility Reservation System (Team of 4)':
+        'Applied Software Engineering (MPCS 51220) <br /> University of Chicago, Apr 2021 – May 2021',
+      'Auction Marketplace Microservices (Team of 4)':
+        'Topics in Software Engineering (MPCS 51205) <br /> University of Chicago, Feb 2021 – Mar 2021',
+      'Anomaly Detection at Scale on Species Data (Team of 3)':
+        'Systems for Massive Datasets (CSC 502) <br /> University of Victoria, Mar 2026 – Apr 2026',
+      'Stock Sentiment Analysis (Team of 4)':
+        'Algorithms and Data Models (CSC 501) <br /> University of Victoria, Nov 2025 – Dec 2025',
+      'Parallel Image Processing Engine': 'Personal Project <br /> Apr 2022 – May 2022',
+      'Belay Real-Time Chat Application':
+        'Web Development (MPCS 52553) <br /> University of Chicago, Jan 2022 – Feb 2022',
+      'Support Ticket Triage (Team of 4)':
+        'Selected Topics in Computer Engineering: AI (ECE 569A) <br /> University of Victoria, May 2026 – Jun 2026',
+      'Loan Approval Classifier (Team of 6)':
+        'Data Mining (CSC 503) <br /> University of Victoria, Jul 2026 – Aug 2026',
+      'Automated Crypto Trading Bot': 'Personal Project <br /> Feb 2025 – Jul 2025',
+    },
+  ],
+  [
+    hackathonsPath,
+    {
+      'End-to-End Multi-Output Fuel Blending System': 'Shell.ai Hackathon 2025 · Jul 2025',
+      'Algorithmic Trading &amp; Execution Optimization': 'IMC 64 Bids Coding Challenge · Oct 2021',
+      'KoronaKiller (Team of 3)': 'Uncommon Hacks 2021 · Apr 2021',
+    },
+  ],
+]
+
+function projectCardAttributions(source) {
+  return [...source.matchAll(/<TiltCard className="card project-card">(.*?)<\/TiltCard>/gs)].map(
+    (card) => ({
+      title: card[1]
+        .match(/<h3>(.*?)<\/h3>/s)?.[1]
+        .replace(/<.*?>/gs, '')
+        .trim(),
+      meta: card[1]
+        .match(/<p className="edu-meta">(.*?)<\/p>/s)?.[1]
+        .replace(/\s+/g, ' ')
+        .trim(),
+    })
+  )
+}
+
+let attributionsChecked = 0
+for (const [relativePath, expected] of attributionContract) {
+  const cards = projectCardAttributions(fs.readFileSync(path.join(root, relativePath), 'utf8'))
+  const seen = new Set()
+  for (const card of cards) {
+    if (!Object.prototype.hasOwnProperty.call(expected, card.title)) {
+      console.error(`FAIL ${relativePath}: project card '${card.title}' has no attribution contract`)
+      failed = true
+      continue
+    }
+    seen.add(card.title)
+    attributionsChecked += 1
+    if (card.meta !== expected[card.title]) {
+      console.error(
+        `FAIL ${relativePath}: ${card.title} attribution is '${card.meta}'; expected '${expected[card.title]}'`
+      )
+      failed = true
+    }
+  }
+  for (const title of Object.keys(expected)) {
+    if (!seen.has(title)) {
+      console.error(`FAIL ${relativePath}: contracted project card '${title}' is missing`)
+      failed = true
+    }
+  }
+}
+
+// "Solo" is never an attribution, so it is banned outright rather than only on
+// the cards the contract above enumerates.
+for (const relativePath of [
+  'src/pages/Home.jsx',
+  'src/pages/Experience.jsx',
+  projectsPath,
+  hackathonsPath,
+]) {
+  const source = fs.readFileSync(path.join(root, relativePath), 'utf8')
+  if (/\bsolo\b/i.test(source)) {
+    console.error(`FAIL ${relativePath}: 'Solo' is not an attribution; name the backing instead`)
+    failed = true
+  }
+}
+
+if (attributionsChecked !== 14) {
+  console.error(`FAIL website attributions: checked ${attributionsChecked} cards; expected 14`)
+  failed = true
+}
+
 if (failed) process.exit(1)
-console.log(`PASS website bullet counts and resume parity: T-Mobile 4; ${projectCards.length} project cards covered`)
+console.log(
+  `PASS website bullet counts and resume parity: T-Mobile 4; ${projectCards.length} project cards covered; ${attributionsChecked} attributions contracted`
+)

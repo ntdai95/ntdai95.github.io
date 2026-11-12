@@ -99,6 +99,27 @@ try {
     '<span className="featured-label">★ Featured</span>',
     'featured order is'
   )
+  assertMutationBlocked(
+    'Solo attribution returns to a hackathon card',
+    'src/pages/Hackathons.jsx',
+    '<p className="edu-meta">Shell.ai Hackathon 2025 · Jul 2025</p>',
+    '<p className="edu-meta">Solo · Shell.ai Hackathon 2025 · Jul 2025</p>',
+    "'Solo' is not an attribution"
+  )
+  assertMutationBlocked(
+    'event name loses the year it carries',
+    'src/pages/Hackathons.jsx',
+    '<p className="edu-meta">Uncommon Hacks 2021 · Apr 2021</p>',
+    '<p className="edu-meta">Uncommon Hacks · Apr 2021</p>',
+    'KoronaKiller (Team of 3) attribution is'
+  )
+  assertMutationBlocked(
+    'personal project claims an institution',
+    'src/pages/Projects.jsx',
+    'Personal Project\n                <br />\n                Feb 2026',
+    'University of Victoria\n                <br />\n                Feb 2026',
+    'Ocean Data ML Platform with RAG attribution is'
+  )
 } finally {
   const resolvedTemporaryRoot = path.resolve(temporaryRoot)
   const resolvedSystemTemp = path.resolve(os.tmpdir())
