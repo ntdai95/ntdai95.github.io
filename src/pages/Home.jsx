@@ -54,7 +54,7 @@ function Home() {
           <motion.div className="hero-text" variants={heroItem} style={{ y: textY }}>
             <span className="badge-available">
               <span className="badge-pulse" />
-              Available · Co-op Jan – Dec 2027 · Canada (Remote OK)
+              Available · Co-op May 2027 – Apr 2028 · Canada (Remote OK)
             </span>
             <h1 style={{ margin: '0 0 0.2rem' }}>
               <SplitText delay={0.35}>Tan Dai Ngo</SplitText>
@@ -65,7 +65,7 @@ function Home() {
             <p className="hero-subtitle">
               I am an Applied Data Science MEng candidate at UVic. Before that
               I spent nearly two years on backend services for T-Mobile through
-              BeaconFire Inc. I am looking for a 2027 co-op or internship in
+              BeaconFire Inc. I am looking for a co-op or internship between May 2027 and April 2028 in
               software engineering, machine learning, data science, or data
               engineering, and I work mainly in Python, SQL and Spark.
             </p>
@@ -197,8 +197,8 @@ function Home() {
             <p>
               I am looking for a co-op or internship in data science, machine
               learning, data engineering, or software development. I am
-              available for a term beginning and ending between January and
-              December 2027. My Canadian study permit includes employment
+              available for a term beginning and ending between May 2027 and
+              April 2028. My Canadian study permit includes employment
               authorization, so I do not require sponsorship.
             </p>
           </FadeIn>
@@ -298,7 +298,7 @@ function Home() {
                 <div>
                   <h3>Master of Engineering (MEng), Applied Data Science (Co-op)</h3>
                   <p className="edu-meta">
-                    University of Victoria · Sep 2025 – Dec 2027 (Expected)
+                    University of Victoria · Sep 2025 – Apr 2028 (Expected)
                     <br />
                     GPA: 8.78 / 9.00
                   </p>
@@ -472,7 +472,7 @@ function Home() {
               <h3>Let's work together</h3>
               <p>
                 I'm actively seeking co-op / internship roles in data science, ML engineering,
-                data engineering, or software engineering (Jan – Dec 2027). Open to remote or relocating
+                data engineering, or software engineering (May 2027 – Apr 2028). Open to remote or relocating
                 anywhere in Canada.
               </p>
               <div className="cta-actions">
